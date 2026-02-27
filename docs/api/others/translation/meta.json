@@ -1,0 +1,14 @@
+{
+  "title": "Translation",
+  "pages": [
+    "index",
+    {
+      "slug": "lv_translation_h",
+      "title": "lv_translation.h"
+    },
+    {
+      "slug": "lv_translation_private_h",
+      "title": "lv_translation_private.h"
+    }
+  ]
+}

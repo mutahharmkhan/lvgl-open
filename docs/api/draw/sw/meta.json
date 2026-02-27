@@ -1,0 +1,32 @@
+{
+  "title": "Sw",
+  "pages": [
+    "index",
+    "arm2d",
+    "blend",
+    {
+      "slug": "lv_draw_sw_grad_h",
+      "title": "lv_draw_sw_grad.h"
+    },
+    {
+      "slug": "lv_draw_sw_h",
+      "title": "lv_draw_sw.h"
+    },
+    {
+      "slug": "lv_draw_sw_mask_h",
+      "title": "lv_draw_sw_mask.h"
+    },
+    {
+      "slug": "lv_draw_sw_mask_private_h",
+      "title": "lv_draw_sw_mask_private.h"
+    },
+    {
+      "slug": "lv_draw_sw_private_h",
+      "title": "lv_draw_sw_private.h"
+    },
+    {
+      "slug": "lv_draw_sw_utils_h",
+      "title": "lv_draw_sw_utils.h"
+    }
+  ]
+}

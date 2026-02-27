@@ -1,0 +1,266 @@
+---
+title: lv_gltf_model.h
+description: API reference for lv_gltf_model.h
+api:
+  functions: [lv_gltf_model_get_image_count, lv_gltf_model_get_texture_count, lv_gltf_model_get_material_count, lv_gltf_model_get_camera_count, lv_gltf_model_get_mesh_count, lv_gltf_model_get_scene_count, lv_gltf_model_get_animation_count, lv_gltf_model_play_animation, lv_gltf_model_pause_animation, lv_gltf_model_is_animation_paused, lv_gltf_model_get_animation]
+---
+
+<ApiSummary functions={11} />
+
+## Functions
+
+<ApiTabs items={["Getters (8)","Other (3)"]}>
+<ApiTab value="Getters (8)">
+
+<ApiMember kind="function" name="lv_gltf_model_get_image_count" file="libs/gltf/gltf_data/lv_gltf_model.h" line={23} url="https://github.com/lvgl/lvgl/blob/master/src/libs/gltf/gltf_data/lv_gltf_model.h#L23">
+
+### lv_gltf_model_get_image_count
+
+Get the number of images in the glTF model.
+
+Images in glTF are used as sources for textures and can be stored either as external files or embedded as base64-encoded model within the glTF file.
+
+```c
+size_t lv_gltf_model_get_image_count(const lv_gltf_model_t *model)
+```
+
+<span className="sr-only">Parameters</span>
+
+| Name | Type | Description |
+|------|------|-------------|
+| `model` | <ApiLink name="lv_gltf_model_t" display="const lv_gltf_model_t *" /> | Pointer to the glTF model data structure |
+
+**Returns:** <ApiLink name="size_t" /> — Number of images in the model
+
+
+</ApiMember>
+
+<ApiMember kind="function" name="lv_gltf_model_get_texture_count" file="libs/gltf/gltf_data/lv_gltf_model.h" line={34} url="https://github.com/lvgl/lvgl/blob/master/src/libs/gltf/gltf_data/lv_gltf_model.h#L34">
+
+### lv_gltf_model_get_texture_count
+
+Get the number of textures in the glTF model.
+
+Textures define how images are sampled and applied to materials. Each texture references an image and may specify sampling parameters like filtering and wrapping modes.
+
+```c
+size_t lv_gltf_model_get_texture_count(const lv_gltf_model_t *model)
+```
+
+<span className="sr-only">Parameters</span>
+
+| Name | Type | Description |
+|------|------|-------------|
+| `model` | <ApiLink name="lv_gltf_model_t" display="const lv_gltf_model_t *" /> | Pointer to the glTF model data structure |
+
+**Returns:** <ApiLink name="size_t" /> — Number of textures in the model
+
+
+</ApiMember>
+
+<ApiMember kind="function" name="lv_gltf_model_get_material_count" file="libs/gltf/gltf_data/lv_gltf_model.h" line={45} url="https://github.com/lvgl/lvgl/blob/master/src/libs/gltf/gltf_data/lv_gltf_model.h#L45">
+
+### lv_gltf_model_get_material_count
+
+Get the number of materials in the glTF model.
+
+Materials define the visual appearance of mesh primitives, including properties like base color, metallic/roughness values, normal maps, and other surface characteristics.
+
+```c
+size_t lv_gltf_model_get_material_count(const lv_gltf_model_t *model)
+```
+
+<span className="sr-only">Parameters</span>
+
+| Name | Type | Description |
+|------|------|-------------|
+| `model` | <ApiLink name="lv_gltf_model_t" display="const lv_gltf_model_t *" /> | Pointer to the glTF model data structure |
+
+**Returns:** <ApiLink name="size_t" /> — Number of materials in the model
+
+
+</ApiMember>
+
+<ApiMember kind="function" name="lv_gltf_model_get_camera_count" file="libs/gltf/gltf_data/lv_gltf_model.h" line={56} url="https://github.com/lvgl/lvgl/blob/master/src/libs/gltf/gltf_data/lv_gltf_model.h#L56">
+
+### lv_gltf_model_get_camera_count
+
+Get the number of cameras in the glTF model.
+
+Cameras define viewpoints within the 3D scene and can be either perspective or orthographic. They are typically attached to nodes in the scene graph.
+
+```c
+size_t lv_gltf_model_get_camera_count(const lv_gltf_model_t *model)
+```
+
+<span className="sr-only">Parameters</span>
+
+| Name | Type | Description |
+|------|------|-------------|
+| `model` | <ApiLink name="lv_gltf_model_t" display="const lv_gltf_model_t *" /> | Pointer to the glTF model data structure |
+
+**Returns:** <ApiLink name="size_t" /> — Number of cameras in the model
+
+
+</ApiMember>
+
+<ApiMember kind="function" name="lv_gltf_model_get_mesh_count" file="libs/gltf/gltf_data/lv_gltf_model.h" line={68} url="https://github.com/lvgl/lvgl/blob/master/src/libs/gltf/gltf_data/lv_gltf_model.h#L68">
+
+### lv_gltf_model_get_mesh_count
+
+Get the number of meshes in the glTF model.
+
+Meshes contain the geometric model for 3D objects, including vertex positions, normals, texture coordinates, and indices. Each mesh can have multiple primitives with different materials.
+
+```c
+size_t lv_gltf_model_get_mesh_count(const lv_gltf_model_t *model)
+```
+
+<span className="sr-only">Parameters</span>
+
+| Name | Type | Description |
+|------|------|-------------|
+| `model` | <ApiLink name="lv_gltf_model_t" display="const lv_gltf_model_t *" /> | Pointer to the glTF model data structure |
+
+**Returns:** <ApiLink name="size_t" /> — Number of meshes in the model
+
+
+</ApiMember>
+
+<ApiMember kind="function" name="lv_gltf_model_get_scene_count" file="libs/gltf/gltf_data/lv_gltf_model.h" line={79} url="https://github.com/lvgl/lvgl/blob/master/src/libs/gltf/gltf_data/lv_gltf_model.h#L79">
+
+### lv_gltf_model_get_scene_count
+
+Get the number of scenes in the glTF model.
+
+Scenes define the root nodes of the scene graph. A glTF file can contain multiple scenes, though typically only one is designated as the default scene to be displayed.
+
+```c
+size_t lv_gltf_model_get_scene_count(const lv_gltf_model_t *model)
+```
+
+<span className="sr-only">Parameters</span>
+
+| Name | Type | Description |
+|------|------|-------------|
+| `model` | <ApiLink name="lv_gltf_model_t" display="const lv_gltf_model_t *" /> | Pointer to the glTF model data structure |
+
+**Returns:** <ApiLink name="size_t" /> — Number of scenes in the model
+
+
+</ApiMember>
+
+<ApiMember kind="function" name="lv_gltf_model_get_animation_count" file="libs/gltf/gltf_data/lv_gltf_model.h" line={90} url="https://github.com/lvgl/lvgl/blob/master/src/libs/gltf/gltf_data/lv_gltf_model.h#L90">
+
+### lv_gltf_model_get_animation_count
+
+Get the number of animations in the glTF model.
+
+Animations define keyframe-based motion for nodes in the scene, including transformations like translation, rotation, and scaling over time.
+
+```c
+size_t lv_gltf_model_get_animation_count(const lv_gltf_model_t *model)
+```
+
+<span className="sr-only">Parameters</span>
+
+| Name | Type | Description |
+|------|------|-------------|
+| `model` | <ApiLink name="lv_gltf_model_t" display="const lv_gltf_model_t *" /> | Pointer to the glTF model data structure |
+
+**Returns:** <ApiLink name="size_t" /> — Number of animations in the model
+
+
+</ApiMember>
+
+<ApiMember kind="function" name="lv_gltf_model_get_animation" file="libs/gltf/gltf_data/lv_gltf_model.h" line={120} url="https://github.com/lvgl/lvgl/blob/master/src/libs/gltf/gltf_data/lv_gltf_model.h#L120">
+
+### lv_gltf_model_get_animation
+
+Get the current selected animation. To see if it's playing see <ApiLink name="lv_gltf_model_is_animation_paused" />.
+
+```c
+size_t lv_gltf_model_get_animation(lv_gltf_model_t *model)
+```
+
+<span className="sr-only">Parameters</span>
+
+| Name | Type | Description |
+|------|------|-------------|
+| `model` | <ApiLink name="lv_gltf_model_t" display="lv_gltf_model_t *" /> | Pointer to the glTF model structure |
+
+
+</ApiMember>
+
+</ApiTab>
+<ApiTab value="Other (3)">
+
+<ApiMember kind="function" name="lv_gltf_model_play_animation" file="libs/gltf/gltf_data/lv_gltf_model.h" line={99} url="https://github.com/lvgl/lvgl/blob/master/src/libs/gltf/gltf_data/lv_gltf_model.h#L99">
+
+### lv_gltf_model_play_animation
+
+Select and start playing an animation.
+
+```c
+lv_result_t lv_gltf_model_play_animation(lv_gltf_model_t *model, size_t index)
+```
+
+<span className="sr-only">Parameters</span>
+
+| Name | Type | Description |
+|------|------|-------------|
+| `model` | <ApiLink name="lv_gltf_model_t" display="lv_gltf_model_t *" /> | Pointer to the glTF model structure |
+| `index` | <ApiLink name="size_t" /> | Animation number to start playing |
+
+**Returns:** <ApiLink name="lv_result_t" /> — LV_RESULT_OK if the animation was started else LV_RESULT_INVALID
+
+
+</ApiMember>
+
+<ApiMember kind="function" name="lv_gltf_model_pause_animation" file="libs/gltf/gltf_data/lv_gltf_model.h" line={106} url="https://github.com/lvgl/lvgl/blob/master/src/libs/gltf/gltf_data/lv_gltf_model.h#L106">
+
+### lv_gltf_model_pause_animation
+
+Pause the current animation.
+
+```c
+void lv_gltf_model_pause_animation(lv_gltf_model_t *model)
+```
+
+<span className="sr-only">Parameters</span>
+
+| Name | Type | Description |
+|------|------|-------------|
+| `model` | <ApiLink name="lv_gltf_model_t" display="lv_gltf_model_t *" /> | Pointer to the glTF model structure |
+
+
+</ApiMember>
+
+<ApiMember kind="function" name="lv_gltf_model_is_animation_paused" file="libs/gltf/gltf_data/lv_gltf_model.h" line={113} url="https://github.com/lvgl/lvgl/blob/master/src/libs/gltf/gltf_data/lv_gltf_model.h#L113">
+
+### lv_gltf_model_is_animation_paused
+
+Check if an animation is currently being played.
+
+```c
+bool lv_gltf_model_is_animation_paused(lv_gltf_model_t *model)
+```
+
+<span className="sr-only">Parameters</span>
+
+| Name | Type | Description |
+|------|------|-------------|
+| `model` | <ApiLink name="lv_gltf_model_t" display="lv_gltf_model_t *" /> | Pointer to the glTF model structure |
+
+
+</ApiMember>
+
+</ApiTab>
+</ApiTabs>
+## Dependencies
+
+<FileIncludes
+  includes={["lv_conf_internal.h", "lv_gltf_model_node.h", "lv_types.h", "lv_event.h"]}
+  includedBy={["lv_gltf.h"]}
+  transitiveIncludes={["lv_3dmath.h", "lv_array.h", "lv_conf_kconfig.h"]}
+/>

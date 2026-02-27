@@ -1,0 +1,13 @@
+{
+  "title": "Assets",
+  "pages": [
+    {
+      "slug": "images",
+      "title": "Images"
+    },
+    {
+      "slug": "fonts",
+      "title": "Fonts"
+    }
+  ]
+}

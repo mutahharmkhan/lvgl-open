@@ -1,0 +1,14 @@
+{
+  "title": "Msgbox",
+  "pages": [
+    "index",
+    {
+      "slug": "lv_msgbox_h",
+      "title": "lv_msgbox.h"
+    },
+    {
+      "slug": "lv_msgbox_private_h",
+      "title": "lv_msgbox_private.h"
+    }
+  ]
+}

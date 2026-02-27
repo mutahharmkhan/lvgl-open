@@ -1,0 +1,24 @@
+{
+  "title": "Cache",
+  "pages": [
+    "index",
+    "class",
+    "instance",
+    {
+      "slug": "lv_cache_entry_h",
+      "title": "lv_cache_entry.h"
+    },
+    {
+      "slug": "lv_cache_entry_private_h",
+      "title": "lv_cache_entry_private.h"
+    },
+    {
+      "slug": "lv_cache_h",
+      "title": "lv_cache.h"
+    },
+    {
+      "slug": "lv_cache_private_h",
+      "title": "lv_cache_private.h"
+    }
+  ]
+}

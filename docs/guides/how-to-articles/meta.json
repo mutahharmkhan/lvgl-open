@@ -1,0 +1,13 @@
+{
+  "title": "Guides",
+  "pages": [
+    {
+      "slug": "how-to-articles",
+      "title": "How to Articles"
+    },
+    {
+      "slug": "internal-subsystems",
+      "title": "Internal Subsystems"
+    }
+  ]
+}

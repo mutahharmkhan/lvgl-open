@@ -1,0 +1,17 @@
+{
+  "title": "Board Support",
+  "pages": [
+    {
+      "slug": "lvgl_supported",
+      "title": "Lvgl Supported"
+    },
+    {
+      "slug": "partner_supported",
+      "title": "Partner Supported"
+    },
+    {
+      "slug": "manufacturers",
+      "title": "Manufacturers"
+    }
+  ]
+}

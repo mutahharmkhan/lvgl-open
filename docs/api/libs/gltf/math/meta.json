@@ -1,0 +1,14 @@
+{
+  "title": "Math",
+  "pages": [
+    "index",
+    {
+      "slug": "lv_3dmath_h",
+      "title": "lv_3dmath.h"
+    },
+    {
+      "slug": "lv_gltf_math_hpp",
+      "title": "lv_gltf_math.hpp"
+    }
+  ]
+}

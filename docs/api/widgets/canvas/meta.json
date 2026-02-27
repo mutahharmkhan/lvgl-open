@@ -1,0 +1,14 @@
+{
+  "title": "Canvas",
+  "pages": [
+    "index",
+    {
+      "slug": "lv_canvas_h",
+      "title": "lv_canvas.h"
+    },
+    {
+      "slug": "lv_canvas_private_h",
+      "title": "lv_canvas_private.h"
+    }
+  ]
+}

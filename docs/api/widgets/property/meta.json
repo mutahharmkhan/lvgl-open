@@ -1,0 +1,14 @@
+{
+  "title": "Property",
+  "pages": [
+    "index",
+    {
+      "slug": "lv_obj_property_names_h",
+      "title": "lv_obj_property_names.h"
+    },
+    {
+      "slug": "lv_style_properties_h",
+      "title": "lv_style_properties.h"
+    }
+  ]
+}

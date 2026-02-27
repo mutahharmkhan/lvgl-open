@@ -1,0 +1,14 @@
+{
+  "title": "Buttonmatrix",
+  "pages": [
+    "index",
+    {
+      "slug": "lv_buttonmatrix_h",
+      "title": "lv_buttonmatrix.h"
+    },
+    {
+      "slug": "lv_buttonmatrix_private_h",
+      "title": "lv_buttonmatrix_private.h"
+    }
+  ]
+}

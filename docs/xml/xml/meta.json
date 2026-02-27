@@ -1,0 +1,17 @@
+{
+  "title": "XML Overview",
+  "pages": [
+    {
+      "slug": "overview",
+      "title": "Overview"
+    },
+    {
+      "slug": "syntax",
+      "title": "Syntax"
+    },
+    {
+      "slug": "license",
+      "title": "License"
+    }
+  ]
+}

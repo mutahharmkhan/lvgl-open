@@ -1,0 +1,25 @@
+{
+  "title": "Drawing",
+  "pages": [
+    {
+      "slug": "draw_pipeline",
+      "title": "Draw Pipeline"
+    },
+    {
+      "slug": "draw_api",
+      "title": "Draw API"
+    },
+    {
+      "slug": "draw_layers",
+      "title": "Draw Layers"
+    },
+    {
+      "slug": "draw_descriptors",
+      "title": "Draw Descriptors"
+    },
+    {
+      "slug": "snapshot",
+      "title": "Snapshot"
+    }
+  ]
+}

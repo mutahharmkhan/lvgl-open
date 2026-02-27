@@ -1,0 +1,107 @@
+{
+  "title": "Draw",
+  "pages": [
+    "index",
+    "convert",
+    "dma2d",
+    "espressif",
+    "eve",
+    "nanovg",
+    "nema_gfx",
+    "nxp",
+    "opengles",
+    "renesas",
+    "sdl",
+    "snapshot",
+    "sw",
+    "vg_lite",
+    {
+      "slug": "lv_draw_3d_h",
+      "title": "lv_draw_3d.h"
+    },
+    {
+      "slug": "lv_draw_arc_h",
+      "title": "lv_draw_arc.h"
+    },
+    {
+      "slug": "lv_draw_blur_h",
+      "title": "lv_draw_blur.h"
+    },
+    {
+      "slug": "lv_draw_buf_h",
+      "title": "lv_draw_buf.h"
+    },
+    {
+      "slug": "lv_draw_buf_private_h",
+      "title": "lv_draw_buf_private.h"
+    },
+    {
+      "slug": "lv_draw_h",
+      "title": "lv_draw.h"
+    },
+    {
+      "slug": "lv_draw_image_h",
+      "title": "lv_draw_image.h"
+    },
+    {
+      "slug": "lv_draw_image_private_h",
+      "title": "lv_draw_image_private.h"
+    },
+    {
+      "slug": "lv_draw_label_h",
+      "title": "lv_draw_label.h"
+    },
+    {
+      "slug": "lv_draw_label_private_h",
+      "title": "lv_draw_label_private.h"
+    },
+    {
+      "slug": "lv_draw_line_h",
+      "title": "lv_draw_line.h"
+    },
+    {
+      "slug": "lv_draw_mask_h",
+      "title": "lv_draw_mask.h"
+    },
+    {
+      "slug": "lv_draw_private_h",
+      "title": "lv_draw_private.h"
+    },
+    {
+      "slug": "lv_draw_rect_h",
+      "title": "lv_draw_rect.h"
+    },
+    {
+      "slug": "lv_draw_rect_private_h",
+      "title": "lv_draw_rect_private.h"
+    },
+    {
+      "slug": "lv_draw_triangle_h",
+      "title": "lv_draw_triangle.h"
+    },
+    {
+      "slug": "lv_draw_triangle_private_h",
+      "title": "lv_draw_triangle_private.h"
+    },
+    {
+      "slug": "lv_draw_vector_h",
+      "title": "lv_draw_vector.h"
+    },
+    {
+      "slug": "lv_draw_vector_private_h",
+      "title": "lv_draw_vector_private.h"
+    },
+    {
+      "slug": "lv_image_decoder_h",
+      "title": "lv_image_decoder.h"
+    },
+    {
+      "slug": "lv_image_decoder_private_h",
+      "title": "lv_image_decoder_private.h"
+    },
+    {
+      "slug": "lv_image_dsc_h",
+      "title": "lv_image_dsc.h"
+    }
+  ]
+}

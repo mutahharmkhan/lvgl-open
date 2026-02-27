@@ -1,0 +1,33 @@
+{
+  "title": "Images",
+  "pages": [
+    {
+      "slug": "overview",
+      "title": "Overview"
+    },
+    {
+      "slug": "sources",
+      "title": "Sources"
+    },
+    {
+      "slug": "color_formats",
+      "title": "Color Formats"
+    },
+    {
+      "slug": "adding_images",
+      "title": "Adding Images"
+    },
+    {
+      "slug": "using_images",
+      "title": "Using Images"
+    },
+    {
+      "slug": "decoders",
+      "title": "Decoders"
+    },
+    {
+      "slug": "caching",
+      "title": "Caching"
+    }
+  ]
+}

@@ -1,0 +1,14 @@
+{
+  "title": "Checkbox",
+  "pages": [
+    "index",
+    {
+      "slug": "lv_checkbox_h",
+      "title": "lv_checkbox.h"
+    },
+    {
+      "slug": "lv_checkbox_private_h",
+      "title": "lv_checkbox_private.h"
+    }
+  ]
+}

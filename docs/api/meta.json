@@ -1,0 +1,78 @@
+{
+  "title": "API",
+  "pages": [
+    "index",
+    "core",
+    "debugging",
+    "display",
+    "draw",
+    "drivers",
+    "font",
+    "indev",
+    "layouts",
+    "libs",
+    "misc",
+    "osal",
+    "others",
+    "stdlib",
+    "themes",
+    "tick",
+    "widgets",
+    {
+      "slug": "deprecated",
+      "title": "Deprecated List"
+    },
+    {
+      "slug": "fastgltf",
+      "title": "fastgltf"
+    },
+    {
+      "slug": "lv_api_map_v8_h",
+      "title": "lv_api_map_v8.h"
+    },
+    {
+      "slug": "lv_api_map_v9_0_h",
+      "title": "lv_api_map_v9_0.h"
+    },
+    {
+      "slug": "lv_api_map_v9_1_h",
+      "title": "lv_api_map_v9_1.h"
+    },
+    {
+      "slug": "lv_api_map_v9_2_h",
+      "title": "lv_api_map_v9_2.h"
+    },
+    {
+      "slug": "lv_api_map_v9_3_h",
+      "title": "lv_api_map_v9_3.h"
+    },
+    {
+      "slug": "lv_api_map_v9_4_h",
+      "title": "lv_api_map_v9_4.h"
+    },
+    {
+      "slug": "lv_conf_internal_h",
+      "title": "lv_conf_internal.h"
+    },
+    {
+      "slug": "lv_conf_kconfig_h",
+      "title": "lv_conf_kconfig.h"
+    },
+    {
+      "slug": "lv_init_h",
+      "title": "lv_init.h"
+    },
+    {
+      "slug": "lvgl_h",
+      "title": "lvgl.h"
+    },
+    {
+      "slug": "lvgl_private_h",
+      "title": "lvgl_private.h"
+    },
+    {
+      "slug": "todo",
+      "title": "Todo List"
+    }
+  ]
+}

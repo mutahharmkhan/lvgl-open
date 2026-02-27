@@ -1,0 +1,98 @@
+{
+  "title": "Core",
+  "pages": [
+    "index",
+    {
+      "slug": "lv_global_h",
+      "title": "lv_global.h"
+    },
+    {
+      "slug": "lv_group_h",
+      "title": "lv_group.h"
+    },
+    {
+      "slug": "lv_group_private_h",
+      "title": "lv_group_private.h"
+    },
+    {
+      "slug": "lv_obj_class_h",
+      "title": "lv_obj_class.h"
+    },
+    {
+      "slug": "lv_obj_class_private_h",
+      "title": "lv_obj_class_private.h"
+    },
+    {
+      "slug": "lv_obj_draw_h",
+      "title": "lv_obj_draw.h"
+    },
+    {
+      "slug": "lv_obj_draw_private_h",
+      "title": "lv_obj_draw_private.h"
+    },
+    {
+      "slug": "lv_obj_event_h",
+      "title": "lv_obj_event.h"
+    },
+    {
+      "slug": "lv_obj_event_private_h",
+      "title": "lv_obj_event_private.h"
+    },
+    {
+      "slug": "lv_obj_h",
+      "title": "lv_obj.h"
+    },
+    {
+      "slug": "lv_obj_pos_h",
+      "title": "lv_obj_pos.h"
+    },
+    {
+      "slug": "lv_obj_private_h",
+      "title": "lv_obj_private.h"
+    },
+    {
+      "slug": "lv_obj_property_h",
+      "title": "lv_obj_property.h"
+    },
+    {
+      "slug": "lv_obj_scroll_h",
+      "title": "lv_obj_scroll.h"
+    },
+    {
+      "slug": "lv_obj_scroll_private_h",
+      "title": "lv_obj_scroll_private.h"
+    },
+    {
+      "slug": "lv_obj_style_gen_h",
+      "title": "lv_obj_style_gen.h"
+    },
+    {
+      "slug": "lv_obj_style_h",
+      "title": "lv_obj_style.h"
+    },
+    {
+      "slug": "lv_obj_style_private_h",
+      "title": "lv_obj_style_private.h"
+    },
+    {
+      "slug": "lv_obj_tree_h",
+      "title": "lv_obj_tree.h"
+    },
+    {
+      "slug": "lv_observer_h",
+      "title": "lv_observer.h"
+    },
+    {
+      "slug": "lv_observer_private_h",
+      "title": "lv_observer_private.h"
+    },
+    {
+      "slug": "lv_refr_h",
+      "title": "lv_refr.h"
+    },
+    {
+      "slug": "lv_refr_private_h",
+      "title": "lv_refr_private.h"
+    }
+  ]
+}

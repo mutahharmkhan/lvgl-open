@@ -1,0 +1,21 @@
+{
+  "title": "Boards",
+  "pages": [
+    {
+      "slug": "icop",
+      "title": "Icop"
+    },
+    {
+      "slug": "toradex",
+      "title": "Toradex"
+    },
+    {
+      "slug": "riverdi",
+      "title": "Riverdi"
+    },
+    {
+      "slug": "viewe",
+      "title": "Viewe"
+    }
+  ]
+}

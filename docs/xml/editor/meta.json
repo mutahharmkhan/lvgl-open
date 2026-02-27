@@ -1,0 +1,25 @@
+{
+  "title": "Editor",
+  "pages": [
+    {
+      "slug": "overview",
+      "title": "Overview"
+    },
+    {
+      "slug": "install",
+      "title": "Install"
+    },
+    {
+      "slug": "user_interface",
+      "title": "User Interface"
+    },
+    {
+      "slug": "hotkeys",
+      "title": "Hotkeys"
+    },
+    {
+      "slug": "license",
+      "title": "License"
+    }
+  ]
+}

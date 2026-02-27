@@ -1,0 +1,23 @@
+{
+  "title": "Stdlib",
+  "pages": [
+    "index",
+    "builtin",
+    {
+      "slug": "lv_mem_h",
+      "title": "lv_mem.h"
+    },
+    {
+      "slug": "lv_mem_private_h",
+      "title": "lv_mem_private.h"
+    },
+    {
+      "slug": "lv_sprintf_h",
+      "title": "lv_sprintf.h"
+    },
+    {
+      "slug": "lv_string_h",
+      "title": "lv_string.h"
+    }
+  ]
+}

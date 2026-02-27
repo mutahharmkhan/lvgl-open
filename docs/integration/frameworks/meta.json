@@ -1,0 +1,17 @@
+{
+  "title": "Framework Support",
+  "pages": [
+    {
+      "slug": "arduino",
+      "title": "Arduino"
+    },
+    {
+      "slug": "platformio",
+      "title": "Platformio"
+    },
+    {
+      "slug": "tasmota-berry",
+      "title": "Tasmota Berry"
+    }
+  ]
+}

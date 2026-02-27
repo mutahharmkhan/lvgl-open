@@ -1,0 +1,14 @@
+{
+  "title": "Keyboard",
+  "pages": [
+    "index",
+    {
+      "slug": "lv_keyboard_h",
+      "title": "lv_keyboard.h"
+    },
+    {
+      "slug": "lv_keyboard_private_h",
+      "title": "lv_keyboard_private.h"
+    }
+  ]
+}

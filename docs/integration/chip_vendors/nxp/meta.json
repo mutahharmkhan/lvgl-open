@@ -1,0 +1,25 @@
+{
+  "title": "NXP",
+  "pages": [
+    {
+      "slug": "overview",
+      "title": "Overview"
+    },
+    {
+      "slug": "elcdif",
+      "title": "Elcdif"
+    },
+    {
+      "slug": "pxp_gpu",
+      "title": "Pxp GPU"
+    },
+    {
+      "slug": "vg_lite_gpu",
+      "title": "Vg Lite GPU"
+    },
+    {
+      "slug": "g2d_gpu",
+      "title": "G2d GPU"
+    }
+  ]
+}

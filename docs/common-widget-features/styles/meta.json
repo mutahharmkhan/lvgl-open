@@ -1,0 +1,29 @@
+{
+  "title": "Styles",
+  "pages": [
+    {
+      "slug": "overview",
+      "title": "Overview"
+    },
+    {
+      "slug": "style_sheets",
+      "title": "Style Sheets"
+    },
+    {
+      "slug": "local_styles",
+      "title": "Local Styles"
+    },
+    {
+      "slug": "transitions",
+      "title": "Transitions"
+    },
+    {
+      "slug": "themes",
+      "title": "Themes"
+    },
+    {
+      "slug": "style-properties",
+      "title": "Style Properties"
+    }
+  ]
+}

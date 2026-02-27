@@ -1,0 +1,37 @@
+{
+  "title": "Input devices (lv_indev)",
+  "pages": [
+    {
+      "slug": "overview",
+      "title": "Overview"
+    },
+    {
+      "slug": "pointer",
+      "title": "Pointer"
+    },
+    {
+      "slug": "keypad",
+      "title": "Keypad"
+    },
+    {
+      "slug": "encoder",
+      "title": "Encoder"
+    },
+    {
+      "slug": "button",
+      "title": "Button"
+    },
+    {
+      "slug": "groups",
+      "title": "Groups"
+    },
+    {
+      "slug": "gestures",
+      "title": "Gestures"
+    },
+    {
+      "slug": "gridnav",
+      "title": "Gridnav"
+    }
+  ]
+}

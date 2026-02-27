@@ -1,0 +1,13 @@
+{
+  "title": "Build System Support",
+  "pages": [
+    {
+      "slug": "make",
+      "title": "Make"
+    },
+    {
+      "slug": "cmake",
+      "title": "Cmake"
+    }
+  ]
+}

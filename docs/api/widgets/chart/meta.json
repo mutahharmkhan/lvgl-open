@@ -1,0 +1,14 @@
+{
+  "title": "Chart",
+  "pages": [
+    "index",
+    {
+      "slug": "lv_chart_h",
+      "title": "lv_chart.h"
+    },
+    {
+      "slug": "lv_chart_private_h",
+      "title": "lv_chart_private.h"
+    }
+  ]
+}

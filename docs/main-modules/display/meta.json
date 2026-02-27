@@ -1,0 +1,49 @@
+{
+  "title": "Main Modules",
+  "pages": [
+    {
+      "slug": "display",
+      "title": "Display"
+    },
+    {
+      "slug": "indev",
+      "title": "Indev"
+    },
+    {
+      "slug": "fonts",
+      "title": "Fonts"
+    },
+    {
+      "slug": "images",
+      "title": "Images"
+    },
+    {
+      "slug": "color",
+      "title": "Color"
+    },
+    {
+      "slug": "timer",
+      "title": "Timer"
+    },
+    {
+      "slug": "animation",
+      "title": "Animation"
+    },
+    {
+      "slug": "fs",
+      "title": "Fs"
+    },
+    {
+      "slug": "observer",
+      "title": "Observer"
+    },
+    {
+      "slug": "draw",
+      "title": "Draw"
+    },
+    {
+      "slug": "translation",
+      "title": "Translation"
+    }
+  ]
+}

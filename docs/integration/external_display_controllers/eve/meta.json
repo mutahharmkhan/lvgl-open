@@ -1,0 +1,33 @@
+{
+  "title": "Display Controller Support",
+  "pages": [
+    {
+      "slug": "eve",
+      "title": "Eve"
+    },
+    {
+      "slug": "gen_mipi",
+      "title": "Gen Mipi"
+    },
+    {
+      "slug": "ili9341",
+      "title": "Ili9341"
+    },
+    {
+      "slug": "st7735",
+      "title": "St7735"
+    },
+    {
+      "slug": "st7789",
+      "title": "St7789"
+    },
+    {
+      "slug": "st7796",
+      "title": "St7796"
+    },
+    {
+      "slug": "nv3007",
+      "title": "Nv3007"
+    }
+  ]
+}

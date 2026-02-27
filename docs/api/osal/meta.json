@@ -1,0 +1,30 @@
+{
+  "title": "Osal",
+  "pages": [
+    "index",
+    {
+      "slug": "lv_freertos_h",
+      "title": "lv_freertos.h"
+    },
+    {
+      "slug": "lv_linux_h",
+      "title": "lv_linux.h"
+    },
+    {
+      "slug": "lv_mqx_h",
+      "title": "lv_mqx.h"
+    },
+    {
+      "slug": "lv_os_h",
+      "title": "lv_os.h"
+    },
+    {
+      "slug": "lv_os_private_h",
+      "title": "lv_os_private.h"
+    },
+    {
+      "slug": "lv_pthread_h",
+      "title": "lv_pthread.h"
+    }
+  ]
+}

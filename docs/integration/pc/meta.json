@@ -1,0 +1,29 @@
+{
+  "title": "Running on PC",
+  "pages": [
+    {
+      "slug": "linux",
+      "title": "Linux"
+    },
+    {
+      "slug": "windows",
+      "title": "Windows"
+    },
+    {
+      "slug": "macos",
+      "title": "Macos"
+    },
+    {
+      "slug": "browser",
+      "title": "Browser"
+    },
+    {
+      "slug": "sdl",
+      "title": "SDL"
+    },
+    {
+      "slug": "uefi",
+      "title": "Uefi"
+    }
+  ]
+}

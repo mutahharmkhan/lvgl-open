@@ -1,0 +1,25 @@
+{
+  "title": "Integration",
+  "pages": [
+    {
+      "slug": "c_code",
+      "title": "C Code"
+    },
+    {
+      "slug": "xml",
+      "title": "XML"
+    },
+    {
+      "slug": "renesas-dev-tools",
+      "title": "Renesas Dev Tools"
+    },
+    {
+      "slug": "arduino",
+      "title": "Arduino"
+    },
+    {
+      "slug": "zephyr",
+      "title": "Zephyr"
+    }
+  ]
+}

@@ -1,0 +1,14 @@
+{
+  "title": "Span",
+  "pages": [
+    "index",
+    {
+      "slug": "lv_span_h",
+      "title": "lv_span.h"
+    },
+    {
+      "slug": "lv_span_private_h",
+      "title": "lv_span_private.h"
+    }
+  ]
+}

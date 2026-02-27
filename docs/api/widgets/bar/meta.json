@@ -1,0 +1,14 @@
+{
+  "title": "Bar",
+  "pages": [
+    "index",
+    {
+      "slug": "lv_bar_h",
+      "title": "lv_bar.h"
+    },
+    {
+      "slug": "lv_bar_private_h",
+      "title": "lv_bar_private.h"
+    }
+  ]
+}

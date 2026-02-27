@@ -1,0 +1,10 @@
+{
+  "title": "Renesas_glcdc",
+  "pages": [
+    "index",
+    {
+      "slug": "lv_renesas_glcdc_h",
+      "title": "lv_renesas_glcdc.h"
+    }
+  ]
+}

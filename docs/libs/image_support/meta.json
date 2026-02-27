@@ -1,0 +1,49 @@
+{
+  "title": "Image Support",
+  "pages": [
+    {
+      "slug": "bmp",
+      "title": "Bmp"
+    },
+    {
+      "slug": "gif",
+      "title": "Gif"
+    },
+    {
+      "slug": "libjpeg_turbo",
+      "title": "Libjpeg Turbo"
+    },
+    {
+      "slug": "libpng",
+      "title": "Libpng"
+    },
+    {
+      "slug": "lodepng",
+      "title": "Lodepng"
+    },
+    {
+      "slug": "libwebp",
+      "title": "Libwebp"
+    },
+    {
+      "slug": "lz4",
+      "title": "Lz4"
+    },
+    {
+      "slug": "rle",
+      "title": "Rle"
+    },
+    {
+      "slug": "rlottie",
+      "title": "Rlottie"
+    },
+    {
+      "slug": "svg",
+      "title": "Svg"
+    },
+    {
+      "slug": "tjpgd",
+      "title": "Tjpgd"
+    }
+  ]
+}

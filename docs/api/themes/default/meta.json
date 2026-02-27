@@ -1,0 +1,10 @@
+{
+  "title": "Default",
+  "pages": [
+    "index",
+    {
+      "slug": "lv_theme_default_h",
+      "title": "lv_theme_default.h"
+    }
+  ]
+}

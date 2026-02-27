@@ -1,0 +1,14 @@
+{
+  "title": "Ime",
+  "pages": [
+    "index",
+    {
+      "slug": "lv_ime_pinyin_h",
+      "title": "lv_ime_pinyin.h"
+    },
+    {
+      "slug": "lv_ime_pinyin_private_h",
+      "title": "lv_ime_pinyin_private.h"
+    }
+  ]
+}

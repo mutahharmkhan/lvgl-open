@@ -1,0 +1,5395 @@
+---
+title: lv_style_gen.h
+description: API reference for lv_style_gen.h
+api:
+  functions: [lv_style_set_width, lv_style_set_min_width, lv_style_set_max_width, lv_style_set_height, lv_style_set_min_height, lv_style_set_max_height, lv_style_set_length, lv_style_set_x, lv_style_set_y, lv_style_set_align, lv_style_set_transform_width, lv_style_set_transform_height, lv_style_set_translate_x, lv_style_set_translate_y, lv_style_set_translate_radial, lv_style_set_transform_scale_x, lv_style_set_transform_scale_y, lv_style_set_transform_rotation, lv_style_set_transform_pivot_x, lv_style_set_transform_pivot_y, lv_style_set_transform_skew_x, lv_style_set_transform_skew_y, lv_style_set_pad_top, lv_style_set_pad_bottom, lv_style_set_pad_left, lv_style_set_pad_right, lv_style_set_pad_row, lv_style_set_pad_column, lv_style_set_pad_radial, lv_style_set_margin_top, lv_style_set_margin_bottom, lv_style_set_margin_left, lv_style_set_margin_right, lv_style_set_bg_color, lv_style_set_bg_opa, lv_style_set_bg_grad_color, lv_style_set_bg_grad_dir, lv_style_set_bg_main_stop, lv_style_set_bg_grad_stop, lv_style_set_bg_main_opa, lv_style_set_bg_grad_opa, lv_style_set_bg_grad, lv_style_set_bg_image_src, lv_style_set_bg_image_opa, lv_style_set_bg_image_recolor, lv_style_set_bg_image_recolor_opa, lv_style_set_bg_image_tiled, lv_style_set_border_color, lv_style_set_border_opa, lv_style_set_border_width, lv_style_set_border_side, lv_style_set_border_post, lv_style_set_outline_width, lv_style_set_outline_color, lv_style_set_outline_opa, lv_style_set_outline_pad, lv_style_set_shadow_width, lv_style_set_shadow_offset_x, lv_style_set_shadow_offset_y, lv_style_set_shadow_spread, lv_style_set_shadow_color, lv_style_set_shadow_opa, lv_style_set_image_opa, lv_style_set_image_recolor, lv_style_set_image_recolor_opa, lv_style_set_image_colorkey, lv_style_set_line_width, lv_style_set_line_dash_width, lv_style_set_line_dash_gap, lv_style_set_line_rounded, lv_style_set_line_color, lv_style_set_line_opa, lv_style_set_arc_width, lv_style_set_arc_rounded, lv_style_set_arc_color, lv_style_set_arc_opa, lv_style_set_arc_image_src, lv_style_set_text_color, lv_style_set_text_opa, lv_style_set_text_font, lv_style_set_text_letter_space, lv_style_set_text_line_space, lv_style_set_text_decor, lv_style_set_text_align, lv_style_set_text_outline_stroke_color, lv_style_set_text_outline_stroke_width, lv_style_set_text_outline_stroke_opa, lv_style_set_blur_radius, lv_style_set_blur_backdrop, lv_style_set_blur_quality, lv_style_set_drop_shadow_radius, lv_style_set_drop_shadow_offset_x, lv_style_set_drop_shadow_offset_y, lv_style_set_drop_shadow_color, lv_style_set_drop_shadow_opa, lv_style_set_drop_shadow_quality, lv_style_set_radius, lv_style_set_radial_offset, lv_style_set_clip_corner, lv_style_set_opa, lv_style_set_opa_layered, lv_style_set_color_filter_dsc, lv_style_set_color_filter_opa, lv_style_set_recolor, lv_style_set_recolor_opa, lv_style_set_anim, lv_style_set_anim_duration, lv_style_set_transition, lv_style_set_blend_mode, lv_style_set_layout, lv_style_set_base_dir, lv_style_set_bitmap_mask_src, lv_style_set_rotary_sensitivity, lv_style_set_flex_flow, lv_style_set_flex_main_place, lv_style_set_flex_cross_place, lv_style_set_flex_track_place, lv_style_set_flex_grow, lv_style_set_grid_column_dsc_array, lv_style_set_grid_column_align, lv_style_set_grid_row_dsc_array, lv_style_set_grid_row_align, lv_style_set_grid_cell_column_pos, lv_style_set_grid_cell_x_align, lv_style_set_grid_cell_column_span, lv_style_set_grid_cell_row_pos, lv_style_set_grid_cell_y_align, lv_style_set_grid_cell_row_span]
+  macros: [LV_STYLE_CONST_WIDTH, LV_STYLE_CONST_MIN_WIDTH, LV_STYLE_CONST_MAX_WIDTH, LV_STYLE_CONST_HEIGHT, LV_STYLE_CONST_MIN_HEIGHT, LV_STYLE_CONST_MAX_HEIGHT, LV_STYLE_CONST_LENGTH, LV_STYLE_CONST_X, LV_STYLE_CONST_Y, LV_STYLE_CONST_ALIGN, LV_STYLE_CONST_TRANSFORM_WIDTH, LV_STYLE_CONST_TRANSFORM_HEIGHT, LV_STYLE_CONST_TRANSLATE_X, LV_STYLE_CONST_TRANSLATE_Y, LV_STYLE_CONST_TRANSLATE_RADIAL, LV_STYLE_CONST_TRANSFORM_SCALE_X, LV_STYLE_CONST_TRANSFORM_SCALE_Y, LV_STYLE_CONST_TRANSFORM_ROTATION, LV_STYLE_CONST_TRANSFORM_PIVOT_X, LV_STYLE_CONST_TRANSFORM_PIVOT_Y, LV_STYLE_CONST_TRANSFORM_SKEW_X, LV_STYLE_CONST_TRANSFORM_SKEW_Y, LV_STYLE_CONST_PAD_TOP, LV_STYLE_CONST_PAD_BOTTOM, LV_STYLE_CONST_PAD_LEFT, LV_STYLE_CONST_PAD_RIGHT, LV_STYLE_CONST_PAD_ROW, LV_STYLE_CONST_PAD_COLUMN, LV_STYLE_CONST_PAD_RADIAL, LV_STYLE_CONST_MARGIN_TOP, LV_STYLE_CONST_MARGIN_BOTTOM, LV_STYLE_CONST_MARGIN_LEFT, LV_STYLE_CONST_MARGIN_RIGHT, LV_STYLE_CONST_BG_COLOR, LV_STYLE_CONST_BG_OPA, LV_STYLE_CONST_BG_GRAD_COLOR, LV_STYLE_CONST_BG_GRAD_DIR, LV_STYLE_CONST_BG_MAIN_STOP, LV_STYLE_CONST_BG_GRAD_STOP, LV_STYLE_CONST_BG_MAIN_OPA, LV_STYLE_CONST_BG_GRAD_OPA, LV_STYLE_CONST_BG_GRAD, LV_STYLE_CONST_BG_IMAGE_SRC, LV_STYLE_CONST_BG_IMAGE_OPA, LV_STYLE_CONST_BG_IMAGE_RECOLOR, LV_STYLE_CONST_BG_IMAGE_RECOLOR_OPA, LV_STYLE_CONST_BG_IMAGE_TILED, LV_STYLE_CONST_BORDER_COLOR, LV_STYLE_CONST_BORDER_OPA, LV_STYLE_CONST_BORDER_WIDTH, LV_STYLE_CONST_BORDER_SIDE, LV_STYLE_CONST_BORDER_POST, LV_STYLE_CONST_OUTLINE_WIDTH, LV_STYLE_CONST_OUTLINE_COLOR, LV_STYLE_CONST_OUTLINE_OPA, LV_STYLE_CONST_OUTLINE_PAD, LV_STYLE_CONST_SHADOW_WIDTH, LV_STYLE_CONST_SHADOW_OFFSET_X, LV_STYLE_CONST_SHADOW_OFFSET_Y, LV_STYLE_CONST_SHADOW_SPREAD, LV_STYLE_CONST_SHADOW_COLOR, LV_STYLE_CONST_SHADOW_OPA, LV_STYLE_CONST_IMAGE_OPA, LV_STYLE_CONST_IMAGE_RECOLOR, LV_STYLE_CONST_IMAGE_RECOLOR_OPA, LV_STYLE_CONST_IMAGE_COLORKEY, LV_STYLE_CONST_LINE_WIDTH, LV_STYLE_CONST_LINE_DASH_WIDTH, LV_STYLE_CONST_LINE_DASH_GAP, LV_STYLE_CONST_LINE_ROUNDED, LV_STYLE_CONST_LINE_COLOR, LV_STYLE_CONST_LINE_OPA, LV_STYLE_CONST_ARC_WIDTH, LV_STYLE_CONST_ARC_ROUNDED, LV_STYLE_CONST_ARC_COLOR, LV_STYLE_CONST_ARC_OPA, LV_STYLE_CONST_ARC_IMAGE_SRC, LV_STYLE_CONST_TEXT_COLOR, LV_STYLE_CONST_TEXT_OPA, LV_STYLE_CONST_TEXT_FONT, LV_STYLE_CONST_TEXT_LETTER_SPACE, LV_STYLE_CONST_TEXT_LINE_SPACE, LV_STYLE_CONST_TEXT_DECOR, LV_STYLE_CONST_TEXT_ALIGN, LV_STYLE_CONST_TEXT_OUTLINE_STROKE_COLOR, LV_STYLE_CONST_TEXT_OUTLINE_STROKE_WIDTH, LV_STYLE_CONST_TEXT_OUTLINE_STROKE_OPA, LV_STYLE_CONST_BLUR_RADIUS, LV_STYLE_CONST_BLUR_BACKDROP, LV_STYLE_CONST_BLUR_QUALITY, LV_STYLE_CONST_DROP_SHADOW_RADIUS, LV_STYLE_CONST_DROP_SHADOW_OFFSET_X, LV_STYLE_CONST_DROP_SHADOW_OFFSET_Y, LV_STYLE_CONST_DROP_SHADOW_COLOR, LV_STYLE_CONST_DROP_SHADOW_OPA, LV_STYLE_CONST_DROP_SHADOW_QUALITY, LV_STYLE_CONST_RADIUS, LV_STYLE_CONST_RADIAL_OFFSET, LV_STYLE_CONST_CLIP_CORNER, LV_STYLE_CONST_OPA, LV_STYLE_CONST_OPA_LAYERED, LV_STYLE_CONST_COLOR_FILTER_DSC, LV_STYLE_CONST_COLOR_FILTER_OPA, LV_STYLE_CONST_RECOLOR, LV_STYLE_CONST_RECOLOR_OPA, LV_STYLE_CONST_ANIM, LV_STYLE_CONST_ANIM_DURATION, LV_STYLE_CONST_TRANSITION, LV_STYLE_CONST_BLEND_MODE, LV_STYLE_CONST_LAYOUT, LV_STYLE_CONST_BASE_DIR, LV_STYLE_CONST_BITMAP_MASK_SRC, LV_STYLE_CONST_ROTARY_SENSITIVITY, LV_STYLE_CONST_FLEX_FLOW, LV_STYLE_CONST_FLEX_MAIN_PLACE, LV_STYLE_CONST_FLEX_CROSS_PLACE, LV_STYLE_CONST_FLEX_TRACK_PLACE, LV_STYLE_CONST_FLEX_GROW, LV_STYLE_CONST_GRID_COLUMN_DSC_ARRAY, LV_STYLE_CONST_GRID_COLUMN_ALIGN, LV_STYLE_CONST_GRID_ROW_DSC_ARRAY, LV_STYLE_CONST_GRID_ROW_ALIGN, LV_STYLE_CONST_GRID_CELL_COLUMN_POS, LV_STYLE_CONST_GRID_CELL_X_ALIGN, LV_STYLE_CONST_GRID_CELL_COLUMN_SPAN, LV_STYLE_CONST_GRID_CELL_ROW_POS, LV_STYLE_CONST_GRID_CELL_Y_ALIGN, LV_STYLE_CONST_GRID_CELL_ROW_SPAN]
+---
+
+<ApiSummary functions={128} macros={128} />
+
+## Functions
+
+<ApiMember kind="function" name="lv_style_set_width" file="misc/lv_style_gen.h" line={25} url="https://github.com/lvgl/lvgl/blob/master/src/misc/lv_style_gen.h#L25">
+
+### lv_style_set_width
+
+Sets width of Widget. Pixel, percentage and <ApiLink name="LV_SIZE_CONTENT" /> values can be used. Percentage values are relative to the width of the parent's content area. Default: Widget dependent, inherited: No, layout: Yes, ext. draw: No.
+
+```c
+void lv_style_set_width(lv_style_t *style, int32_t value)
+```
+
+<span className="sr-only">Parameters</span>
+
+| Name | Type | Description |
+|------|------|-------------|
+| `style` | <ApiLink name="lv_style_t" display="lv_style_t *" /> | Pointer to style |
+| `value` | <ApiLink name="int32_t" /> | Value to submit |
+
+
+</ApiMember>
+
+<ApiMember kind="function" name="lv_style_set_min_width" file="misc/lv_style_gen.h" line={34} url="https://github.com/lvgl/lvgl/blob/master/src/misc/lv_style_gen.h#L34">
+
+### lv_style_set_min_width
+
+Sets a minimal width. Pixel and percentage values can be used. Percentage values are relative to the width of the parent's content area. Default: 0, inherited: No, layout: Yes, ext. draw: No.
+
+```c
+void lv_style_set_min_width(lv_style_t *style, int32_t value)
+```
+
+<span className="sr-only">Parameters</span>
+
+| Name | Type | Description |
+|------|------|-------------|
+| `style` | <ApiLink name="lv_style_t" display="lv_style_t *" /> | Pointer to style |
+| `value` | <ApiLink name="int32_t" /> | Value to submit |
+
+
+</ApiMember>
+
+<ApiMember kind="function" name="lv_style_set_max_width" file="misc/lv_style_gen.h" line={43} url="https://github.com/lvgl/lvgl/blob/master/src/misc/lv_style_gen.h#L43">
+
+### lv_style_set_max_width
+
+Sets a maximal width. Pixel and percentage values can be used. Percentage values are relative to the width of the parent's content area. Default: LV_COORD_MAX, inherited: No, layout: Yes, ext. draw: No.
+
+```c
+void lv_style_set_max_width(lv_style_t *style, int32_t value)
+```
+
+<span className="sr-only">Parameters</span>
+
+| Name | Type | Description |
+|------|------|-------------|
+| `style` | <ApiLink name="lv_style_t" display="lv_style_t *" /> | Pointer to style |
+| `value` | <ApiLink name="int32_t" /> | Value to submit |
+
+
+</ApiMember>
+
+<ApiMember kind="function" name="lv_style_set_height" file="misc/lv_style_gen.h" line={52} url="https://github.com/lvgl/lvgl/blob/master/src/misc/lv_style_gen.h#L52">
+
+### lv_style_set_height
+
+Sets height of Widget. Pixel, percentage and <ApiLink name="LV_SIZE_CONTENT" /> can be used. Percentage values are relative to the height of the parent's content area. Default: Widget dependent, inherited: No, layout: Yes, ext. draw: No.
+
+```c
+void lv_style_set_height(lv_style_t *style, int32_t value)
+```
+
+<span className="sr-only">Parameters</span>
+
+| Name | Type | Description |
+|------|------|-------------|
+| `style` | <ApiLink name="lv_style_t" display="lv_style_t *" /> | Pointer to style |
+| `value` | <ApiLink name="int32_t" /> | Value to submit |
+
+
+</ApiMember>
+
+<ApiMember kind="function" name="lv_style_set_min_height" file="misc/lv_style_gen.h" line={61} url="https://github.com/lvgl/lvgl/blob/master/src/misc/lv_style_gen.h#L61">
+
+### lv_style_set_min_height
+
+Sets a minimal height. Pixel and percentage values can be used. Percentage values are relative to the height of the parent's content area. Default: 0, inherited: No, layout: Yes, ext. draw: No.
+
+```c
+void lv_style_set_min_height(lv_style_t *style, int32_t value)
+```
+
+<span className="sr-only">Parameters</span>
+
+| Name | Type | Description |
+|------|------|-------------|
+| `style` | <ApiLink name="lv_style_t" display="lv_style_t *" /> | Pointer to style |
+| `value` | <ApiLink name="int32_t" /> | Value to submit |
+
+
+</ApiMember>
+
+<ApiMember kind="function" name="lv_style_set_max_height" file="misc/lv_style_gen.h" line={70} url="https://github.com/lvgl/lvgl/blob/master/src/misc/lv_style_gen.h#L70">
+
+### lv_style_set_max_height
+
+Sets a maximal height. Pixel and percentage values can be used. Percentage values are relative to the height of the parent's content area. Default: LV_COORD_MAX, inherited: No, layout: Yes, ext. draw: No.
+
+```c
+void lv_style_set_max_height(lv_style_t *style, int32_t value)
+```
+
+<span className="sr-only">Parameters</span>
+
+| Name | Type | Description |
+|------|------|-------------|
+| `style` | <ApiLink name="lv_style_t" display="lv_style_t *" /> | Pointer to style |
+| `value` | <ApiLink name="int32_t" /> | Value to submit |
+
+
+</ApiMember>
+
+<ApiMember kind="function" name="lv_style_set_length" file="misc/lv_style_gen.h" line={79} url="https://github.com/lvgl/lvgl/blob/master/src/misc/lv_style_gen.h#L79">
+
+### lv_style_set_length
+
+Its meaning depends on the type of Widget. For example in case of lv_scale it means the length of the ticks. Default: 0, inherited: No, layout: No, ext. draw: Yes.
+
+```c
+void lv_style_set_length(lv_style_t *style, int32_t value)
+```
+
+<span className="sr-only">Parameters</span>
+
+| Name | Type | Description |
+|------|------|-------------|
+| `style` | <ApiLink name="lv_style_t" display="lv_style_t *" /> | Pointer to style |
+| `value` | <ApiLink name="int32_t" /> | Value to submit |
+
+
+</ApiMember>
+
+<ApiMember kind="function" name="lv_style_set_x" file="misc/lv_style_gen.h" line={89} url="https://github.com/lvgl/lvgl/blob/master/src/misc/lv_style_gen.h#L89">
+
+### lv_style_set_x
+
+Set X coordinate of Widget considering the `align` setting. Pixel and percentage values can be used. Percentage values are relative to the width of the parent's content area. Default: 0, inherited: No, layout: Yes, ext. draw: No.
+
+```c
+void lv_style_set_x(lv_style_t *style, int32_t value)
+```
+
+<span className="sr-only">Parameters</span>
+
+| Name | Type | Description |
+|------|------|-------------|
+| `style` | <ApiLink name="lv_style_t" display="lv_style_t *" /> | Pointer to style |
+| `value` | <ApiLink name="int32_t" /> | Value to submit |
+
+
+</ApiMember>
+
+<ApiMember kind="function" name="lv_style_set_y" file="misc/lv_style_gen.h" line={99} url="https://github.com/lvgl/lvgl/blob/master/src/misc/lv_style_gen.h#L99">
+
+### lv_style_set_y
+
+Set Y coordinate of Widget considering the `align` setting. Pixel and percentage values can be used. Percentage values are relative to the height of the parent's content area. Default: 0, inherited: No, layout: Yes, ext. draw: No.
+
+```c
+void lv_style_set_y(lv_style_t *style, int32_t value)
+```
+
+<span className="sr-only">Parameters</span>
+
+| Name | Type | Description |
+|------|------|-------------|
+| `style` | <ApiLink name="lv_style_t" display="lv_style_t *" /> | Pointer to style |
+| `value` | <ApiLink name="int32_t" /> | Value to submit |
+
+
+</ApiMember>
+
+<ApiMember kind="function" name="lv_style_set_align" file="misc/lv_style_gen.h" line={112} url="https://github.com/lvgl/lvgl/blob/master/src/misc/lv_style_gen.h#L112">
+
+### lv_style_set_align
+
+Set the alignment which tells from which point of the parent the X and Y coordinates should be interpreted. Possible values are: <ApiLink name="lv_align_t" display="LV_ALIGN_DEFAULT" />, `LV_ALIGN_TOP_LEFT/MID/RIGHT`, `LV_ALIGN_BOTTOM_LEFT/MID/RIGHT`, `LV_ALIGN_LEFT/RIGHT_MID`, <ApiLink name="lv_align_t" display="LV_ALIGN_CENTER" />. <ApiLink name="lv_align_t" display="LV_ALIGN_DEFAULT" /> means <ApiLink name="lv_align_t" display="LV_ALIGN_TOP_LEFT" /> with LTR base direction and <ApiLink name="lv_align_t" display="LV_ALIGN_TOP_RIGHT" /> with RTL base direction. Default: <ApiLink name="lv_align_t" display="LV_ALIGN_DEFAULT" />, inherited: No, layout: Yes, ext. draw: No.
+
+```c
+void lv_style_set_align(lv_style_t *style, lv_align_t value)
+```
+
+<span className="sr-only">Parameters</span>
+
+| Name | Type | Description |
+|------|------|-------------|
+| `style` | <ApiLink name="lv_style_t" display="lv_style_t *" /> | Pointer to style |
+| `value` | <ApiLink name="lv_align_t" /> | Value to submit |
+
+
+</ApiMember>
+
+<ApiMember kind="function" name="lv_style_set_transform_width" file="misc/lv_style_gen.h" line={121} url="https://github.com/lvgl/lvgl/blob/master/src/misc/lv_style_gen.h#L121">
+
+### lv_style_set_transform_width
+
+Make Widget wider on both sides with this value. Pixel and percentage (with `lv_pct(x)`) values can be used. Percentage values are relative to Widget's width. Default: 0, inherited: No, layout: No, ext. draw: Yes.
+
+```c
+void lv_style_set_transform_width(lv_style_t *style, int32_t value)
+```
+
+<span className="sr-only">Parameters</span>
+
+| Name | Type | Description |
+|------|------|-------------|
+| `style` | <ApiLink name="lv_style_t" display="lv_style_t *" /> | Pointer to style |
+| `value` | <ApiLink name="int32_t" /> | Value to submit |
+
+
+</ApiMember>
+
+<ApiMember kind="function" name="lv_style_set_transform_height" file="misc/lv_style_gen.h" line={130} url="https://github.com/lvgl/lvgl/blob/master/src/misc/lv_style_gen.h#L130">
+
+### lv_style_set_transform_height
+
+Make Widget higher on both sides with this value. Pixel and percentage (with `lv_pct(x)`) values can be used. Percentage values are relative to Widget's height. Default: 0, inherited: No, layout: No, ext. draw: Yes.
+
+```c
+void lv_style_set_transform_height(lv_style_t *style, int32_t value)
+```
+
+<span className="sr-only">Parameters</span>
+
+| Name | Type | Description |
+|------|------|-------------|
+| `style` | <ApiLink name="lv_style_t" display="lv_style_t *" /> | Pointer to style |
+| `value` | <ApiLink name="int32_t" /> | Value to submit |
+
+
+</ApiMember>
+
+<ApiMember kind="function" name="lv_style_set_translate_x" file="misc/lv_style_gen.h" line={140} url="https://github.com/lvgl/lvgl/blob/master/src/misc/lv_style_gen.h#L140">
+
+### lv_style_set_translate_x
+
+Move Widget with this value in X direction. Applied after layouts, aligns and other positioning. Pixel and percentage (with `lv_pct(x)`) values can be used. Percentage values are relative to Widget's width. Default: 0, inherited: No, layout: Yes, ext. draw: No.
+
+```c
+void lv_style_set_translate_x(lv_style_t *style, int32_t value)
+```
+
+<span className="sr-only">Parameters</span>
+
+| Name | Type | Description |
+|------|------|-------------|
+| `style` | <ApiLink name="lv_style_t" display="lv_style_t *" /> | Pointer to style |
+| `value` | <ApiLink name="int32_t" /> | Value to submit |
+
+
+</ApiMember>
+
+<ApiMember kind="function" name="lv_style_set_translate_y" file="misc/lv_style_gen.h" line={150} url="https://github.com/lvgl/lvgl/blob/master/src/misc/lv_style_gen.h#L150">
+
+### lv_style_set_translate_y
+
+Move Widget with this value in Y direction. Applied after layouts, aligns and other positioning. Pixel and percentage (with `lv_pct(x)`) values can be used. Percentage values are relative to Widget's height. Default: 0, inherited: No, layout: Yes, ext. draw: No.
+
+```c
+void lv_style_set_translate_y(lv_style_t *style, int32_t value)
+```
+
+<span className="sr-only">Parameters</span>
+
+| Name | Type | Description |
+|------|------|-------------|
+| `style` | <ApiLink name="lv_style_t" display="lv_style_t *" /> | Pointer to style |
+| `value` | <ApiLink name="int32_t" /> | Value to submit |
+
+
+</ApiMember>
+
+<ApiMember kind="function" name="lv_style_set_translate_radial" file="misc/lv_style_gen.h" line={159} url="https://github.com/lvgl/lvgl/blob/master/src/misc/lv_style_gen.h#L159">
+
+### lv_style_set_translate_radial
+
+Move object around the centre of the parent object (e.g. around the circumference of a scale). Default: 0, inherited: No, layout: Yes, ext. draw: No.
+
+```c
+void lv_style_set_translate_radial(lv_style_t *style, int32_t value)
+```
+
+<span className="sr-only">Parameters</span>
+
+| Name | Type | Description |
+|------|------|-------------|
+| `style` | <ApiLink name="lv_style_t" display="lv_style_t *" /> | Pointer to style |
+| `value` | <ApiLink name="int32_t" /> | Value to submit |
+
+
+</ApiMember>
+
+<ApiMember kind="function" name="lv_style_set_transform_scale_x" file="misc/lv_style_gen.h" line={168} url="https://github.com/lvgl/lvgl/blob/master/src/misc/lv_style_gen.h#L168">
+
+### lv_style_set_transform_scale_x
+
+Zoom Widget horizontally. The value 256 (or <ApiLink name="LV_SCALE_NONE" />) means normal size, 128 half size, 512 double size, and so on. Default: 0, inherited: No, layout: Yes, ext. draw: Yes.
+
+```c
+void lv_style_set_transform_scale_x(lv_style_t *style, int32_t value)
+```
+
+<span className="sr-only">Parameters</span>
+
+| Name | Type | Description |
+|------|------|-------------|
+| `style` | <ApiLink name="lv_style_t" display="lv_style_t *" /> | Pointer to style |
+| `value` | <ApiLink name="int32_t" /> | Value to submit |
+
+
+</ApiMember>
+
+<ApiMember kind="function" name="lv_style_set_transform_scale_y" file="misc/lv_style_gen.h" line={177} url="https://github.com/lvgl/lvgl/blob/master/src/misc/lv_style_gen.h#L177">
+
+### lv_style_set_transform_scale_y
+
+Zoom Widget vertically. The value 256 (or <ApiLink name="LV_SCALE_NONE" />) means normal size, 128 half size, 512 double size, and so on. Default: 0, inherited: No, layout: Yes, ext. draw: Yes.
+
+```c
+void lv_style_set_transform_scale_y(lv_style_t *style, int32_t value)
+```
+
+<span className="sr-only">Parameters</span>
+
+| Name | Type | Description |
+|------|------|-------------|
+| `style` | <ApiLink name="lv_style_t" display="lv_style_t *" /> | Pointer to style |
+| `value` | <ApiLink name="int32_t" /> | Value to submit |
+
+
+</ApiMember>
+
+<ApiMember kind="function" name="lv_style_set_transform_rotation" file="misc/lv_style_gen.h" line={185} url="https://github.com/lvgl/lvgl/blob/master/src/misc/lv_style_gen.h#L185">
+
+### lv_style_set_transform_rotation
+
+Rotate Widget. The value is interpreted in 0.1 degree units. E.g. 450 means 45 deg. Default: 0, inherited: No, layout: Yes, ext. draw: Yes.
+
+```c
+void lv_style_set_transform_rotation(lv_style_t *style, int32_t value)
+```
+
+<span className="sr-only">Parameters</span>
+
+| Name | Type | Description |
+|------|------|-------------|
+| `style` | <ApiLink name="lv_style_t" display="lv_style_t *" /> | Pointer to style |
+| `value` | <ApiLink name="int32_t" /> | Value to submit |
+
+
+</ApiMember>
+
+<ApiMember kind="function" name="lv_style_set_transform_pivot_x" file="misc/lv_style_gen.h" line={193} url="https://github.com/lvgl/lvgl/blob/master/src/misc/lv_style_gen.h#L193">
+
+### lv_style_set_transform_pivot_x
+
+Set pivot point's X coordinate for transformations. Relative to Widget's top left corner. Default: 0, inherited: No, layout: No, ext. draw: No.
+
+```c
+void lv_style_set_transform_pivot_x(lv_style_t *style, int32_t value)
+```
+
+<span className="sr-only">Parameters</span>
+
+| Name | Type | Description |
+|------|------|-------------|
+| `style` | <ApiLink name="lv_style_t" display="lv_style_t *" /> | Pointer to style |
+| `value` | <ApiLink name="int32_t" /> | Value to submit |
+
+
+</ApiMember>
+
+<ApiMember kind="function" name="lv_style_set_transform_pivot_y" file="misc/lv_style_gen.h" line={201} url="https://github.com/lvgl/lvgl/blob/master/src/misc/lv_style_gen.h#L201">
+
+### lv_style_set_transform_pivot_y
+
+Set pivot point's Y coordinate for transformations. Relative to Widget's top left corner. Default: 0, inherited: No, layout: No, ext. draw: No.
+
+```c
+void lv_style_set_transform_pivot_y(lv_style_t *style, int32_t value)
+```
+
+<span className="sr-only">Parameters</span>
+
+| Name | Type | Description |
+|------|------|-------------|
+| `style` | <ApiLink name="lv_style_t" display="lv_style_t *" /> | Pointer to style |
+| `value` | <ApiLink name="int32_t" /> | Value to submit |
+
+
+</ApiMember>
+
+<ApiMember kind="function" name="lv_style_set_transform_skew_x" file="misc/lv_style_gen.h" line={210} url="https://github.com/lvgl/lvgl/blob/master/src/misc/lv_style_gen.h#L210">
+
+### lv_style_set_transform_skew_x
+
+Skew Widget horizontally. The value is interpreted in 0.1 degree units. E.g. 450 means 45 deg. Default: 0, inherited: No, layout: Yes, ext. draw: Yes.
+
+```c
+void lv_style_set_transform_skew_x(lv_style_t *style, int32_t value)
+```
+
+<span className="sr-only">Parameters</span>
+
+| Name | Type | Description |
+|------|------|-------------|
+| `style` | <ApiLink name="lv_style_t" display="lv_style_t *" /> | Pointer to style |
+| `value` | <ApiLink name="int32_t" /> | Value to submit |
+
+
+</ApiMember>
+
+<ApiMember kind="function" name="lv_style_set_transform_skew_y" file="misc/lv_style_gen.h" line={219} url="https://github.com/lvgl/lvgl/blob/master/src/misc/lv_style_gen.h#L219">
+
+### lv_style_set_transform_skew_y
+
+Skew Widget vertically. The value is interpreted in 0.1 degree units. E.g. 450 means 45 deg. Default: 0, inherited: No, layout: Yes, ext. draw: Yes.
+
+```c
+void lv_style_set_transform_skew_y(lv_style_t *style, int32_t value)
+```
+
+<span className="sr-only">Parameters</span>
+
+| Name | Type | Description |
+|------|------|-------------|
+| `style` | <ApiLink name="lv_style_t" display="lv_style_t *" /> | Pointer to style |
+| `value` | <ApiLink name="int32_t" /> | Value to submit |
+
+
+</ApiMember>
+
+<ApiMember kind="function" name="lv_style_set_pad_top" file="misc/lv_style_gen.h" line={227} url="https://github.com/lvgl/lvgl/blob/master/src/misc/lv_style_gen.h#L227">
+
+### lv_style_set_pad_top
+
+Sets the padding on the top. It makes the content area smaller in this direction. Default: 0, inherited: No, layout: Yes, ext. draw: No.
+
+```c
+void lv_style_set_pad_top(lv_style_t *style, int32_t value)
+```
+
+<span className="sr-only">Parameters</span>
+
+| Name | Type | Description |
+|------|------|-------------|
+| `style` | <ApiLink name="lv_style_t" display="lv_style_t *" /> | Pointer to style |
+| `value` | <ApiLink name="int32_t" /> | Value to submit |
+
+
+</ApiMember>
+
+<ApiMember kind="function" name="lv_style_set_pad_bottom" file="misc/lv_style_gen.h" line={235} url="https://github.com/lvgl/lvgl/blob/master/src/misc/lv_style_gen.h#L235">
+
+### lv_style_set_pad_bottom
+
+Sets the padding on the bottom. It makes the content area smaller in this direction. Default: 0, inherited: No, layout: Yes, ext. draw: No.
+
+```c
+void lv_style_set_pad_bottom(lv_style_t *style, int32_t value)
+```
+
+<span className="sr-only">Parameters</span>
+
+| Name | Type | Description |
+|------|------|-------------|
+| `style` | <ApiLink name="lv_style_t" display="lv_style_t *" /> | Pointer to style |
+| `value` | <ApiLink name="int32_t" /> | Value to submit |
+
+
+</ApiMember>
+
+<ApiMember kind="function" name="lv_style_set_pad_left" file="misc/lv_style_gen.h" line={243} url="https://github.com/lvgl/lvgl/blob/master/src/misc/lv_style_gen.h#L243">
+
+### lv_style_set_pad_left
+
+Sets the padding on the left. It makes the content area smaller in this direction. Default: 0, inherited: No, layout: Yes, ext. draw: No.
+
+```c
+void lv_style_set_pad_left(lv_style_t *style, int32_t value)
+```
+
+<span className="sr-only">Parameters</span>
+
+| Name | Type | Description |
+|------|------|-------------|
+| `style` | <ApiLink name="lv_style_t" display="lv_style_t *" /> | Pointer to style |
+| `value` | <ApiLink name="int32_t" /> | Value to submit |
+
+
+</ApiMember>
+
+<ApiMember kind="function" name="lv_style_set_pad_right" file="misc/lv_style_gen.h" line={251} url="https://github.com/lvgl/lvgl/blob/master/src/misc/lv_style_gen.h#L251">
+
+### lv_style_set_pad_right
+
+Sets the padding on the right. It makes the content area smaller in this direction. Default: 0, inherited: No, layout: Yes, ext. draw: No.
+
+```c
+void lv_style_set_pad_right(lv_style_t *style, int32_t value)
+```
+
+<span className="sr-only">Parameters</span>
+
+| Name | Type | Description |
+|------|------|-------------|
+| `style` | <ApiLink name="lv_style_t" display="lv_style_t *" /> | Pointer to style |
+| `value` | <ApiLink name="int32_t" /> | Value to submit |
+
+
+</ApiMember>
+
+<ApiMember kind="function" name="lv_style_set_pad_row" file="misc/lv_style_gen.h" line={259} url="https://github.com/lvgl/lvgl/blob/master/src/misc/lv_style_gen.h#L259">
+
+### lv_style_set_pad_row
+
+Sets the padding between the rows. Used by the layouts. Default: 0, inherited: No, layout: Yes, ext. draw: No.
+
+```c
+void lv_style_set_pad_row(lv_style_t *style, int32_t value)
+```
+
+<span className="sr-only">Parameters</span>
+
+| Name | Type | Description |
+|------|------|-------------|
+| `style` | <ApiLink name="lv_style_t" display="lv_style_t *" /> | Pointer to style |
+| `value` | <ApiLink name="int32_t" /> | Value to submit |
+
+
+</ApiMember>
+
+<ApiMember kind="function" name="lv_style_set_pad_column" file="misc/lv_style_gen.h" line={267} url="https://github.com/lvgl/lvgl/blob/master/src/misc/lv_style_gen.h#L267">
+
+### lv_style_set_pad_column
+
+Sets the padding between the columns. Used by the layouts. Default: 0, inherited: No, layout: Yes, ext. draw: No.
+
+```c
+void lv_style_set_pad_column(lv_style_t *style, int32_t value)
+```
+
+<span className="sr-only">Parameters</span>
+
+| Name | Type | Description |
+|------|------|-------------|
+| `style` | <ApiLink name="lv_style_t" display="lv_style_t *" /> | Pointer to style |
+| `value` | <ApiLink name="int32_t" /> | Value to submit |
+
+
+</ApiMember>
+
+<ApiMember kind="function" name="lv_style_set_pad_radial" file="misc/lv_style_gen.h" line={275} url="https://github.com/lvgl/lvgl/blob/master/src/misc/lv_style_gen.h#L275">
+
+### lv_style_set_pad_radial
+
+Pad text labels away from the scale ticks/remainder of the `LV_PART_`. Default: 0, inherited: No, layout: No, ext. draw: No.
+
+```c
+void lv_style_set_pad_radial(lv_style_t *style, int32_t value)
+```
+
+<span className="sr-only">Parameters</span>
+
+| Name | Type | Description |
+|------|------|-------------|
+| `style` | <ApiLink name="lv_style_t" display="lv_style_t *" /> | Pointer to style |
+| `value` | <ApiLink name="int32_t" /> | Value to submit |
+
+
+</ApiMember>
+
+<ApiMember kind="function" name="lv_style_set_margin_top" file="misc/lv_style_gen.h" line={283} url="https://github.com/lvgl/lvgl/blob/master/src/misc/lv_style_gen.h#L283">
+
+### lv_style_set_margin_top
+
+Sets margin on the top. Widget will keep this space from its siblings in layouts. Default: 0, inherited: No, layout: Yes, ext. draw: No.
+
+```c
+void lv_style_set_margin_top(lv_style_t *style, int32_t value)
+```
+
+<span className="sr-only">Parameters</span>
+
+| Name | Type | Description |
+|------|------|-------------|
+| `style` | <ApiLink name="lv_style_t" display="lv_style_t *" /> | Pointer to style |
+| `value` | <ApiLink name="int32_t" /> | Value to submit |
+
+
+</ApiMember>
+
+<ApiMember kind="function" name="lv_style_set_margin_bottom" file="misc/lv_style_gen.h" line={291} url="https://github.com/lvgl/lvgl/blob/master/src/misc/lv_style_gen.h#L291">
+
+### lv_style_set_margin_bottom
+
+Sets margin on the bottom. Widget will keep this space from its siblings in layouts. Default: 0, inherited: No, layout: Yes, ext. draw: No.
+
+```c
+void lv_style_set_margin_bottom(lv_style_t *style, int32_t value)
+```
+
+<span className="sr-only">Parameters</span>
+
+| Name | Type | Description |
+|------|------|-------------|
+| `style` | <ApiLink name="lv_style_t" display="lv_style_t *" /> | Pointer to style |
+| `value` | <ApiLink name="int32_t" /> | Value to submit |
+
+
+</ApiMember>
+
+<ApiMember kind="function" name="lv_style_set_margin_left" file="misc/lv_style_gen.h" line={299} url="https://github.com/lvgl/lvgl/blob/master/src/misc/lv_style_gen.h#L299">
+
+### lv_style_set_margin_left
+
+Sets margin on the left. Widget will keep this space from its siblings in layouts. Default: 0, inherited: No, layout: Yes, ext. draw: No.
+
+```c
+void lv_style_set_margin_left(lv_style_t *style, int32_t value)
+```
+
+<span className="sr-only">Parameters</span>
+
+| Name | Type | Description |
+|------|------|-------------|
+| `style` | <ApiLink name="lv_style_t" display="lv_style_t *" /> | Pointer to style |
+| `value` | <ApiLink name="int32_t" /> | Value to submit |
+
+
+</ApiMember>
+
+<ApiMember kind="function" name="lv_style_set_margin_right" file="misc/lv_style_gen.h" line={307} url="https://github.com/lvgl/lvgl/blob/master/src/misc/lv_style_gen.h#L307">
+
+### lv_style_set_margin_right
+
+Sets margin on the right. Widget will keep this space from its siblings in layouts. Default: 0, inherited: No, layout: Yes, ext. draw: No.
+
+```c
+void lv_style_set_margin_right(lv_style_t *style, int32_t value)
+```
+
+<span className="sr-only">Parameters</span>
+
+| Name | Type | Description |
+|------|------|-------------|
+| `style` | <ApiLink name="lv_style_t" display="lv_style_t *" /> | Pointer to style |
+| `value` | <ApiLink name="int32_t" /> | Value to submit |
+
+
+</ApiMember>
+
+<ApiMember kind="function" name="lv_style_set_bg_color" file="misc/lv_style_gen.h" line={315} url="https://github.com/lvgl/lvgl/blob/master/src/misc/lv_style_gen.h#L315">
+
+### lv_style_set_bg_color
+
+Set background color of Widget. Default: `0xffffff`, inherited: No, layout: No, ext. draw: No.
+
+```c
+void lv_style_set_bg_color(lv_style_t *style, lv_color_t value)
+```
+
+<span className="sr-only">Parameters</span>
+
+| Name | Type | Description |
+|------|------|-------------|
+| `style` | <ApiLink name="lv_style_t" display="lv_style_t *" /> | Pointer to style |
+| `value` | <ApiLink name="lv_color_t" /> | Color to submit |
+
+
+</ApiMember>
+
+<ApiMember kind="function" name="lv_style_set_bg_opa" file="misc/lv_style_gen.h" line={325} url="https://github.com/lvgl/lvgl/blob/master/src/misc/lv_style_gen.h#L325">
+
+### lv_style_set_bg_opa
+
+Set opacity of the background. Value 0, <ApiLink name="_lv_opacity_level_t" display="LV_OPA_0" /> or <ApiLink name="_lv_opacity_level_t" display="LV_OPA_TRANSP" /> means fully transparent, 255, <ApiLink name="_lv_opacity_level_t" display="LV_OPA_100" /> or <ApiLink name="_lv_opacity_level_t" display="LV_OPA_COVER" /> means fully covering, other values or LV_OPA_10, LV_OPA_20, etc means semi transparency. Default: <ApiLink name="_lv_opacity_level_t" display="LV_OPA_TRANSP" />, inherited: No, layout: No, ext. draw: No.
+
+```c
+void lv_style_set_bg_opa(lv_style_t *style, lv_opa_t value)
+```
+
+<span className="sr-only">Parameters</span>
+
+| Name | Type | Description |
+|------|------|-------------|
+| `style` | <ApiLink name="lv_style_t" display="lv_style_t *" /> | Pointer to style |
+| `value` | <ApiLink name="lv_opa_t" /> | Value to submit |
+
+
+</ApiMember>
+
+<ApiMember kind="function" name="lv_style_set_bg_grad_color" file="misc/lv_style_gen.h" line={333} url="https://github.com/lvgl/lvgl/blob/master/src/misc/lv_style_gen.h#L333">
+
+### lv_style_set_bg_grad_color
+
+Set gradient color of the background. Used only if `grad_dir` is not <ApiLink name="lv_grad_dir_t" display="LV_GRAD_DIR_NONE" />. Default: `0x000000`, inherited: No, layout: No, ext. draw: No.
+
+```c
+void lv_style_set_bg_grad_color(lv_style_t *style, lv_color_t value)
+```
+
+<span className="sr-only">Parameters</span>
+
+| Name | Type | Description |
+|------|------|-------------|
+| `style` | <ApiLink name="lv_style_t" display="lv_style_t *" /> | Pointer to style |
+| `value` | <ApiLink name="lv_color_t" /> | Color to submit |
+
+
+</ApiMember>
+
+<ApiMember kind="function" name="lv_style_set_bg_grad_dir" file="misc/lv_style_gen.h" line={342} url="https://github.com/lvgl/lvgl/blob/master/src/misc/lv_style_gen.h#L342">
+
+### lv_style_set_bg_grad_dir
+
+Set direction of the gradient of the background. Possible values are `LV_GRAD_DIR_NONE/HOR/VER`. Default: <ApiLink name="lv_grad_dir_t" display="LV_GRAD_DIR_NONE" />, inherited: No, layout: No, ext. draw: No.
+
+```c
+void lv_style_set_bg_grad_dir(lv_style_t *style, lv_grad_dir_t value)
+```
+
+<span className="sr-only">Parameters</span>
+
+| Name | Type | Description |
+|------|------|-------------|
+| `style` | <ApiLink name="lv_style_t" display="lv_style_t *" /> | Pointer to style |
+| `value` | <ApiLink name="lv_grad_dir_t" /> | Value to submit |
+
+
+</ApiMember>
+
+<ApiMember kind="function" name="lv_style_set_bg_main_stop" file="misc/lv_style_gen.h" line={351} url="https://github.com/lvgl/lvgl/blob/master/src/misc/lv_style_gen.h#L351">
+
+### lv_style_set_bg_main_stop
+
+Set point from which background color should start for gradients. 0 means to top/left side, 255 the bottom/right side, 128 the center, and so on. Default: 0, inherited: No, layout: No, ext. draw: No.
+
+```c
+void lv_style_set_bg_main_stop(lv_style_t *style, int32_t value)
+```
+
+<span className="sr-only">Parameters</span>
+
+| Name | Type | Description |
+|------|------|-------------|
+| `style` | <ApiLink name="lv_style_t" display="lv_style_t *" /> | Pointer to style |
+| `value` | <ApiLink name="int32_t" /> | Value to submit |
+
+
+</ApiMember>
+
+<ApiMember kind="function" name="lv_style_set_bg_grad_stop" file="misc/lv_style_gen.h" line={360} url="https://github.com/lvgl/lvgl/blob/master/src/misc/lv_style_gen.h#L360">
+
+### lv_style_set_bg_grad_stop
+
+Set point from which background's gradient color should start. 0 means to top/left side, 255 the bottom/right side, 128 the center, and so on. Default: 255, inherited: No, layout: No, ext. draw: No.
+
+```c
+void lv_style_set_bg_grad_stop(lv_style_t *style, int32_t value)
+```
+
+<span className="sr-only">Parameters</span>
+
+| Name | Type | Description |
+|------|------|-------------|
+| `style` | <ApiLink name="lv_style_t" display="lv_style_t *" /> | Pointer to style |
+| `value` | <ApiLink name="int32_t" /> | Value to submit |
+
+
+</ApiMember>
+
+<ApiMember kind="function" name="lv_style_set_bg_main_opa" file="misc/lv_style_gen.h" line={368} url="https://github.com/lvgl/lvgl/blob/master/src/misc/lv_style_gen.h#L368">
+
+### lv_style_set_bg_main_opa
+
+Set opacity of the first gradient color. Default: 255, inherited: No, layout: No, ext. draw: No.
+
+```c
+void lv_style_set_bg_main_opa(lv_style_t *style, lv_opa_t value)
+```
+
+<span className="sr-only">Parameters</span>
+
+| Name | Type | Description |
+|------|------|-------------|
+| `style` | <ApiLink name="lv_style_t" display="lv_style_t *" /> | Pointer to style |
+| `value` | <ApiLink name="lv_opa_t" /> | Value to submit |
+
+
+</ApiMember>
+
+<ApiMember kind="function" name="lv_style_set_bg_grad_opa" file="misc/lv_style_gen.h" line={376} url="https://github.com/lvgl/lvgl/blob/master/src/misc/lv_style_gen.h#L376">
+
+### lv_style_set_bg_grad_opa
+
+Set opacity of the second gradient color. Default: 255, inherited: No, layout: No, ext. draw: No.
+
+```c
+void lv_style_set_bg_grad_opa(lv_style_t *style, lv_opa_t value)
+```
+
+<span className="sr-only">Parameters</span>
+
+| Name | Type | Description |
+|------|------|-------------|
+| `style` | <ApiLink name="lv_style_t" display="lv_style_t *" /> | Pointer to style |
+| `value` | <ApiLink name="lv_opa_t" /> | Value to submit |
+
+
+</ApiMember>
+
+<ApiMember kind="function" name="lv_style_set_bg_grad" file="misc/lv_style_gen.h" line={387} url="https://github.com/lvgl/lvgl/blob/master/src/misc/lv_style_gen.h#L387">
+
+### lv_style_set_bg_grad
+
+Set gradient definition. The pointed instance must exist while Widget is alive. NULL to disable. It wraps `BG_GRAD_COLOR`, `BG_GRAD_DIR`, `BG_MAIN_STOP` and `BG_GRAD_STOP` into one descriptor and allows creating gradients with more colors as well. If it's set other gradient related properties will be ignored. Default: `NULL`, inherited: No, layout: No, ext. draw: No.
+
+```c
+void lv_style_set_bg_grad(lv_style_t *style, const lv_grad_dsc_t *value)
+```
+
+<span className="sr-only">Parameters</span>
+
+| Name | Type | Description |
+|------|------|-------------|
+| `style` | <ApiLink name="lv_style_t" display="lv_style_t *" /> | Pointer to style |
+| `value` | <ApiLink name="lv_grad_dsc_t" display="const lv_grad_dsc_t *" /> | Pointer to gradient descriptor |
+
+
+</ApiMember>
+
+<ApiMember kind="function" name="lv_style_set_bg_image_src" file="misc/lv_style_gen.h" line={396} url="https://github.com/lvgl/lvgl/blob/master/src/misc/lv_style_gen.h#L396">
+
+### lv_style_set_bg_image_src
+
+Set a background image. Can be a pointer to <ApiLink name="lv_image_dsc_t" />, a path to a file or an `LV_SYMBOL_...`. Default: `NULL`, inherited: No, layout: No, ext. draw: Yes.
+
+```c
+void lv_style_set_bg_image_src(lv_style_t *style, const void *value)
+```
+
+<span className="sr-only">Parameters</span>
+
+| Name | Type | Description |
+|------|------|-------------|
+| `style` | <ApiLink name="lv_style_t" display="lv_style_t *" /> | Pointer to style |
+| `value` | `const void *` | Pointer to image source |
+
+
+</ApiMember>
+
+<ApiMember kind="function" name="lv_style_set_bg_image_opa" file="misc/lv_style_gen.h" line={406} url="https://github.com/lvgl/lvgl/blob/master/src/misc/lv_style_gen.h#L406">
+
+### lv_style_set_bg_image_opa
+
+Set opacity of the background image. Value 0, <ApiLink name="_lv_opacity_level_t" display="LV_OPA_0" /> or <ApiLink name="_lv_opacity_level_t" display="LV_OPA_TRANSP" /> means fully transparent, 255, <ApiLink name="_lv_opacity_level_t" display="LV_OPA_100" /> or <ApiLink name="_lv_opacity_level_t" display="LV_OPA_COVER" /> means fully covering, other values or LV_OPA_10, LV_OPA_20, etc means semi transparency. Default: <ApiLink name="_lv_opacity_level_t" display="LV_OPA_COVER" />, inherited: No, layout: No, ext. draw: No.
+
+```c
+void lv_style_set_bg_image_opa(lv_style_t *style, lv_opa_t value)
+```
+
+<span className="sr-only">Parameters</span>
+
+| Name | Type | Description |
+|------|------|-------------|
+| `style` | <ApiLink name="lv_style_t" display="lv_style_t *" /> | Pointer to style |
+| `value` | <ApiLink name="lv_opa_t" /> | Value to submit |
+
+
+</ApiMember>
+
+<ApiMember kind="function" name="lv_style_set_bg_image_recolor" file="misc/lv_style_gen.h" line={414} url="https://github.com/lvgl/lvgl/blob/master/src/misc/lv_style_gen.h#L414">
+
+### lv_style_set_bg_image_recolor
+
+Set a color to mix to the background image. Default: `0x000000`, inherited: No, layout: No, ext. draw: No.
+
+```c
+void lv_style_set_bg_image_recolor(lv_style_t *style, lv_color_t value)
+```
+
+<span className="sr-only">Parameters</span>
+
+| Name | Type | Description |
+|------|------|-------------|
+| `style` | <ApiLink name="lv_style_t" display="lv_style_t *" /> | Pointer to style |
+| `value` | <ApiLink name="lv_color_t" /> | Color to submit |
+
+
+</ApiMember>
+
+<ApiMember kind="function" name="lv_style_set_bg_image_recolor_opa" file="misc/lv_style_gen.h" line={425} url="https://github.com/lvgl/lvgl/blob/master/src/misc/lv_style_gen.h#L425">
+
+### lv_style_set_bg_image_recolor_opa
+
+Set intensity of background image recoloring. Value 0, <ApiLink name="_lv_opacity_level_t" display="LV_OPA_0" /> or <ApiLink name="_lv_opacity_level_t" display="LV_OPA_TRANSP" /> means no mixing, 255, <ApiLink name="_lv_opacity_level_t" display="LV_OPA_100" /> or <ApiLink name="_lv_opacity_level_t" display="LV_OPA_COVER" /> means full recoloring, other values or LV_OPA_10, LV_OPA_20, etc are interpreted proportionally. Default: <ApiLink name="_lv_opacity_level_t" display="LV_OPA_TRANSP" />, inherited: No, layout: No, ext. draw: No.
+
+```c
+void lv_style_set_bg_image_recolor_opa(lv_style_t *style, lv_opa_t value)
+```
+
+<span className="sr-only">Parameters</span>
+
+| Name | Type | Description |
+|------|------|-------------|
+| `style` | <ApiLink name="lv_style_t" display="lv_style_t *" /> | Pointer to style |
+| `value` | <ApiLink name="lv_opa_t" /> | Value to submit |
+
+
+</ApiMember>
+
+<ApiMember kind="function" name="lv_style_set_bg_image_tiled" file="misc/lv_style_gen.h" line={433} url="https://github.com/lvgl/lvgl/blob/master/src/misc/lv_style_gen.h#L433">
+
+### lv_style_set_bg_image_tiled
+
+If enabled the background image will be tiled. Possible values are <ApiLink name="true" /> or <ApiLink name="false" />. Default: 0, inherited: No, layout: No, ext. draw: No.
+
+```c
+void lv_style_set_bg_image_tiled(lv_style_t *style, bool value)
+```
+
+<span className="sr-only">Parameters</span>
+
+| Name | Type | Description |
+|------|------|-------------|
+| `style` | <ApiLink name="lv_style_t" display="lv_style_t *" /> | Pointer to style |
+| `value` | <ApiLink name="bool" /> | Value to submit |
+
+
+</ApiMember>
+
+<ApiMember kind="function" name="lv_style_set_border_color" file="misc/lv_style_gen.h" line={441} url="https://github.com/lvgl/lvgl/blob/master/src/misc/lv_style_gen.h#L441">
+
+### lv_style_set_border_color
+
+Set color of the border. Default: `0x000000`, inherited: No, layout: No, ext. draw: No.
+
+```c
+void lv_style_set_border_color(lv_style_t *style, lv_color_t value)
+```
+
+<span className="sr-only">Parameters</span>
+
+| Name | Type | Description |
+|------|------|-------------|
+| `style` | <ApiLink name="lv_style_t" display="lv_style_t *" /> | Pointer to style |
+| `value` | <ApiLink name="lv_color_t" /> | Color to submit |
+
+
+</ApiMember>
+
+<ApiMember kind="function" name="lv_style_set_border_opa" file="misc/lv_style_gen.h" line={451} url="https://github.com/lvgl/lvgl/blob/master/src/misc/lv_style_gen.h#L451">
+
+### lv_style_set_border_opa
+
+Set opacity of the border. Value 0, <ApiLink name="_lv_opacity_level_t" display="LV_OPA_0" /> or <ApiLink name="_lv_opacity_level_t" display="LV_OPA_TRANSP" /> means fully transparent, 255, <ApiLink name="_lv_opacity_level_t" display="LV_OPA_100" /> or <ApiLink name="_lv_opacity_level_t" display="LV_OPA_COVER" /> means fully covering, other values or LV_OPA_10, LV_OPA_20, etc means semi transparency. Default: <ApiLink name="_lv_opacity_level_t" display="LV_OPA_COVER" />, inherited: No, layout: No, ext. draw: No.
+
+```c
+void lv_style_set_border_opa(lv_style_t *style, lv_opa_t value)
+```
+
+<span className="sr-only">Parameters</span>
+
+| Name | Type | Description |
+|------|------|-------------|
+| `style` | <ApiLink name="lv_style_t" display="lv_style_t *" /> | Pointer to style |
+| `value` | <ApiLink name="lv_opa_t" /> | Value to submit |
+
+
+</ApiMember>
+
+<ApiMember kind="function" name="lv_style_set_border_width" file="misc/lv_style_gen.h" line={459} url="https://github.com/lvgl/lvgl/blob/master/src/misc/lv_style_gen.h#L459">
+
+### lv_style_set_border_width
+
+Set width of the border. Only pixel values can be used. Default: 0, inherited: No, layout: Yes, ext. draw: No.
+
+```c
+void lv_style_set_border_width(lv_style_t *style, int32_t value)
+```
+
+<span className="sr-only">Parameters</span>
+
+| Name | Type | Description |
+|------|------|-------------|
+| `style` | <ApiLink name="lv_style_t" display="lv_style_t *" /> | Pointer to style |
+| `value` | <ApiLink name="int32_t" /> | Value to submit |
+
+
+</ApiMember>
+
+<ApiMember kind="function" name="lv_style_set_border_side" file="misc/lv_style_gen.h" line={469} url="https://github.com/lvgl/lvgl/blob/master/src/misc/lv_style_gen.h#L469">
+
+### lv_style_set_border_side
+
+Set only which side(s) the border should be drawn. Possible values are `LV_BORDER_SIDE_NONE/TOP/BOTTOM/LEFT/RIGHT/INTERNAL`. OR-ed values can be used as well, e.g. <ApiLink name="lv_border_side_t" display="LV_BORDER_SIDE_TOP" />` | `<ApiLink name="lv_border_side_t" display="LV_BORDER_SIDE_LEFT" />. Default: <ApiLink name="lv_border_side_t" display="LV_BORDER_SIDE_FULL" />, inherited: No, layout: No, ext. draw: No.
+
+```c
+void lv_style_set_border_side(lv_style_t *style, lv_border_side_t value)
+```
+
+<span className="sr-only">Parameters</span>
+
+| Name | Type | Description |
+|------|------|-------------|
+| `style` | <ApiLink name="lv_style_t" display="lv_style_t *" /> | Pointer to style |
+| `value` | <ApiLink name="lv_border_side_t" /> | Value to submit |
+
+
+</ApiMember>
+
+<ApiMember kind="function" name="lv_style_set_border_post" file="misc/lv_style_gen.h" line={478} url="https://github.com/lvgl/lvgl/blob/master/src/misc/lv_style_gen.h#L478">
+
+### lv_style_set_border_post
+
+Sets whether the border should be drawn before or after the children are drawn. <ApiLink name="true" />: after children, <ApiLink name="false" />: before children. Default: 0, inherited: No, layout: No, ext. draw: No.
+
+```c
+void lv_style_set_border_post(lv_style_t *style, bool value)
+```
+
+<span className="sr-only">Parameters</span>
+
+| Name | Type | Description |
+|------|------|-------------|
+| `style` | <ApiLink name="lv_style_t" display="lv_style_t *" /> | Pointer to style |
+| `value` | <ApiLink name="bool" /> | Value to submit |
+
+
+</ApiMember>
+
+<ApiMember kind="function" name="lv_style_set_outline_width" file="misc/lv_style_gen.h" line={486} url="https://github.com/lvgl/lvgl/blob/master/src/misc/lv_style_gen.h#L486">
+
+### lv_style_set_outline_width
+
+Set width of outline in pixels. Default: 0, inherited: No, layout: No, ext. draw: Yes.
+
+```c
+void lv_style_set_outline_width(lv_style_t *style, int32_t value)
+```
+
+<span className="sr-only">Parameters</span>
+
+| Name | Type | Description |
+|------|------|-------------|
+| `style` | <ApiLink name="lv_style_t" display="lv_style_t *" /> | Pointer to style |
+| `value` | <ApiLink name="int32_t" /> | Value to submit |
+
+
+</ApiMember>
+
+<ApiMember kind="function" name="lv_style_set_outline_color" file="misc/lv_style_gen.h" line={494} url="https://github.com/lvgl/lvgl/blob/master/src/misc/lv_style_gen.h#L494">
+
+### lv_style_set_outline_color
+
+Set color of outline. Default: `0x000000`, inherited: No, layout: No, ext. draw: No.
+
+```c
+void lv_style_set_outline_color(lv_style_t *style, lv_color_t value)
+```
+
+<span className="sr-only">Parameters</span>
+
+| Name | Type | Description |
+|------|------|-------------|
+| `style` | <ApiLink name="lv_style_t" display="lv_style_t *" /> | Pointer to style |
+| `value` | <ApiLink name="lv_color_t" /> | Color to submit |
+
+
+</ApiMember>
+
+<ApiMember kind="function" name="lv_style_set_outline_opa" file="misc/lv_style_gen.h" line={504} url="https://github.com/lvgl/lvgl/blob/master/src/misc/lv_style_gen.h#L504">
+
+### lv_style_set_outline_opa
+
+Set opacity of outline. Value 0, <ApiLink name="_lv_opacity_level_t" display="LV_OPA_0" /> or <ApiLink name="_lv_opacity_level_t" display="LV_OPA_TRANSP" /> means fully transparent, 255, <ApiLink name="_lv_opacity_level_t" display="LV_OPA_100" /> or <ApiLink name="_lv_opacity_level_t" display="LV_OPA_COVER" /> means fully covering, other values or LV_OPA_10, LV_OPA_20, etc means semi transparency. Default: <ApiLink name="_lv_opacity_level_t" display="LV_OPA_COVER" />, inherited: No, layout: No, ext. draw: Yes.
+
+```c
+void lv_style_set_outline_opa(lv_style_t *style, lv_opa_t value)
+```
+
+<span className="sr-only">Parameters</span>
+
+| Name | Type | Description |
+|------|------|-------------|
+| `style` | <ApiLink name="lv_style_t" display="lv_style_t *" /> | Pointer to style |
+| `value` | <ApiLink name="lv_opa_t" /> | Value to submit |
+
+
+</ApiMember>
+
+<ApiMember kind="function" name="lv_style_set_outline_pad" file="misc/lv_style_gen.h" line={512} url="https://github.com/lvgl/lvgl/blob/master/src/misc/lv_style_gen.h#L512">
+
+### lv_style_set_outline_pad
+
+Set padding of outline, i.e. the gap between Widget and the outline. Default: 0, inherited: No, layout: No, ext. draw: Yes.
+
+```c
+void lv_style_set_outline_pad(lv_style_t *style, int32_t value)
+```
+
+<span className="sr-only">Parameters</span>
+
+| Name | Type | Description |
+|------|------|-------------|
+| `style` | <ApiLink name="lv_style_t" display="lv_style_t *" /> | Pointer to style |
+| `value` | <ApiLink name="int32_t" /> | Value to submit |
+
+
+</ApiMember>
+
+<ApiMember kind="function" name="lv_style_set_shadow_width" file="misc/lv_style_gen.h" line={520} url="https://github.com/lvgl/lvgl/blob/master/src/misc/lv_style_gen.h#L520">
+
+### lv_style_set_shadow_width
+
+Set width of the shadow in pixels. The value should be >= 0. Default: 0, inherited: No, layout: No, ext. draw: Yes.
+
+```c
+void lv_style_set_shadow_width(lv_style_t *style, int32_t value)
+```
+
+<span className="sr-only">Parameters</span>
+
+| Name | Type | Description |
+|------|------|-------------|
+| `style` | <ApiLink name="lv_style_t" display="lv_style_t *" /> | Pointer to style |
+| `value` | <ApiLink name="int32_t" /> | Value to submit |
+
+
+</ApiMember>
+
+<ApiMember kind="function" name="lv_style_set_shadow_offset_x" file="misc/lv_style_gen.h" line={528} url="https://github.com/lvgl/lvgl/blob/master/src/misc/lv_style_gen.h#L528">
+
+### lv_style_set_shadow_offset_x
+
+Set an offset on the shadow in pixels in X direction. Default: 0, inherited: No, layout: No, ext. draw: Yes.
+
+```c
+void lv_style_set_shadow_offset_x(lv_style_t *style, int32_t value)
+```
+
+<span className="sr-only">Parameters</span>
+
+| Name | Type | Description |
+|------|------|-------------|
+| `style` | <ApiLink name="lv_style_t" display="lv_style_t *" /> | Pointer to style |
+| `value` | <ApiLink name="int32_t" /> | Value to submit |
+
+
+</ApiMember>
+
+<ApiMember kind="function" name="lv_style_set_shadow_offset_y" file="misc/lv_style_gen.h" line={536} url="https://github.com/lvgl/lvgl/blob/master/src/misc/lv_style_gen.h#L536">
+
+### lv_style_set_shadow_offset_y
+
+Set an offset on the shadow in pixels in Y direction. Default: 0, inherited: No, layout: No, ext. draw: Yes.
+
+```c
+void lv_style_set_shadow_offset_y(lv_style_t *style, int32_t value)
+```
+
+<span className="sr-only">Parameters</span>
+
+| Name | Type | Description |
+|------|------|-------------|
+| `style` | <ApiLink name="lv_style_t" display="lv_style_t *" /> | Pointer to style |
+| `value` | <ApiLink name="int32_t" /> | Value to submit |
+
+
+</ApiMember>
+
+<ApiMember kind="function" name="lv_style_set_shadow_spread" file="misc/lv_style_gen.h" line={545} url="https://github.com/lvgl/lvgl/blob/master/src/misc/lv_style_gen.h#L545">
+
+### lv_style_set_shadow_spread
+
+Make shadow calculation to use a larger or smaller rectangle as base. The value can be in pixels to make the area larger/smaller. Default: 0, inherited: No, layout: No, ext. draw: Yes.
+
+```c
+void lv_style_set_shadow_spread(lv_style_t *style, int32_t value)
+```
+
+<span className="sr-only">Parameters</span>
+
+| Name | Type | Description |
+|------|------|-------------|
+| `style` | <ApiLink name="lv_style_t" display="lv_style_t *" /> | Pointer to style |
+| `value` | <ApiLink name="int32_t" /> | Value to submit |
+
+
+</ApiMember>
+
+<ApiMember kind="function" name="lv_style_set_shadow_color" file="misc/lv_style_gen.h" line={553} url="https://github.com/lvgl/lvgl/blob/master/src/misc/lv_style_gen.h#L553">
+
+### lv_style_set_shadow_color
+
+Set color of shadow. Default: `0x000000`, inherited: No, layout: No, ext. draw: No.
+
+```c
+void lv_style_set_shadow_color(lv_style_t *style, lv_color_t value)
+```
+
+<span className="sr-only">Parameters</span>
+
+| Name | Type | Description |
+|------|------|-------------|
+| `style` | <ApiLink name="lv_style_t" display="lv_style_t *" /> | Pointer to style |
+| `value` | <ApiLink name="lv_color_t" /> | Color to submit |
+
+
+</ApiMember>
+
+<ApiMember kind="function" name="lv_style_set_shadow_opa" file="misc/lv_style_gen.h" line={563} url="https://github.com/lvgl/lvgl/blob/master/src/misc/lv_style_gen.h#L563">
+
+### lv_style_set_shadow_opa
+
+Set opacity of shadow. Value 0, <ApiLink name="_lv_opacity_level_t" display="LV_OPA_0" /> or <ApiLink name="_lv_opacity_level_t" display="LV_OPA_TRANSP" /> means fully transparent, 255, <ApiLink name="_lv_opacity_level_t" display="LV_OPA_100" /> or <ApiLink name="_lv_opacity_level_t" display="LV_OPA_COVER" /> means fully covering, other values or LV_OPA_10, LV_OPA_20, etc means semi transparency. Default: <ApiLink name="_lv_opacity_level_t" display="LV_OPA_COVER" />, inherited: No, layout: No, ext. draw: Yes.
+
+```c
+void lv_style_set_shadow_opa(lv_style_t *style, lv_opa_t value)
+```
+
+<span className="sr-only">Parameters</span>
+
+| Name | Type | Description |
+|------|------|-------------|
+| `style` | <ApiLink name="lv_style_t" display="lv_style_t *" /> | Pointer to style |
+| `value` | <ApiLink name="lv_opa_t" /> | Value to submit |
+
+
+</ApiMember>
+
+<ApiMember kind="function" name="lv_style_set_image_opa" file="misc/lv_style_gen.h" line={573} url="https://github.com/lvgl/lvgl/blob/master/src/misc/lv_style_gen.h#L573">
+
+### lv_style_set_image_opa
+
+Set opacity of an image. Value 0, <ApiLink name="_lv_opacity_level_t" display="LV_OPA_0" /> or <ApiLink name="_lv_opacity_level_t" display="LV_OPA_TRANSP" /> means fully transparent, 255, <ApiLink name="_lv_opacity_level_t" display="LV_OPA_100" /> or <ApiLink name="_lv_opacity_level_t" display="LV_OPA_COVER" /> means fully covering, other values or LV_OPA_10, LV_OPA_20, etc means semi transparency. Default: <ApiLink name="_lv_opacity_level_t" display="LV_OPA_COVER" />, inherited: No, layout: No, ext. draw: No.
+
+```c
+void lv_style_set_image_opa(lv_style_t *style, lv_opa_t value)
+```
+
+<span className="sr-only">Parameters</span>
+
+| Name | Type | Description |
+|------|------|-------------|
+| `style` | <ApiLink name="lv_style_t" display="lv_style_t *" /> | Pointer to style |
+| `value` | <ApiLink name="lv_opa_t" /> | Value to submit |
+
+
+</ApiMember>
+
+<ApiMember kind="function" name="lv_style_set_image_recolor" file="misc/lv_style_gen.h" line={581} url="https://github.com/lvgl/lvgl/blob/master/src/misc/lv_style_gen.h#L581">
+
+### lv_style_set_image_recolor
+
+Set color to mix with the image. Default: `0x000000`, inherited: No, layout: No, ext. draw: No.
+
+```c
+void lv_style_set_image_recolor(lv_style_t *style, lv_color_t value)
+```
+
+<span className="sr-only">Parameters</span>
+
+| Name | Type | Description |
+|------|------|-------------|
+| `style` | <ApiLink name="lv_style_t" display="lv_style_t *" /> | Pointer to style |
+| `value` | <ApiLink name="lv_color_t" /> | Color to submit |
+
+
+</ApiMember>
+
+<ApiMember kind="function" name="lv_style_set_image_recolor_opa" file="misc/lv_style_gen.h" line={591} url="https://github.com/lvgl/lvgl/blob/master/src/misc/lv_style_gen.h#L591">
+
+### lv_style_set_image_recolor_opa
+
+Set intensity of color mixing. Value 0, <ApiLink name="_lv_opacity_level_t" display="LV_OPA_0" /> or <ApiLink name="_lv_opacity_level_t" display="LV_OPA_TRANSP" /> means fully transparent, 255, <ApiLink name="_lv_opacity_level_t" display="LV_OPA_100" /> or <ApiLink name="_lv_opacity_level_t" display="LV_OPA_COVER" /> means fully covering, other values or LV_OPA_10, LV_OPA_20, etc means semi transparency. Default: 0, inherited: No, layout: No, ext. draw: No.
+
+```c
+void lv_style_set_image_recolor_opa(lv_style_t *style, lv_opa_t value)
+```
+
+<span className="sr-only">Parameters</span>
+
+| Name | Type | Description |
+|------|------|-------------|
+| `style` | <ApiLink name="lv_style_t" display="lv_style_t *" /> | Pointer to style |
+| `value` | <ApiLink name="lv_opa_t" /> | Value to submit |
+
+
+</ApiMember>
+
+<ApiMember kind="function" name="lv_style_set_image_colorkey" file="misc/lv_style_gen.h" line={601} url="https://github.com/lvgl/lvgl/blob/master/src/misc/lv_style_gen.h#L601">
+
+### lv_style_set_image_colorkey
+
+Set image colorkey definition. The <ApiLink name="lv_image_colorkey_t" /> contains two color values: `high_color` and `low_color`. the color of pixels ranging from `low_color` to `high_color` will be transparent. Default: `NULL`, inherited: No, layout: No, ext. draw: No.
+
+```c
+void lv_style_set_image_colorkey(lv_style_t *style, const lv_image_colorkey_t *value)
+```
+
+<span className="sr-only">Parameters</span>
+
+| Name | Type | Description |
+|------|------|-------------|
+| `style` | <ApiLink name="lv_style_t" display="lv_style_t *" /> | Pointer to style |
+| `value` | <ApiLink name="lv_image_colorkey_t" display="const lv_image_colorkey_t *" /> | Pointer to image color key |
+
+
+</ApiMember>
+
+<ApiMember kind="function" name="lv_style_set_line_width" file="misc/lv_style_gen.h" line={609} url="https://github.com/lvgl/lvgl/blob/master/src/misc/lv_style_gen.h#L609">
+
+### lv_style_set_line_width
+
+Set width of lines in pixels. Default: 0, inherited: No, layout: No, ext. draw: Yes.
+
+```c
+void lv_style_set_line_width(lv_style_t *style, int32_t value)
+```
+
+<span className="sr-only">Parameters</span>
+
+| Name | Type | Description |
+|------|------|-------------|
+| `style` | <ApiLink name="lv_style_t" display="lv_style_t *" /> | Pointer to style |
+| `value` | <ApiLink name="int32_t" /> | Value to submit |
+
+
+</ApiMember>
+
+<ApiMember kind="function" name="lv_style_set_line_dash_width" file="misc/lv_style_gen.h" line={617} url="https://github.com/lvgl/lvgl/blob/master/src/misc/lv_style_gen.h#L617">
+
+### lv_style_set_line_dash_width
+
+Set width of dashes in pixels. Note that dash works only on horizontal and vertical lines. Default: 0, inherited: No, layout: No, ext. draw: No.
+
+```c
+void lv_style_set_line_dash_width(lv_style_t *style, int32_t value)
+```
+
+<span className="sr-only">Parameters</span>
+
+| Name | Type | Description |
+|------|------|-------------|
+| `style` | <ApiLink name="lv_style_t" display="lv_style_t *" /> | Pointer to style |
+| `value` | <ApiLink name="int32_t" /> | Value to submit |
+
+
+</ApiMember>
+
+<ApiMember kind="function" name="lv_style_set_line_dash_gap" file="misc/lv_style_gen.h" line={626} url="https://github.com/lvgl/lvgl/blob/master/src/misc/lv_style_gen.h#L626">
+
+### lv_style_set_line_dash_gap
+
+Set gap between dashes in pixels. Note that dash works only on horizontal and vertical lines. Default: 0, inherited: No, layout: No, ext. draw: No.
+
+```c
+void lv_style_set_line_dash_gap(lv_style_t *style, int32_t value)
+```
+
+<span className="sr-only">Parameters</span>
+
+| Name | Type | Description |
+|------|------|-------------|
+| `style` | <ApiLink name="lv_style_t" display="lv_style_t *" /> | Pointer to style |
+| `value` | <ApiLink name="int32_t" /> | Value to submit |
+
+
+</ApiMember>
+
+<ApiMember kind="function" name="lv_style_set_line_rounded" file="misc/lv_style_gen.h" line={634} url="https://github.com/lvgl/lvgl/blob/master/src/misc/lv_style_gen.h#L634">
+
+### lv_style_set_line_rounded
+
+Make end points of the lines rounded. <ApiLink name="true" />: rounded, <ApiLink name="false" />: perpendicular line ending. Default: 0, inherited: No, layout: No, ext. draw: No.
+
+```c
+void lv_style_set_line_rounded(lv_style_t *style, bool value)
+```
+
+<span className="sr-only">Parameters</span>
+
+| Name | Type | Description |
+|------|------|-------------|
+| `style` | <ApiLink name="lv_style_t" display="lv_style_t *" /> | Pointer to style |
+| `value` | <ApiLink name="bool" /> | Value to submit |
+
+
+</ApiMember>
+
+<ApiMember kind="function" name="lv_style_set_line_color" file="misc/lv_style_gen.h" line={642} url="https://github.com/lvgl/lvgl/blob/master/src/misc/lv_style_gen.h#L642">
+
+### lv_style_set_line_color
+
+Set color of lines. Default: `0x000000`, inherited: No, layout: No, ext. draw: No.
+
+```c
+void lv_style_set_line_color(lv_style_t *style, lv_color_t value)
+```
+
+<span className="sr-only">Parameters</span>
+
+| Name | Type | Description |
+|------|------|-------------|
+| `style` | <ApiLink name="lv_style_t" display="lv_style_t *" /> | Pointer to style |
+| `value` | <ApiLink name="lv_color_t" /> | Color to submit |
+
+
+</ApiMember>
+
+<ApiMember kind="function" name="lv_style_set_line_opa" file="misc/lv_style_gen.h" line={650} url="https://github.com/lvgl/lvgl/blob/master/src/misc/lv_style_gen.h#L650">
+
+### lv_style_set_line_opa
+
+Set opacity of lines. Default: <ApiLink name="_lv_opacity_level_t" display="LV_OPA_COVER" />, inherited: No, layout: No, ext. draw: No.
+
+```c
+void lv_style_set_line_opa(lv_style_t *style, lv_opa_t value)
+```
+
+<span className="sr-only">Parameters</span>
+
+| Name | Type | Description |
+|------|------|-------------|
+| `style` | <ApiLink name="lv_style_t" display="lv_style_t *" /> | Pointer to style |
+| `value` | <ApiLink name="lv_opa_t" /> | Value to submit |
+
+
+</ApiMember>
+
+<ApiMember kind="function" name="lv_style_set_arc_width" file="misc/lv_style_gen.h" line={658} url="https://github.com/lvgl/lvgl/blob/master/src/misc/lv_style_gen.h#L658">
+
+### lv_style_set_arc_width
+
+Set width (thickness) of arcs in pixels. Default: 0, inherited: No, layout: No, ext. draw: Yes.
+
+```c
+void lv_style_set_arc_width(lv_style_t *style, int32_t value)
+```
+
+<span className="sr-only">Parameters</span>
+
+| Name | Type | Description |
+|------|------|-------------|
+| `style` | <ApiLink name="lv_style_t" display="lv_style_t *" /> | Pointer to style |
+| `value` | <ApiLink name="int32_t" /> | Value to submit |
+
+
+</ApiMember>
+
+<ApiMember kind="function" name="lv_style_set_arc_rounded" file="misc/lv_style_gen.h" line={666} url="https://github.com/lvgl/lvgl/blob/master/src/misc/lv_style_gen.h#L666">
+
+### lv_style_set_arc_rounded
+
+Make end points of arcs rounded. <ApiLink name="true" />: rounded, <ApiLink name="false" />: perpendicular line ending. Default: 0, inherited: No, layout: No, ext. draw: No.
+
+```c
+void lv_style_set_arc_rounded(lv_style_t *style, bool value)
+```
+
+<span className="sr-only">Parameters</span>
+
+| Name | Type | Description |
+|------|------|-------------|
+| `style` | <ApiLink name="lv_style_t" display="lv_style_t *" /> | Pointer to style |
+| `value` | <ApiLink name="bool" /> | Value to submit |
+
+
+</ApiMember>
+
+<ApiMember kind="function" name="lv_style_set_arc_color" file="misc/lv_style_gen.h" line={674} url="https://github.com/lvgl/lvgl/blob/master/src/misc/lv_style_gen.h#L674">
+
+### lv_style_set_arc_color
+
+Set color of arc. Default: `0x000000`, inherited: No, layout: No, ext. draw: No.
+
+```c
+void lv_style_set_arc_color(lv_style_t *style, lv_color_t value)
+```
+
+<span className="sr-only">Parameters</span>
+
+| Name | Type | Description |
+|------|------|-------------|
+| `style` | <ApiLink name="lv_style_t" display="lv_style_t *" /> | Pointer to style |
+| `value` | <ApiLink name="lv_color_t" /> | Color to submit |
+
+
+</ApiMember>
+
+<ApiMember kind="function" name="lv_style_set_arc_opa" file="misc/lv_style_gen.h" line={682} url="https://github.com/lvgl/lvgl/blob/master/src/misc/lv_style_gen.h#L682">
+
+### lv_style_set_arc_opa
+
+Set opacity of arcs. Default: <ApiLink name="_lv_opacity_level_t" display="LV_OPA_COVER" />, inherited: No, layout: No, ext. draw: No.
+
+```c
+void lv_style_set_arc_opa(lv_style_t *style, lv_opa_t value)
+```
+
+<span className="sr-only">Parameters</span>
+
+| Name | Type | Description |
+|------|------|-------------|
+| `style` | <ApiLink name="lv_style_t" display="lv_style_t *" /> | Pointer to style |
+| `value` | <ApiLink name="lv_opa_t" /> | Value to submit |
+
+
+</ApiMember>
+
+<ApiMember kind="function" name="lv_style_set_arc_image_src" file="misc/lv_style_gen.h" line={691} url="https://github.com/lvgl/lvgl/blob/master/src/misc/lv_style_gen.h#L691">
+
+### lv_style_set_arc_image_src
+
+Set an image from which arc will be masked out. It's useful to display complex effects on the arcs. Can be a pointer to <ApiLink name="lv_image_dsc_t" /> or a path to a file. Default: `NULL`, inherited: No, layout: No, ext. draw: No.
+
+```c
+void lv_style_set_arc_image_src(lv_style_t *style, const void *value)
+```
+
+<span className="sr-only">Parameters</span>
+
+| Name | Type | Description |
+|------|------|-------------|
+| `style` | <ApiLink name="lv_style_t" display="lv_style_t *" /> | Pointer to style |
+| `value` | `const void *` | Pointer to image source |
+
+
+</ApiMember>
+
+<ApiMember kind="function" name="lv_style_set_text_color" file="misc/lv_style_gen.h" line={699} url="https://github.com/lvgl/lvgl/blob/master/src/misc/lv_style_gen.h#L699">
+
+### lv_style_set_text_color
+
+Sets color of text. Default: `0x000000`, inherited: Yes, layout: No, ext. draw: No.
+
+```c
+void lv_style_set_text_color(lv_style_t *style, lv_color_t value)
+```
+
+<span className="sr-only">Parameters</span>
+
+| Name | Type | Description |
+|------|------|-------------|
+| `style` | <ApiLink name="lv_style_t" display="lv_style_t *" /> | Pointer to style |
+| `value` | <ApiLink name="lv_color_t" /> | Color to submit |
+
+
+</ApiMember>
+
+<ApiMember kind="function" name="lv_style_set_text_opa" file="misc/lv_style_gen.h" line={709} url="https://github.com/lvgl/lvgl/blob/master/src/misc/lv_style_gen.h#L709">
+
+### lv_style_set_text_opa
+
+Set opacity of text. Value 0, <ApiLink name="_lv_opacity_level_t" display="LV_OPA_0" /> or <ApiLink name="_lv_opacity_level_t" display="LV_OPA_TRANSP" /> means fully transparent, 255, <ApiLink name="_lv_opacity_level_t" display="LV_OPA_100" /> or <ApiLink name="_lv_opacity_level_t" display="LV_OPA_COVER" /> means fully covering, other values or LV_OPA_10, LV_OPA_20, etc means semi transparency. Default: <ApiLink name="_lv_opacity_level_t" display="LV_OPA_COVER" />, inherited: Yes, layout: No, ext. draw: No.
+
+```c
+void lv_style_set_text_opa(lv_style_t *style, lv_opa_t value)
+```
+
+<span className="sr-only">Parameters</span>
+
+| Name | Type | Description |
+|------|------|-------------|
+| `style` | <ApiLink name="lv_style_t" display="lv_style_t *" /> | Pointer to style |
+| `value` | <ApiLink name="lv_opa_t" /> | Value to submit |
+
+
+</ApiMember>
+
+<ApiMember kind="function" name="lv_style_set_text_font" file="misc/lv_style_gen.h" line={717} url="https://github.com/lvgl/lvgl/blob/master/src/misc/lv_style_gen.h#L717">
+
+### lv_style_set_text_font
+
+Set font of text (a pointer <ApiLink name="lv_font_t" />` *`). Default: <ApiLink name="LV_FONT_DEFAULT" />, inherited: Yes, layout: Yes, ext. draw: No.
+
+```c
+void lv_style_set_text_font(lv_style_t *style, const lv_font_t *value)
+```
+
+<span className="sr-only">Parameters</span>
+
+| Name | Type | Description |
+|------|------|-------------|
+| `style` | <ApiLink name="lv_style_t" display="lv_style_t *" /> | Pointer to style |
+| `value` | <ApiLink name="lv_font_t" display="const lv_font_t *" /> | Pointer to font |
+
+
+</ApiMember>
+
+<ApiMember kind="function" name="lv_style_set_text_letter_space" file="misc/lv_style_gen.h" line={725} url="https://github.com/lvgl/lvgl/blob/master/src/misc/lv_style_gen.h#L725">
+
+### lv_style_set_text_letter_space
+
+Set letter space in pixels. Default: 0, inherited: Yes, layout: Yes, ext. draw: No.
+
+```c
+void lv_style_set_text_letter_space(lv_style_t *style, int32_t value)
+```
+
+<span className="sr-only">Parameters</span>
+
+| Name | Type | Description |
+|------|------|-------------|
+| `style` | <ApiLink name="lv_style_t" display="lv_style_t *" /> | Pointer to style |
+| `value` | <ApiLink name="int32_t" /> | Value to submit |
+
+
+</ApiMember>
+
+<ApiMember kind="function" name="lv_style_set_text_line_space" file="misc/lv_style_gen.h" line={733} url="https://github.com/lvgl/lvgl/blob/master/src/misc/lv_style_gen.h#L733">
+
+### lv_style_set_text_line_space
+
+Set line space in pixels. Default: 0, inherited: Yes, layout: Yes, ext. draw: No.
+
+```c
+void lv_style_set_text_line_space(lv_style_t *style, int32_t value)
+```
+
+<span className="sr-only">Parameters</span>
+
+| Name | Type | Description |
+|------|------|-------------|
+| `style` | <ApiLink name="lv_style_t" display="lv_style_t *" /> | Pointer to style |
+| `value` | <ApiLink name="int32_t" /> | Value to submit |
+
+
+</ApiMember>
+
+<ApiMember kind="function" name="lv_style_set_text_decor" file="misc/lv_style_gen.h" line={742} url="https://github.com/lvgl/lvgl/blob/master/src/misc/lv_style_gen.h#L742">
+
+### lv_style_set_text_decor
+
+Set decoration for the text. Possible values are `LV_TEXT_DECOR_NONE/UNDERLINE/STRIKETHROUGH`. OR-ed values can be used as well. Default: <ApiLink name="lv_text_decor_t" display="LV_TEXT_DECOR_NONE" />, inherited: Yes, layout: No, ext. draw: No.
+
+```c
+void lv_style_set_text_decor(lv_style_t *style, lv_text_decor_t value)
+```
+
+<span className="sr-only">Parameters</span>
+
+| Name | Type | Description |
+|------|------|-------------|
+| `style` | <ApiLink name="lv_style_t" display="lv_style_t *" /> | Pointer to style |
+| `value` | <ApiLink name="lv_text_decor_t" /> | Value to submit |
+
+
+</ApiMember>
+
+<ApiMember kind="function" name="lv_style_set_text_align" file="misc/lv_style_gen.h" line={753} url="https://github.com/lvgl/lvgl/blob/master/src/misc/lv_style_gen.h#L753">
+
+### lv_style_set_text_align
+
+Set how to align the lines of the text. Note that it doesn't align the Widget itself, only the lines inside the Widget. Possible values are `LV_TEXT_ALIGN_LEFT/CENTER/RIGHT/AUTO`. <ApiLink name="lv_text_align_t" display="LV_TEXT_ALIGN_AUTO" /> detect the text base direction and uses left or right alignment accordingly. Default: <ApiLink name="lv_text_align_t" display="LV_TEXT_ALIGN_AUTO" />, inherited: Yes, layout: Yes, ext. draw: No.
+
+```c
+void lv_style_set_text_align(lv_style_t *style, lv_text_align_t value)
+```
+
+<span className="sr-only">Parameters</span>
+
+| Name | Type | Description |
+|------|------|-------------|
+| `style` | <ApiLink name="lv_style_t" display="lv_style_t *" /> | Pointer to style |
+| `value` | <ApiLink name="lv_text_align_t" /> | Value to submit |
+
+
+</ApiMember>
+
+<ApiMember kind="function" name="lv_style_set_text_outline_stroke_color" file="misc/lv_style_gen.h" line={761} url="https://github.com/lvgl/lvgl/blob/master/src/misc/lv_style_gen.h#L761">
+
+### lv_style_set_text_outline_stroke_color
+
+Sets the color of letter outline stroke. Default: `0x000000`, inherited: Yes, layout: No, ext. draw: No.
+
+```c
+void lv_style_set_text_outline_stroke_color(lv_style_t *style, lv_color_t value)
+```
+
+<span className="sr-only">Parameters</span>
+
+| Name | Type | Description |
+|------|------|-------------|
+| `style` | <ApiLink name="lv_style_t" display="lv_style_t *" /> | Pointer to style |
+| `value` | <ApiLink name="lv_color_t" /> | Color to submit |
+
+
+</ApiMember>
+
+<ApiMember kind="function" name="lv_style_set_text_outline_stroke_width" file="misc/lv_style_gen.h" line={769} url="https://github.com/lvgl/lvgl/blob/master/src/misc/lv_style_gen.h#L769">
+
+### lv_style_set_text_outline_stroke_width
+
+Set the letter outline stroke width in pixels. Default: 0, inherited: Yes, layout: Yes, ext. draw: No.
+
+```c
+void lv_style_set_text_outline_stroke_width(lv_style_t *style, int32_t value)
+```
+
+<span className="sr-only">Parameters</span>
+
+| Name | Type | Description |
+|------|------|-------------|
+| `style` | <ApiLink name="lv_style_t" display="lv_style_t *" /> | Pointer to style |
+| `value` | <ApiLink name="int32_t" /> | Value to submit |
+
+
+</ApiMember>
+
+<ApiMember kind="function" name="lv_style_set_text_outline_stroke_opa" file="misc/lv_style_gen.h" line={779} url="https://github.com/lvgl/lvgl/blob/master/src/misc/lv_style_gen.h#L779">
+
+### lv_style_set_text_outline_stroke_opa
+
+Set the opacity of the letter outline stroke. Value 0, <ApiLink name="_lv_opacity_level_t" display="LV_OPA_0" /> or <ApiLink name="_lv_opacity_level_t" display="LV_OPA_TRANSP" /> means fully transparent, 255, <ApiLink name="_lv_opacity_level_t" display="LV_OPA_100" /> or <ApiLink name="_lv_opacity_level_t" display="LV_OPA_COVER" /> means fully covering, other values or LV_OPA_10, LV_OPA_20, etc means semi transparency. Default: <ApiLink name="_lv_opacity_level_t" display="LV_OPA_COVER" />, inherited: Yes, layout: No, ext. draw: No.
+
+```c
+void lv_style_set_text_outline_stroke_opa(lv_style_t *style, lv_opa_t value)
+```
+
+<span className="sr-only">Parameters</span>
+
+| Name | Type | Description |
+|------|------|-------------|
+| `style` | <ApiLink name="lv_style_t" display="lv_style_t *" /> | Pointer to style |
+| `value` | <ApiLink name="lv_opa_t" /> | Value to submit |
+
+
+</ApiMember>
+
+<ApiMember kind="function" name="lv_style_set_blur_radius" file="misc/lv_style_gen.h" line={788} url="https://github.com/lvgl/lvgl/blob/master/src/misc/lv_style_gen.h#L788">
+
+### lv_style_set_blur_radius
+
+Sets the intensity of blurring. Applied on each lv_part separately before the children are rendered. Default: `0`, inherited: No, layout: No, ext. draw: No.
+
+```c
+void lv_style_set_blur_radius(lv_style_t *style, int32_t value)
+```
+
+<span className="sr-only">Parameters</span>
+
+| Name | Type | Description |
+|------|------|-------------|
+| `style` | <ApiLink name="lv_style_t" display="lv_style_t *" /> | Pointer to style |
+| `value` | <ApiLink name="int32_t" /> | Value to submit |
+
+
+</ApiMember>
+
+<ApiMember kind="function" name="lv_style_set_blur_backdrop" file="misc/lv_style_gen.h" line={798} url="https://github.com/lvgl/lvgl/blob/master/src/misc/lv_style_gen.h#L798">
+
+### lv_style_set_blur_backdrop
+
+If <ApiLink name="true" /> the background of the widget will be blurred. The part should have \< 100% opacity to make it visible. If <ApiLink name="false" /> the given part will be blurred when it's rendered but before drawing the children. Default: <ApiLink name="false" />, inherited: No, layout: No, ext. draw: No.
+
+```c
+void lv_style_set_blur_backdrop(lv_style_t *style, bool value)
+```
+
+<span className="sr-only">Parameters</span>
+
+| Name | Type | Description |
+|------|------|-------------|
+| `style` | <ApiLink name="lv_style_t" display="lv_style_t *" /> | Pointer to style |
+| `value` | <ApiLink name="bool" /> | Value to submit |
+
+
+</ApiMember>
+
+<ApiMember kind="function" name="lv_style_set_blur_quality" file="misc/lv_style_gen.h" line={808} url="https://github.com/lvgl/lvgl/blob/master/src/misc/lv_style_gen.h#L808">
+
+### lv_style_set_blur_quality
+
+Setting to <ApiLink name="lv_blur_quality_t" display="LV_BLUR_QUALITY_SPEED" /> the blurring algorithm will prefer speed over quality. <ApiLink name="lv_blur_quality_t" display="LV_BLUR_QUALITY_PRECISION" /> will force using higher quality but slower blur. With <ApiLink name="lv_blur_quality_t" display="LV_BLUR_QUALITY_AUTO" /> the quality will be selected automatically. Default: <ApiLink name="lv_blur_quality_t" display="LV_BLUR_QUALITY_AUTO" />, inherited: No, layout: No, ext. draw: No.
+
+```c
+void lv_style_set_blur_quality(lv_style_t *style, lv_blur_quality_t value)
+```
+
+<span className="sr-only">Parameters</span>
+
+| Name | Type | Description |
+|------|------|-------------|
+| `style` | <ApiLink name="lv_style_t" display="lv_style_t *" /> | Pointer to style |
+| `value` | <ApiLink name="lv_blur_quality_t" /> | Value to submit |
+
+
+</ApiMember>
+
+<ApiMember kind="function" name="lv_style_set_drop_shadow_radius" file="misc/lv_style_gen.h" line={817} url="https://github.com/lvgl/lvgl/blob/master/src/misc/lv_style_gen.h#L817">
+
+### lv_style_set_drop_shadow_radius
+
+Sets the intensity of blurring. Applied on each lv_part separately before the children are rendered. Default: `0`, inherited: No, layout: No, ext. draw: Yes.
+
+```c
+void lv_style_set_drop_shadow_radius(lv_style_t *style, int32_t value)
+```
+
+<span className="sr-only">Parameters</span>
+
+| Name | Type | Description |
+|------|------|-------------|
+| `style` | <ApiLink name="lv_style_t" display="lv_style_t *" /> | Pointer to style |
+| `value` | <ApiLink name="int32_t" /> | Value to submit |
+
+
+</ApiMember>
+
+<ApiMember kind="function" name="lv_style_set_drop_shadow_offset_x" file="misc/lv_style_gen.h" line={825} url="https://github.com/lvgl/lvgl/blob/master/src/misc/lv_style_gen.h#L825">
+
+### lv_style_set_drop_shadow_offset_x
+
+Set an offset on the shadow in pixels in X direction. Default: `0`, inherited: No, layout: No, ext. draw: Yes.
+
+```c
+void lv_style_set_drop_shadow_offset_x(lv_style_t *style, int32_t value)
+```
+
+<span className="sr-only">Parameters</span>
+
+| Name | Type | Description |
+|------|------|-------------|
+| `style` | <ApiLink name="lv_style_t" display="lv_style_t *" /> | Pointer to style |
+| `value` | <ApiLink name="int32_t" /> | Value to submit |
+
+
+</ApiMember>
+
+<ApiMember kind="function" name="lv_style_set_drop_shadow_offset_y" file="misc/lv_style_gen.h" line={833} url="https://github.com/lvgl/lvgl/blob/master/src/misc/lv_style_gen.h#L833">
+
+### lv_style_set_drop_shadow_offset_y
+
+Set an offset on the shadow in pixels in Y direction. Default: `0`, inherited: No, layout: No, ext. draw: Yes.
+
+```c
+void lv_style_set_drop_shadow_offset_y(lv_style_t *style, int32_t value)
+```
+
+<span className="sr-only">Parameters</span>
+
+| Name | Type | Description |
+|------|------|-------------|
+| `style` | <ApiLink name="lv_style_t" display="lv_style_t *" /> | Pointer to style |
+| `value` | <ApiLink name="int32_t" /> | Value to submit |
+
+
+</ApiMember>
+
+<ApiMember kind="function" name="lv_style_set_drop_shadow_color" file="misc/lv_style_gen.h" line={841} url="https://github.com/lvgl/lvgl/blob/master/src/misc/lv_style_gen.h#L841">
+
+### lv_style_set_drop_shadow_color
+
+Set the color of the shadow. Default: `0`, inherited: No, layout: No, ext. draw: No.
+
+```c
+void lv_style_set_drop_shadow_color(lv_style_t *style, lv_color_t value)
+```
+
+<span className="sr-only">Parameters</span>
+
+| Name | Type | Description |
+|------|------|-------------|
+| `style` | <ApiLink name="lv_style_t" display="lv_style_t *" /> | Pointer to style |
+| `value` | <ApiLink name="lv_color_t" /> | Color to submit |
+
+
+</ApiMember>
+
+<ApiMember kind="function" name="lv_style_set_drop_shadow_opa" file="misc/lv_style_gen.h" line={849} url="https://github.com/lvgl/lvgl/blob/master/src/misc/lv_style_gen.h#L849">
+
+### lv_style_set_drop_shadow_opa
+
+Set the opacity of the shadow. Default: `0`, inherited: No, layout: No, ext. draw: No.
+
+```c
+void lv_style_set_drop_shadow_opa(lv_style_t *style, lv_opa_t value)
+```
+
+<span className="sr-only">Parameters</span>
+
+| Name | Type | Description |
+|------|------|-------------|
+| `style` | <ApiLink name="lv_style_t" display="lv_style_t *" /> | Pointer to style |
+| `value` | <ApiLink name="lv_opa_t" /> | Value to submit |
+
+
+</ApiMember>
+
+<ApiMember kind="function" name="lv_style_set_drop_shadow_quality" file="misc/lv_style_gen.h" line={859} url="https://github.com/lvgl/lvgl/blob/master/src/misc/lv_style_gen.h#L859">
+
+### lv_style_set_drop_shadow_quality
+
+Setting to <ApiLink name="lv_blur_quality_t" display="LV_BLUR_QUALITY_SPEED" /> the blurring algorithm will prefer speed over quality. <ApiLink name="lv_blur_quality_t" display="LV_BLUR_QUALITY_PRECISION" /> will force using higher quality but slower blur. With <ApiLink name="lv_blur_quality_t" display="LV_BLUR_QUALITY_AUTO" /> the quality will be selected automatically. Default: <ApiLink name="lv_blur_quality_t" display="LV_BLUR_QUALITY_PRECISION" />, inherited: No, layout: No, ext. draw: No.
+
+```c
+void lv_style_set_drop_shadow_quality(lv_style_t *style, lv_blur_quality_t value)
+```
+
+<span className="sr-only">Parameters</span>
+
+| Name | Type | Description |
+|------|------|-------------|
+| `style` | <ApiLink name="lv_style_t" display="lv_style_t *" /> | Pointer to style |
+| `value` | <ApiLink name="lv_blur_quality_t" /> | Value to submit |
+
+
+</ApiMember>
+
+<ApiMember kind="function" name="lv_style_set_radius" file="misc/lv_style_gen.h" line={868} url="https://github.com/lvgl/lvgl/blob/master/src/misc/lv_style_gen.h#L868">
+
+### lv_style_set_radius
+
+Set radius on every corner. The value is interpreted in pixels (>= 0) or <ApiLink name="LV_RADIUS_CIRCLE" /> for max radius. Default: 0, inherited: No, layout: No, ext. draw: No.
+
+```c
+void lv_style_set_radius(lv_style_t *style, int32_t value)
+```
+
+<span className="sr-only">Parameters</span>
+
+| Name | Type | Description |
+|------|------|-------------|
+| `style` | <ApiLink name="lv_style_t" display="lv_style_t *" /> | Pointer to style |
+| `value` | <ApiLink name="int32_t" /> | Value to submit |
+
+
+</ApiMember>
+
+<ApiMember kind="function" name="lv_style_set_radial_offset" file="misc/lv_style_gen.h" line={876} url="https://github.com/lvgl/lvgl/blob/master/src/misc/lv_style_gen.h#L876">
+
+### lv_style_set_radial_offset
+
+Move start point of object (e.g. scale tick) radially. Default: 0, inherited: No, layout: No, ext. draw: No.
+
+```c
+void lv_style_set_radial_offset(lv_style_t *style, int32_t value)
+```
+
+<span className="sr-only">Parameters</span>
+
+| Name | Type | Description |
+|------|------|-------------|
+| `style` | <ApiLink name="lv_style_t" display="lv_style_t *" /> | Pointer to style |
+| `value` | <ApiLink name="int32_t" /> | Value to submit |
+
+
+</ApiMember>
+
+<ApiMember kind="function" name="lv_style_set_clip_corner" file="misc/lv_style_gen.h" line={885} url="https://github.com/lvgl/lvgl/blob/master/src/misc/lv_style_gen.h#L885">
+
+### lv_style_set_clip_corner
+
+Enable clipping of content that overflows rounded corners of parent Widget. Can be <ApiLink name="true" /> or <ApiLink name="false" />. Default: 0, inherited: No, layout: No, ext. draw: No.
+
+```c
+void lv_style_set_clip_corner(lv_style_t *style, bool value)
+```
+
+<span className="sr-only">Parameters</span>
+
+| Name | Type | Description |
+|------|------|-------------|
+| `style` | <ApiLink name="lv_style_t" display="lv_style_t *" /> | Pointer to style |
+| `value` | <ApiLink name="bool" /> | Value to submit |
+
+
+</ApiMember>
+
+<ApiMember kind="function" name="lv_style_set_opa" file="misc/lv_style_gen.h" line={895} url="https://github.com/lvgl/lvgl/blob/master/src/misc/lv_style_gen.h#L895">
+
+### lv_style_set_opa
+
+Scale down all opacity values of the Widget by this factor. Value 0, <ApiLink name="_lv_opacity_level_t" display="LV_OPA_0" /> or <ApiLink name="_lv_opacity_level_t" display="LV_OPA_TRANSP" /> means fully transparent, 255, <ApiLink name="_lv_opacity_level_t" display="LV_OPA_100" /> or <ApiLink name="_lv_opacity_level_t" display="LV_OPA_COVER" /> means fully covering, other values or LV_OPA_10, LV_OPA_20, etc means semi transparency. Default: <ApiLink name="_lv_opacity_level_t" display="LV_OPA_COVER" />, inherited: Yes, layout: No, ext. draw: No.
+
+```c
+void lv_style_set_opa(lv_style_t *style, lv_opa_t value)
+```
+
+<span className="sr-only">Parameters</span>
+
+| Name | Type | Description |
+|------|------|-------------|
+| `style` | <ApiLink name="lv_style_t" display="lv_style_t *" /> | Pointer to style |
+| `value` | <ApiLink name="lv_opa_t" /> | Value to submit |
+
+
+</ApiMember>
+
+<ApiMember kind="function" name="lv_style_set_opa_layered" file="misc/lv_style_gen.h" line={906} url="https://github.com/lvgl/lvgl/blob/master/src/misc/lv_style_gen.h#L906">
+
+### lv_style_set_opa_layered
+
+First draw Widget on the layer, then scale down layer opacity factor. Value 0, <ApiLink name="_lv_opacity_level_t" display="LV_OPA_0" /> or <ApiLink name="_lv_opacity_level_t" display="LV_OPA_TRANSP" /> means fully transparent, 255, <ApiLink name="_lv_opacity_level_t" display="LV_OPA_100" /> or <ApiLink name="_lv_opacity_level_t" display="LV_OPA_COVER" /> means fully covering, other values or LV_OPA_10, LV_OPA_20, etc means semi transparency. Default: <ApiLink name="_lv_opacity_level_t" display="LV_OPA_COVER" />, inherited: Yes, layout: No, ext. draw: No.
+
+```c
+void lv_style_set_opa_layered(lv_style_t *style, lv_opa_t value)
+```
+
+<span className="sr-only">Parameters</span>
+
+| Name | Type | Description |
+|------|------|-------------|
+| `style` | <ApiLink name="lv_style_t" display="lv_style_t *" /> | Pointer to style |
+| `value` | <ApiLink name="lv_opa_t" /> | Value to submit |
+
+
+</ApiMember>
+
+<ApiMember kind="function" name="lv_style_set_color_filter_dsc" file="misc/lv_style_gen.h" line={914} url="https://github.com/lvgl/lvgl/blob/master/src/misc/lv_style_gen.h#L914">
+
+### lv_style_set_color_filter_dsc
+
+Mix a color with all colors of the Widget. Default: `NULL`, inherited: No, layout: No, ext. draw: No.
+
+```c
+void lv_style_set_color_filter_dsc(lv_style_t *style, const lv_color_filter_dsc_t *value)
+```
+
+<span className="sr-only">Parameters</span>
+
+| Name | Type | Description |
+|------|------|-------------|
+| `style` | <ApiLink name="lv_style_t" display="lv_style_t *" /> | Pointer to style |
+| `value` | <ApiLink name="lv_color_filter_dsc_t" display="const lv_color_filter_dsc_t *" /> | Pointer to color-filter descriptor |
+
+
+</ApiMember>
+
+<ApiMember kind="function" name="lv_style_set_color_filter_opa" file="misc/lv_style_gen.h" line={922} url="https://github.com/lvgl/lvgl/blob/master/src/misc/lv_style_gen.h#L922">
+
+### lv_style_set_color_filter_opa
+
+The intensity of mixing of color filter. Default: <ApiLink name="_lv_opacity_level_t" display="LV_OPA_TRANSP" />, inherited: No, layout: No, ext. draw: No.
+
+```c
+void lv_style_set_color_filter_opa(lv_style_t *style, lv_opa_t value)
+```
+
+<span className="sr-only">Parameters</span>
+
+| Name | Type | Description |
+|------|------|-------------|
+| `style` | <ApiLink name="lv_style_t" display="lv_style_t *" /> | Pointer to style |
+| `value` | <ApiLink name="lv_opa_t" /> | Value to submit |
+
+
+</ApiMember>
+
+<ApiMember kind="function" name="lv_style_set_recolor" file="misc/lv_style_gen.h" line={930} url="https://github.com/lvgl/lvgl/blob/master/src/misc/lv_style_gen.h#L930">
+
+### lv_style_set_recolor
+
+Set a color to mix to the obj. Default: `0x000000`, inherited: No, layout: No, ext. draw: No.
+
+```c
+void lv_style_set_recolor(lv_style_t *style, lv_color_t value)
+```
+
+<span className="sr-only">Parameters</span>
+
+| Name | Type | Description |
+|------|------|-------------|
+| `style` | <ApiLink name="lv_style_t" display="lv_style_t *" /> | Pointer to style |
+| `value` | <ApiLink name="lv_color_t" /> | Color to submit |
+
+
+</ApiMember>
+
+<ApiMember kind="function" name="lv_style_set_recolor_opa" file="misc/lv_style_gen.h" line={941} url="https://github.com/lvgl/lvgl/blob/master/src/misc/lv_style_gen.h#L941">
+
+### lv_style_set_recolor_opa
+
+Sets the intensity of color mixing. Value 0, <ApiLink name="_lv_opacity_level_t" display="LV_OPA_0" /> or <ApiLink name="_lv_opacity_level_t" display="LV_OPA_TRANSP" /> means fully transparent. A value of 255, <ApiLink name="_lv_opacity_level_t" display="LV_OPA_100" /> or <ApiLink name="_lv_opacity_level_t" display="LV_OPA_COVER" /> means fully opaque. Intermediate values like LV_OPA_10, LV_OPA_20, etc result in semi-transparency. Default: <ApiLink name="_lv_opacity_level_t" display="LV_OPA_TRANSP" />, inherited: No, layout: No, ext. draw: No.
+
+```c
+void lv_style_set_recolor_opa(lv_style_t *style, lv_opa_t value)
+```
+
+<span className="sr-only">Parameters</span>
+
+| Name | Type | Description |
+|------|------|-------------|
+| `style` | <ApiLink name="lv_style_t" display="lv_style_t *" /> | Pointer to style |
+| `value` | <ApiLink name="lv_opa_t" /> | Value to submit |
+
+
+</ApiMember>
+
+<ApiMember kind="function" name="lv_style_set_anim" file="misc/lv_style_gen.h" line={952} url="https://github.com/lvgl/lvgl/blob/master/src/misc/lv_style_gen.h#L952">
+
+### lv_style_set_anim
+
+Animation template for Widget's animation. Should be a pointer to <ApiLink name="lv_anim_t" />. The animation parameters are widget specific, e.g. animation time could be the E.g. blink time of the cursor on the Text Area or scroll time of a roller. See Widgets' documentation to learn more. Default: `NULL`, inherited: No, layout: No, ext. draw: No.
+
+```c
+void lv_style_set_anim(lv_style_t *style, const lv_anim_t *value)
+```
+
+<span className="sr-only">Parameters</span>
+
+| Name | Type | Description |
+|------|------|-------------|
+| `style` | <ApiLink name="lv_style_t" display="lv_style_t *" /> | Pointer to style |
+| `value` | <ApiLink name="lv_anim_t" display="const lv_anim_t *" /> | Pointer to animation descriptor |
+
+
+</ApiMember>
+
+<ApiMember kind="function" name="lv_style_set_anim_duration" file="misc/lv_style_gen.h" line={962} url="https://github.com/lvgl/lvgl/blob/master/src/misc/lv_style_gen.h#L962">
+
+### lv_style_set_anim_duration
+
+Animation duration in milliseconds. Its meaning is widget specific. E.g. blink time of the cursor on the Text Area or scroll time of a roller. See Widgets' documentation to learn more. Default: 0, inherited: No, layout: No, ext. draw: No.
+
+```c
+void lv_style_set_anim_duration(lv_style_t *style, uint32_t value)
+```
+
+<span className="sr-only">Parameters</span>
+
+| Name | Type | Description |
+|------|------|-------------|
+| `style` | <ApiLink name="lv_style_t" display="lv_style_t *" /> | Pointer to style |
+| `value` | <ApiLink name="uint32_t" /> | Value to submit |
+
+
+</ApiMember>
+
+<ApiMember kind="function" name="lv_style_set_transition" file="misc/lv_style_gen.h" line={970} url="https://github.com/lvgl/lvgl/blob/master/src/misc/lv_style_gen.h#L970">
+
+### lv_style_set_transition
+
+An initialized <ApiLink name="lv_style_transition_dsc_t" /> to describe a transition. Default: `NULL`, inherited: No, layout: No, ext. draw: No.
+
+```c
+void lv_style_set_transition(lv_style_t *style, const lv_style_transition_dsc_t *value)
+```
+
+<span className="sr-only">Parameters</span>
+
+| Name | Type | Description |
+|------|------|-------------|
+| `style` | <ApiLink name="lv_style_t" display="lv_style_t *" /> | Pointer to style |
+| `value` | <ApiLink name="lv_style_transition_dsc_t" display="const lv_style_transition_dsc_t *" /> | Pointer to transition descriptor |
+
+
+</ApiMember>
+
+<ApiMember kind="function" name="lv_style_set_blend_mode" file="misc/lv_style_gen.h" line={979} url="https://github.com/lvgl/lvgl/blob/master/src/misc/lv_style_gen.h#L979">
+
+### lv_style_set_blend_mode
+
+Describes how to blend the colors to the background. Possible values are `LV_BLEND_MODE_NORMAL/ADDITIVE/SUBTRACTIVE/MULTIPLY/DIFFERENCE`. Default: <ApiLink name="lv_blend_mode_t" display="LV_BLEND_MODE_NORMAL" />, inherited: No, layout: No, ext. draw: No.
+
+```c
+void lv_style_set_blend_mode(lv_style_t *style, lv_blend_mode_t value)
+```
+
+<span className="sr-only">Parameters</span>
+
+| Name | Type | Description |
+|------|------|-------------|
+| `style` | <ApiLink name="lv_style_t" display="lv_style_t *" /> | Pointer to style |
+| `value` | <ApiLink name="lv_blend_mode_t" /> | Value to submit |
+
+
+</ApiMember>
+
+<ApiMember kind="function" name="lv_style_set_layout" file="misc/lv_style_gen.h" line={988} url="https://github.com/lvgl/lvgl/blob/master/src/misc/lv_style_gen.h#L988">
+
+### lv_style_set_layout
+
+Set layout of Widget. Children will be repositioned and resized according to policies set for the layout. For possible values see documentation of the layouts. Default: 0, inherited: No, layout: Yes, ext. draw: No.
+
+```c
+void lv_style_set_layout(lv_style_t *style, uint16_t value)
+```
+
+<span className="sr-only">Parameters</span>
+
+| Name | Type | Description |
+|------|------|-------------|
+| `style` | <ApiLink name="lv_style_t" display="lv_style_t *" /> | Pointer to style |
+| `value` | <ApiLink name="uint16_t" /> | Value to submit |
+
+
+</ApiMember>
+
+<ApiMember kind="function" name="lv_style_set_base_dir" file="misc/lv_style_gen.h" line={996} url="https://github.com/lvgl/lvgl/blob/master/src/misc/lv_style_gen.h#L996">
+
+### lv_style_set_base_dir
+
+Set base direction of Widget. Possible values are `LV_BIDI_DIR_LTR/RTL/AUTO`. Default: <ApiLink name="lv_base_dir_t" display="LV_BASE_DIR_AUTO" />, inherited: Yes, layout: Yes, ext. draw: No.
+
+```c
+void lv_style_set_base_dir(lv_style_t *style, lv_base_dir_t value)
+```
+
+<span className="sr-only">Parameters</span>
+
+| Name | Type | Description |
+|------|------|-------------|
+| `style` | <ApiLink name="lv_style_t" display="lv_style_t *" /> | Pointer to style |
+| `value` | <ApiLink name="lv_base_dir_t" /> | Value to submit |
+
+
+</ApiMember>
+
+<ApiMember kind="function" name="lv_style_set_bitmap_mask_src" file="misc/lv_style_gen.h" line={1005} url="https://github.com/lvgl/lvgl/blob/master/src/misc/lv_style_gen.h#L1005">
+
+### lv_style_set_bitmap_mask_src
+
+If set, a layer will be created for the widget and the layer will be masked with this A8 bitmap mask. Default: `NULL`, inherited: No, layout: No, ext. draw: No.
+
+```c
+void lv_style_set_bitmap_mask_src(lv_style_t *style, const void *value)
+```
+
+<span className="sr-only">Parameters</span>
+
+| Name | Type | Description |
+|------|------|-------------|
+| `style` | <ApiLink name="lv_style_t" display="lv_style_t *" /> | Pointer to style |
+| `value` | `const void *` | Pointer to A8 bitmap mask |
+
+
+</ApiMember>
+
+<ApiMember kind="function" name="lv_style_set_rotary_sensitivity" file="misc/lv_style_gen.h" line={1014} url="https://github.com/lvgl/lvgl/blob/master/src/misc/lv_style_gen.h#L1014">
+
+### lv_style_set_rotary_sensitivity
+
+Adjust sensitivity for rotary encoders in 1/256 unit. It means, 128: slow down the rotary to half, 512: speeds up to double, 256: no change. Default: `256`, inherited: Yes, layout: No, ext. draw: No.
+
+```c
+void lv_style_set_rotary_sensitivity(lv_style_t *style, uint32_t value)
+```
+
+<span className="sr-only">Parameters</span>
+
+| Name | Type | Description |
+|------|------|-------------|
+| `style` | <ApiLink name="lv_style_t" display="lv_style_t *" /> | Pointer to style |
+| `value` | <ApiLink name="uint32_t" /> | Value to submit |
+
+
+</ApiMember>
+
+<ApiMember kind="function" name="lv_style_set_flex_flow" file="misc/lv_style_gen.h" line={1023} url="https://github.com/lvgl/lvgl/blob/master/src/misc/lv_style_gen.h#L1023">
+
+### lv_style_set_flex_flow
+
+Defines in which direction the flex layout should arrange the children. Default: `LV_FLEX_FLOW_NONE`, inherited: No, layout: Yes, ext. draw: No.
+
+```c
+void lv_style_set_flex_flow(lv_style_t *style, lv_flex_flow_t value)
+```
+
+<span className="sr-only">Parameters</span>
+
+| Name | Type | Description |
+|------|------|-------------|
+| `style` | <ApiLink name="lv_style_t" display="lv_style_t *" /> | Pointer to style |
+| `value` | <ApiLink name="lv_flex_flow_t" /> | Value to submit |
+
+
+</ApiMember>
+
+<ApiMember kind="function" name="lv_style_set_flex_main_place" file="misc/lv_style_gen.h" line={1031} url="https://github.com/lvgl/lvgl/blob/master/src/misc/lv_style_gen.h#L1031">
+
+### lv_style_set_flex_main_place
+
+Defines how to align the children in the direction of flex flow. Default: `LV_FLEX_ALIGN_NONE`, inherited: No, layout: Yes, ext. draw: No.
+
+```c
+void lv_style_set_flex_main_place(lv_style_t *style, lv_flex_align_t value)
+```
+
+<span className="sr-only">Parameters</span>
+
+| Name | Type | Description |
+|------|------|-------------|
+| `style` | <ApiLink name="lv_style_t" display="lv_style_t *" /> | Pointer to style |
+| `value` | <ApiLink name="lv_flex_align_t" /> | Value to submit |
+
+
+</ApiMember>
+
+<ApiMember kind="function" name="lv_style_set_flex_cross_place" file="misc/lv_style_gen.h" line={1039} url="https://github.com/lvgl/lvgl/blob/master/src/misc/lv_style_gen.h#L1039">
+
+### lv_style_set_flex_cross_place
+
+Defines how to align the children perpendicular to the direction of flex flow. Default: `LV_FLEX_ALIGN_NONE`, inherited: No, layout: Yes, ext. draw: No.
+
+```c
+void lv_style_set_flex_cross_place(lv_style_t *style, lv_flex_align_t value)
+```
+
+<span className="sr-only">Parameters</span>
+
+| Name | Type | Description |
+|------|------|-------------|
+| `style` | <ApiLink name="lv_style_t" display="lv_style_t *" /> | Pointer to style |
+| `value` | <ApiLink name="lv_flex_align_t" /> | Value to submit |
+
+
+</ApiMember>
+
+<ApiMember kind="function" name="lv_style_set_flex_track_place" file="misc/lv_style_gen.h" line={1047} url="https://github.com/lvgl/lvgl/blob/master/src/misc/lv_style_gen.h#L1047">
+
+### lv_style_set_flex_track_place
+
+Defines how to align the tracks of the flow. Default: `LV_FLEX_ALIGN_NONE`, inherited: No, layout: Yes, ext. draw: No.
+
+```c
+void lv_style_set_flex_track_place(lv_style_t *style, lv_flex_align_t value)
+```
+
+<span className="sr-only">Parameters</span>
+
+| Name | Type | Description |
+|------|------|-------------|
+| `style` | <ApiLink name="lv_style_t" display="lv_style_t *" /> | Pointer to style |
+| `value` | <ApiLink name="lv_flex_align_t" /> | Value to submit |
+
+
+</ApiMember>
+
+<ApiMember kind="function" name="lv_style_set_flex_grow" file="misc/lv_style_gen.h" line={1055} url="https://github.com/lvgl/lvgl/blob/master/src/misc/lv_style_gen.h#L1055">
+
+### lv_style_set_flex_grow
+
+Defines how much space to take proportionally from the free space of the Widget's track. Default: `0`, inherited: No, layout: Yes, ext. draw: No.
+
+```c
+void lv_style_set_flex_grow(lv_style_t *style, uint8_t value)
+```
+
+<span className="sr-only">Parameters</span>
+
+| Name | Type | Description |
+|------|------|-------------|
+| `style` | <ApiLink name="lv_style_t" display="lv_style_t *" /> | Pointer to style |
+| `value` | <ApiLink name="uint8_t" /> | Value to submit |
+
+
+</ApiMember>
+
+<ApiMember kind="function" name="lv_style_set_grid_column_dsc_array" file="misc/lv_style_gen.h" line={1066} url="https://github.com/lvgl/lvgl/blob/master/src/misc/lv_style_gen.h#L1066">
+
+### lv_style_set_grid_column_dsc_array
+
+An array to describe the columns of the grid. Should be LV_GRID_TEMPLATE_LAST terminated. Default: `NULL`, inherited: No, layout: Yes, ext. draw: No.
+
+```c
+void lv_style_set_grid_column_dsc_array(lv_style_t *style, const int32_t *value)
+```
+
+<span className="sr-only">Parameters</span>
+
+| Name | Type | Description |
+|------|------|-------------|
+| `style` | <ApiLink name="lv_style_t" display="lv_style_t *" /> | Pointer to style |
+| `value` | <ApiLink name="int32_t" display="const int32_t *" /> | Pointer to grid-column descriptor array |
+
+
+</ApiMember>
+
+<ApiMember kind="function" name="lv_style_set_grid_column_align" file="misc/lv_style_gen.h" line={1074} url="https://github.com/lvgl/lvgl/blob/master/src/misc/lv_style_gen.h#L1074">
+
+### lv_style_set_grid_column_align
+
+Defines how to distribute the columns. Default: <ApiLink name="lv_grid_align_t" display="LV_GRID_ALIGN_START" />, inherited: No, layout: Yes, ext. draw: No.
+
+```c
+void lv_style_set_grid_column_align(lv_style_t *style, lv_grid_align_t value)
+```
+
+<span className="sr-only">Parameters</span>
+
+| Name | Type | Description |
+|------|------|-------------|
+| `style` | <ApiLink name="lv_style_t" display="lv_style_t *" /> | Pointer to style |
+| `value` | <ApiLink name="lv_grid_align_t" /> | Value to submit |
+
+
+</ApiMember>
+
+<ApiMember kind="function" name="lv_style_set_grid_row_dsc_array" file="misc/lv_style_gen.h" line={1082} url="https://github.com/lvgl/lvgl/blob/master/src/misc/lv_style_gen.h#L1082">
+
+### lv_style_set_grid_row_dsc_array
+
+An array to describe the rows of the grid. Should be LV_GRID_TEMPLATE_LAST terminated. Default: `NULL`, inherited: No, layout: Yes, ext. draw: No.
+
+```c
+void lv_style_set_grid_row_dsc_array(lv_style_t *style, const int32_t *value)
+```
+
+<span className="sr-only">Parameters</span>
+
+| Name | Type | Description |
+|------|------|-------------|
+| `style` | <ApiLink name="lv_style_t" display="lv_style_t *" /> | Pointer to style |
+| `value` | <ApiLink name="int32_t" display="const int32_t *" /> | Pointer to grid-row descriptor array |
+
+
+</ApiMember>
+
+<ApiMember kind="function" name="lv_style_set_grid_row_align" file="misc/lv_style_gen.h" line={1090} url="https://github.com/lvgl/lvgl/blob/master/src/misc/lv_style_gen.h#L1090">
+
+### lv_style_set_grid_row_align
+
+Defines how to distribute the rows. Default: <ApiLink name="lv_grid_align_t" display="LV_GRID_ALIGN_START" />, inherited: No, layout: Yes, ext. draw: No.
+
+```c
+void lv_style_set_grid_row_align(lv_style_t *style, lv_grid_align_t value)
+```
+
+<span className="sr-only">Parameters</span>
+
+| Name | Type | Description |
+|------|------|-------------|
+| `style` | <ApiLink name="lv_style_t" display="lv_style_t *" /> | Pointer to style |
+| `value` | <ApiLink name="lv_grid_align_t" /> | Value to submit |
+
+
+</ApiMember>
+
+<ApiMember kind="function" name="lv_style_set_grid_cell_column_pos" file="misc/lv_style_gen.h" line={1098} url="https://github.com/lvgl/lvgl/blob/master/src/misc/lv_style_gen.h#L1098">
+
+### lv_style_set_grid_cell_column_pos
+
+Set column in which Widget should be placed. Default: 0, inherited: No, layout: Yes, ext. draw: No.
+
+```c
+void lv_style_set_grid_cell_column_pos(lv_style_t *style, int32_t value)
+```
+
+<span className="sr-only">Parameters</span>
+
+| Name | Type | Description |
+|------|------|-------------|
+| `style` | <ApiLink name="lv_style_t" display="lv_style_t *" /> | Pointer to style |
+| `value` | <ApiLink name="int32_t" /> | Value to submit |
+
+
+</ApiMember>
+
+<ApiMember kind="function" name="lv_style_set_grid_cell_x_align" file="misc/lv_style_gen.h" line={1106} url="https://github.com/lvgl/lvgl/blob/master/src/misc/lv_style_gen.h#L1106">
+
+### lv_style_set_grid_cell_x_align
+
+Set how to align Widget horizontally. Default: <ApiLink name="lv_grid_align_t" display="LV_GRID_ALIGN_START" />, inherited: No, layout: Yes, ext. draw: No.
+
+```c
+void lv_style_set_grid_cell_x_align(lv_style_t *style, lv_grid_align_t value)
+```
+
+<span className="sr-only">Parameters</span>
+
+| Name | Type | Description |
+|------|------|-------------|
+| `style` | <ApiLink name="lv_style_t" display="lv_style_t *" /> | Pointer to style |
+| `value` | <ApiLink name="lv_grid_align_t" /> | Value to submit |
+
+
+</ApiMember>
+
+<ApiMember kind="function" name="lv_style_set_grid_cell_column_span" file="misc/lv_style_gen.h" line={1114} url="https://github.com/lvgl/lvgl/blob/master/src/misc/lv_style_gen.h#L1114">
+
+### lv_style_set_grid_cell_column_span
+
+Set how many columns Widget should span. Needs to be >= 1. Default: 1, inherited: No, layout: Yes, ext. draw: No.
+
+```c
+void lv_style_set_grid_cell_column_span(lv_style_t *style, int32_t value)
+```
+
+<span className="sr-only">Parameters</span>
+
+| Name | Type | Description |
+|------|------|-------------|
+| `style` | <ApiLink name="lv_style_t" display="lv_style_t *" /> | Pointer to style |
+| `value` | <ApiLink name="int32_t" /> | Value to submit |
+
+
+</ApiMember>
+
+<ApiMember kind="function" name="lv_style_set_grid_cell_row_pos" file="misc/lv_style_gen.h" line={1122} url="https://github.com/lvgl/lvgl/blob/master/src/misc/lv_style_gen.h#L1122">
+
+### lv_style_set_grid_cell_row_pos
+
+Set row in which Widget should be placed. Default: 0, inherited: No, layout: Yes, ext. draw: No.
+
+```c
+void lv_style_set_grid_cell_row_pos(lv_style_t *style, int32_t value)
+```
+
+<span className="sr-only">Parameters</span>
+
+| Name | Type | Description |
+|------|------|-------------|
+| `style` | <ApiLink name="lv_style_t" display="lv_style_t *" /> | Pointer to style |
+| `value` | <ApiLink name="int32_t" /> | Value to submit |
+
+
+</ApiMember>
+
+<ApiMember kind="function" name="lv_style_set_grid_cell_y_align" file="misc/lv_style_gen.h" line={1130} url="https://github.com/lvgl/lvgl/blob/master/src/misc/lv_style_gen.h#L1130">
+
+### lv_style_set_grid_cell_y_align
+
+Set how to align Widget vertically. Default: <ApiLink name="lv_grid_align_t" display="LV_GRID_ALIGN_START" />, inherited: No, layout: Yes, ext. draw: No.
+
+```c
+void lv_style_set_grid_cell_y_align(lv_style_t *style, lv_grid_align_t value)
+```
+
+<span className="sr-only">Parameters</span>
+
+| Name | Type | Description |
+|------|------|-------------|
+| `style` | <ApiLink name="lv_style_t" display="lv_style_t *" /> | Pointer to style |
+| `value` | <ApiLink name="lv_grid_align_t" /> | Value to submit |
+
+
+</ApiMember>
+
+<ApiMember kind="function" name="lv_style_set_grid_cell_row_span" file="misc/lv_style_gen.h" line={1138} url="https://github.com/lvgl/lvgl/blob/master/src/misc/lv_style_gen.h#L1138">
+
+### lv_style_set_grid_cell_row_span
+
+Set how many rows Widget should span. Needs to be >= 1. Default: 1, inherited: No, layout: Yes, ext. draw: No.
+
+```c
+void lv_style_set_grid_cell_row_span(lv_style_t *style, int32_t value)
+```
+
+<span className="sr-only">Parameters</span>
+
+| Name | Type | Description |
+|------|------|-------------|
+| `style` | <ApiLink name="lv_style_t" display="lv_style_t *" /> | Pointer to style |
+| `value` | <ApiLink name="int32_t" /> | Value to submit |
+
+
+</ApiMember>
+
+## Macros
+
+<ApiMember kind="macro" name="LV_STYLE_CONST_WIDTH" file="misc/lv_style_gen.h" line={1148} url="https://github.com/lvgl/lvgl/blob/master/src/misc/lv_style_gen.h#L1148">
+
+### LV_STYLE_CONST_WIDTH
+
+```c
+#define LV_STYLE_CONST_WIDTH(val) \
+    { \
+        .prop = LV_STYLE_WIDTH, .value = { .num = (int32_t)val } \
+    }
+```
+
+Sets width of Widget. Pixel, percentage and <ApiLink name="LV_SIZE_CONTENT" /> values can be used. Percentage values are relative to the width of the parent's content area. Default: Widget dependent, inherited: No, layout: Yes, ext. draw: No.
+
+<span className="sr-only">Parameters</span>
+
+| Name | Description |
+|------|-------------|
+| `val` | Value to submit |
+
+
+</ApiMember>
+
+<ApiMember kind="macro" name="LV_STYLE_CONST_MIN_WIDTH" file="misc/lv_style_gen.h" line={1159} url="https://github.com/lvgl/lvgl/blob/master/src/misc/lv_style_gen.h#L1159">
+
+### LV_STYLE_CONST_MIN_WIDTH
+
+```c
+#define LV_STYLE_CONST_MIN_WIDTH(val) \
+    { \
+        .prop = LV_STYLE_MIN_WIDTH, .value = { .num = (int32_t)val } \
+    }
+```
+
+Sets a minimal width. Pixel and percentage values can be used. Percentage values are relative to the width of the parent's content area. Default: 0, inherited: No, layout: Yes, ext. draw: No.
+
+<span className="sr-only">Parameters</span>
+
+| Name | Description |
+|------|-------------|
+| `val` | Value to submit |
+
+
+</ApiMember>
+
+<ApiMember kind="macro" name="LV_STYLE_CONST_MAX_WIDTH" file="misc/lv_style_gen.h" line={1170} url="https://github.com/lvgl/lvgl/blob/master/src/misc/lv_style_gen.h#L1170">
+
+### LV_STYLE_CONST_MAX_WIDTH
+
+```c
+#define LV_STYLE_CONST_MAX_WIDTH(val) \
+    { \
+        .prop = LV_STYLE_MAX_WIDTH, .value = { .num = (int32_t)val } \
+    }
+```
+
+Sets a maximal width. Pixel and percentage values can be used. Percentage values are relative to the width of the parent's content area. Default: LV_COORD_MAX, inherited: No, layout: Yes, ext. draw: No.
+
+<span className="sr-only">Parameters</span>
+
+| Name | Description |
+|------|-------------|
+| `val` | Value to submit |
+
+
+</ApiMember>
+
+<ApiMember kind="macro" name="LV_STYLE_CONST_HEIGHT" file="misc/lv_style_gen.h" line={1181} url="https://github.com/lvgl/lvgl/blob/master/src/misc/lv_style_gen.h#L1181">
+
+### LV_STYLE_CONST_HEIGHT
+
+```c
+#define LV_STYLE_CONST_HEIGHT(val) \
+    { \
+        .prop = LV_STYLE_HEIGHT, .value = { .num = (int32_t)val } \
+    }
+```
+
+Sets height of Widget. Pixel, percentage and <ApiLink name="LV_SIZE_CONTENT" /> can be used. Percentage values are relative to the height of the parent's content area. Default: Widget dependent, inherited: No, layout: Yes, ext. draw: No.
+
+<span className="sr-only">Parameters</span>
+
+| Name | Description |
+|------|-------------|
+| `val` | Value to submit |
+
+
+</ApiMember>
+
+<ApiMember kind="macro" name="LV_STYLE_CONST_MIN_HEIGHT" file="misc/lv_style_gen.h" line={1192} url="https://github.com/lvgl/lvgl/blob/master/src/misc/lv_style_gen.h#L1192">
+
+### LV_STYLE_CONST_MIN_HEIGHT
+
+```c
+#define LV_STYLE_CONST_MIN_HEIGHT(val) \
+    { \
+        .prop = LV_STYLE_MIN_HEIGHT, .value = { .num = (int32_t)val } \
+    }
+```
+
+Sets a minimal height. Pixel and percentage values can be used. Percentage values are relative to the height of the parent's content area. Default: 0, inherited: No, layout: Yes, ext. draw: No.
+
+<span className="sr-only">Parameters</span>
+
+| Name | Description |
+|------|-------------|
+| `val` | Value to submit |
+
+
+</ApiMember>
+
+<ApiMember kind="macro" name="LV_STYLE_CONST_MAX_HEIGHT" file="misc/lv_style_gen.h" line={1203} url="https://github.com/lvgl/lvgl/blob/master/src/misc/lv_style_gen.h#L1203">
+
+### LV_STYLE_CONST_MAX_HEIGHT
+
+```c
+#define LV_STYLE_CONST_MAX_HEIGHT(val) \
+    { \
+        .prop = LV_STYLE_MAX_HEIGHT, .value = { .num = (int32_t)val } \
+    }
+```
+
+Sets a maximal height. Pixel and percentage values can be used. Percentage values are relative to the height of the parent's content area. Default: LV_COORD_MAX, inherited: No, layout: Yes, ext. draw: No.
+
+<span className="sr-only">Parameters</span>
+
+| Name | Description |
+|------|-------------|
+| `val` | Value to submit |
+
+
+</ApiMember>
+
+<ApiMember kind="macro" name="LV_STYLE_CONST_LENGTH" file="misc/lv_style_gen.h" line={1214} url="https://github.com/lvgl/lvgl/blob/master/src/misc/lv_style_gen.h#L1214">
+
+### LV_STYLE_CONST_LENGTH
+
+```c
+#define LV_STYLE_CONST_LENGTH(val) \
+    { \
+        .prop = LV_STYLE_LENGTH, .value = { .num = (int32_t)val } \
+    }
+```
+
+Its meaning depends on the type of Widget. For example in case of lv_scale it means the length of the ticks. Default: 0, inherited: No, layout: No, ext. draw: Yes.
+
+<span className="sr-only">Parameters</span>
+
+| Name | Description |
+|------|-------------|
+| `val` | Value to submit |
+
+
+</ApiMember>
+
+<ApiMember kind="macro" name="LV_STYLE_CONST_X" file="misc/lv_style_gen.h" line={1226} url="https://github.com/lvgl/lvgl/blob/master/src/misc/lv_style_gen.h#L1226">
+
+### LV_STYLE_CONST_X
+
+```c
+#define LV_STYLE_CONST_X(val) \
+    { \
+        .prop = LV_STYLE_X, .value = { .num = (int32_t)val } \
+    }
+```
+
+Set X coordinate of Widget considering the `align` setting. Pixel and percentage values can be used. Percentage values are relative to the width of the parent's content area. Default: 0, inherited: No, layout: Yes, ext. draw: No.
+
+<span className="sr-only">Parameters</span>
+
+| Name | Description |
+|------|-------------|
+| `val` | Value to submit |
+
+
+</ApiMember>
+
+<ApiMember kind="macro" name="LV_STYLE_CONST_Y" file="misc/lv_style_gen.h" line={1238} url="https://github.com/lvgl/lvgl/blob/master/src/misc/lv_style_gen.h#L1238">
+
+### LV_STYLE_CONST_Y
+
+```c
+#define LV_STYLE_CONST_Y(val) \
+    { \
+        .prop = LV_STYLE_Y, .value = { .num = (int32_t)val } \
+    }
+```
+
+Set Y coordinate of Widget considering the `align` setting. Pixel and percentage values can be used. Percentage values are relative to the height of the parent's content area. Default: 0, inherited: No, layout: Yes, ext. draw: No.
+
+<span className="sr-only">Parameters</span>
+
+| Name | Description |
+|------|-------------|
+| `val` | Value to submit |
+
+
+</ApiMember>
+
+<ApiMember kind="macro" name="LV_STYLE_CONST_ALIGN" file="misc/lv_style_gen.h" line={1253} url="https://github.com/lvgl/lvgl/blob/master/src/misc/lv_style_gen.h#L1253">
+
+### LV_STYLE_CONST_ALIGN
+
+```c
+#define LV_STYLE_CONST_ALIGN(val) \
+    { \
+        .prop = LV_STYLE_ALIGN, .value = { .num = (int32_t)val } \
+    }
+```
+
+Set the alignment which tells from which point of the parent the X and Y coordinates should be interpreted. Possible values are: <ApiLink name="lv_align_t" display="LV_ALIGN_DEFAULT" />, `LV_ALIGN_TOP_LEFT/MID/RIGHT`, `LV_ALIGN_BOTTOM_LEFT/MID/RIGHT`, `LV_ALIGN_LEFT/RIGHT_MID`, <ApiLink name="lv_align_t" display="LV_ALIGN_CENTER" />. <ApiLink name="lv_align_t" display="LV_ALIGN_DEFAULT" /> means <ApiLink name="lv_align_t" display="LV_ALIGN_TOP_LEFT" /> with LTR base direction and <ApiLink name="lv_align_t" display="LV_ALIGN_TOP_RIGHT" /> with RTL base direction. Default: <ApiLink name="lv_align_t" display="LV_ALIGN_DEFAULT" />, inherited: No, layout: Yes, ext. draw: No.
+
+<span className="sr-only">Parameters</span>
+
+| Name | Description |
+|------|-------------|
+| `val` | Value to submit |
+
+
+</ApiMember>
+
+<ApiMember kind="macro" name="LV_STYLE_CONST_TRANSFORM_WIDTH" file="misc/lv_style_gen.h" line={1264} url="https://github.com/lvgl/lvgl/blob/master/src/misc/lv_style_gen.h#L1264">
+
+### LV_STYLE_CONST_TRANSFORM_WIDTH
+
+```c
+#define LV_STYLE_CONST_TRANSFORM_WIDTH(val) \
+    { \
+        .prop = LV_STYLE_TRANSFORM_WIDTH, .value = { .num = (int32_t)val } \
+    }
+```
+
+Make Widget wider on both sides with this value. Pixel and percentage (with `lv_pct(x)`) values can be used. Percentage values are relative to Widget's width. Default: 0, inherited: No, layout: No, ext. draw: Yes.
+
+<span className="sr-only">Parameters</span>
+
+| Name | Description |
+|------|-------------|
+| `val` | Value to submit |
+
+
+</ApiMember>
+
+<ApiMember kind="macro" name="LV_STYLE_CONST_TRANSFORM_HEIGHT" file="misc/lv_style_gen.h" line={1275} url="https://github.com/lvgl/lvgl/blob/master/src/misc/lv_style_gen.h#L1275">
+
+### LV_STYLE_CONST_TRANSFORM_HEIGHT
+
+```c
+#define LV_STYLE_CONST_TRANSFORM_HEIGHT(val) \
+    { \
+        .prop = LV_STYLE_TRANSFORM_HEIGHT, .value = { .num = (int32_t)val } \
+    }
+```
+
+Make Widget higher on both sides with this value. Pixel and percentage (with `lv_pct(x)`) values can be used. Percentage values are relative to Widget's height. Default: 0, inherited: No, layout: No, ext. draw: Yes.
+
+<span className="sr-only">Parameters</span>
+
+| Name | Description |
+|------|-------------|
+| `val` | Value to submit |
+
+
+</ApiMember>
+
+<ApiMember kind="macro" name="LV_STYLE_CONST_TRANSLATE_X" file="misc/lv_style_gen.h" line={1287} url="https://github.com/lvgl/lvgl/blob/master/src/misc/lv_style_gen.h#L1287">
+
+### LV_STYLE_CONST_TRANSLATE_X
+
+```c
+#define LV_STYLE_CONST_TRANSLATE_X(val) \
+    { \
+        .prop = LV_STYLE_TRANSLATE_X, .value = { .num = (int32_t)val } \
+    }
+```
+
+Move Widget with this value in X direction. Applied after layouts, aligns and other positioning. Pixel and percentage (with `lv_pct(x)`) values can be used. Percentage values are relative to Widget's width. Default: 0, inherited: No, layout: Yes, ext. draw: No.
+
+<span className="sr-only">Parameters</span>
+
+| Name | Description |
+|------|-------------|
+| `val` | Value to submit |
+
+
+</ApiMember>
+
+<ApiMember kind="macro" name="LV_STYLE_CONST_TRANSLATE_Y" file="misc/lv_style_gen.h" line={1299} url="https://github.com/lvgl/lvgl/blob/master/src/misc/lv_style_gen.h#L1299">
+
+### LV_STYLE_CONST_TRANSLATE_Y
+
+```c
+#define LV_STYLE_CONST_TRANSLATE_Y(val) \
+    { \
+        .prop = LV_STYLE_TRANSLATE_Y, .value = { .num = (int32_t)val } \
+    }
+```
+
+Move Widget with this value in Y direction. Applied after layouts, aligns and other positioning. Pixel and percentage (with `lv_pct(x)`) values can be used. Percentage values are relative to Widget's height. Default: 0, inherited: No, layout: Yes, ext. draw: No.
+
+<span className="sr-only">Parameters</span>
+
+| Name | Description |
+|------|-------------|
+| `val` | Value to submit |
+
+
+</ApiMember>
+
+<ApiMember kind="macro" name="LV_STYLE_CONST_TRANSLATE_RADIAL" file="misc/lv_style_gen.h" line={1310} url="https://github.com/lvgl/lvgl/blob/master/src/misc/lv_style_gen.h#L1310">
+
+### LV_STYLE_CONST_TRANSLATE_RADIAL
+
+```c
+#define LV_STYLE_CONST_TRANSLATE_RADIAL(val) \
+    { \
+        .prop = LV_STYLE_TRANSLATE_RADIAL, .value = { .num = (int32_t)val } \
+    }
+```
+
+Move object around the centre of the parent object (e.g. around the circumference of a scale). Default: 0, inherited: No, layout: Yes, ext. draw: No.
+
+<span className="sr-only">Parameters</span>
+
+| Name | Description |
+|------|-------------|
+| `val` | Value to submit |
+
+
+</ApiMember>
+
+<ApiMember kind="macro" name="LV_STYLE_CONST_TRANSFORM_SCALE_X" file="misc/lv_style_gen.h" line={1321} url="https://github.com/lvgl/lvgl/blob/master/src/misc/lv_style_gen.h#L1321">
+
+### LV_STYLE_CONST_TRANSFORM_SCALE_X
+
+```c
+#define LV_STYLE_CONST_TRANSFORM_SCALE_X(val) \
+    { \
+        .prop = LV_STYLE_TRANSFORM_SCALE_X, .value = { .num = (int32_t)val } \
+    }
+```
+
+Zoom Widget horizontally. The value 256 (or <ApiLink name="LV_SCALE_NONE" />) means normal size, 128 half size, 512 double size, and so on. Default: 0, inherited: No, layout: Yes, ext. draw: Yes.
+
+<span className="sr-only">Parameters</span>
+
+| Name | Description |
+|------|-------------|
+| `val` | Value to submit |
+
+
+</ApiMember>
+
+<ApiMember kind="macro" name="LV_STYLE_CONST_TRANSFORM_SCALE_Y" file="misc/lv_style_gen.h" line={1332} url="https://github.com/lvgl/lvgl/blob/master/src/misc/lv_style_gen.h#L1332">
+
+### LV_STYLE_CONST_TRANSFORM_SCALE_Y
+
+```c
+#define LV_STYLE_CONST_TRANSFORM_SCALE_Y(val) \
+    { \
+        .prop = LV_STYLE_TRANSFORM_SCALE_Y, .value = { .num = (int32_t)val } \
+    }
+```
+
+Zoom Widget vertically. The value 256 (or <ApiLink name="LV_SCALE_NONE" />) means normal size, 128 half size, 512 double size, and so on. Default: 0, inherited: No, layout: Yes, ext. draw: Yes.
+
+<span className="sr-only">Parameters</span>
+
+| Name | Description |
+|------|-------------|
+| `val` | Value to submit |
+
+
+</ApiMember>
+
+<ApiMember kind="macro" name="LV_STYLE_CONST_TRANSFORM_ROTATION" file="misc/lv_style_gen.h" line={1342} url="https://github.com/lvgl/lvgl/blob/master/src/misc/lv_style_gen.h#L1342">
+
+### LV_STYLE_CONST_TRANSFORM_ROTATION
+
+```c
+#define LV_STYLE_CONST_TRANSFORM_ROTATION(val) \
+    { \
+        .prop = LV_STYLE_TRANSFORM_ROTATION, .value = { .num = (int32_t)val } \
+    }
+```
+
+Rotate Widget. The value is interpreted in 0.1 degree units. E.g. 450 means 45 deg. Default: 0, inherited: No, layout: Yes, ext. draw: Yes.
+
+<span className="sr-only">Parameters</span>
+
+| Name | Description |
+|------|-------------|
+| `val` | Value to submit |
+
+
+</ApiMember>
+
+<ApiMember kind="macro" name="LV_STYLE_CONST_TRANSFORM_PIVOT_X" file="misc/lv_style_gen.h" line={1352} url="https://github.com/lvgl/lvgl/blob/master/src/misc/lv_style_gen.h#L1352">
+
+### LV_STYLE_CONST_TRANSFORM_PIVOT_X
+
+```c
+#define LV_STYLE_CONST_TRANSFORM_PIVOT_X(val) \
+    { \
+        .prop = LV_STYLE_TRANSFORM_PIVOT_X, .value = { .num = (int32_t)val } \
+    }
+```
+
+Set pivot point's X coordinate for transformations. Relative to Widget's top left corner. Default: 0, inherited: No, layout: No, ext. draw: No.
+
+<span className="sr-only">Parameters</span>
+
+| Name | Description |
+|------|-------------|
+| `val` | Value to submit |
+
+
+</ApiMember>
+
+<ApiMember kind="macro" name="LV_STYLE_CONST_TRANSFORM_PIVOT_Y" file="misc/lv_style_gen.h" line={1362} url="https://github.com/lvgl/lvgl/blob/master/src/misc/lv_style_gen.h#L1362">
+
+### LV_STYLE_CONST_TRANSFORM_PIVOT_Y
+
+```c
+#define LV_STYLE_CONST_TRANSFORM_PIVOT_Y(val) \
+    { \
+        .prop = LV_STYLE_TRANSFORM_PIVOT_Y, .value = { .num = (int32_t)val } \
+    }
+```
+
+Set pivot point's Y coordinate for transformations. Relative to Widget's top left corner. Default: 0, inherited: No, layout: No, ext. draw: No.
+
+<span className="sr-only">Parameters</span>
+
+| Name | Description |
+|------|-------------|
+| `val` | Value to submit |
+
+
+</ApiMember>
+
+<ApiMember kind="macro" name="LV_STYLE_CONST_TRANSFORM_SKEW_X" file="misc/lv_style_gen.h" line={1373} url="https://github.com/lvgl/lvgl/blob/master/src/misc/lv_style_gen.h#L1373">
+
+### LV_STYLE_CONST_TRANSFORM_SKEW_X
+
+```c
+#define LV_STYLE_CONST_TRANSFORM_SKEW_X(val) \
+    { \
+        .prop = LV_STYLE_TRANSFORM_SKEW_X, .value = { .num = (int32_t)val } \
+    }
+```
+
+Skew Widget horizontally. The value is interpreted in 0.1 degree units. E.g. 450 means 45 deg. Default: 0, inherited: No, layout: Yes, ext. draw: Yes.
+
+<span className="sr-only">Parameters</span>
+
+| Name | Description |
+|------|-------------|
+| `val` | Value to submit |
+
+
+</ApiMember>
+
+<ApiMember kind="macro" name="LV_STYLE_CONST_TRANSFORM_SKEW_Y" file="misc/lv_style_gen.h" line={1384} url="https://github.com/lvgl/lvgl/blob/master/src/misc/lv_style_gen.h#L1384">
+
+### LV_STYLE_CONST_TRANSFORM_SKEW_Y
+
+```c
+#define LV_STYLE_CONST_TRANSFORM_SKEW_Y(val) \
+    { \
+        .prop = LV_STYLE_TRANSFORM_SKEW_Y, .value = { .num = (int32_t)val } \
+    }
+```
+
+Skew Widget vertically. The value is interpreted in 0.1 degree units. E.g. 450 means 45 deg. Default: 0, inherited: No, layout: Yes, ext. draw: Yes.
+
+<span className="sr-only">Parameters</span>
+
+| Name | Description |
+|------|-------------|
+| `val` | Value to submit |
+
+
+</ApiMember>
+
+<ApiMember kind="macro" name="LV_STYLE_CONST_PAD_TOP" file="misc/lv_style_gen.h" line={1394} url="https://github.com/lvgl/lvgl/blob/master/src/misc/lv_style_gen.h#L1394">
+
+### LV_STYLE_CONST_PAD_TOP
+
+```c
+#define LV_STYLE_CONST_PAD_TOP(val) \
+    { \
+        .prop = LV_STYLE_PAD_TOP, .value = { .num = (int32_t)val } \
+    }
+```
+
+Sets the padding on the top. It makes the content area smaller in this direction. Default: 0, inherited: No, layout: Yes, ext. draw: No.
+
+<span className="sr-only">Parameters</span>
+
+| Name | Description |
+|------|-------------|
+| `val` | Value to submit |
+
+
+</ApiMember>
+
+<ApiMember kind="macro" name="LV_STYLE_CONST_PAD_BOTTOM" file="misc/lv_style_gen.h" line={1404} url="https://github.com/lvgl/lvgl/blob/master/src/misc/lv_style_gen.h#L1404">
+
+### LV_STYLE_CONST_PAD_BOTTOM
+
+```c
+#define LV_STYLE_CONST_PAD_BOTTOM(val) \
+    { \
+        .prop = LV_STYLE_PAD_BOTTOM, .value = { .num = (int32_t)val } \
+    }
+```
+
+Sets the padding on the bottom. It makes the content area smaller in this direction. Default: 0, inherited: No, layout: Yes, ext. draw: No.
+
+<span className="sr-only">Parameters</span>
+
+| Name | Description |
+|------|-------------|
+| `val` | Value to submit |
+
+
+</ApiMember>
+
+<ApiMember kind="macro" name="LV_STYLE_CONST_PAD_LEFT" file="misc/lv_style_gen.h" line={1414} url="https://github.com/lvgl/lvgl/blob/master/src/misc/lv_style_gen.h#L1414">
+
+### LV_STYLE_CONST_PAD_LEFT
+
+```c
+#define LV_STYLE_CONST_PAD_LEFT(val) \
+    { \
+        .prop = LV_STYLE_PAD_LEFT, .value = { .num = (int32_t)val } \
+    }
+```
+
+Sets the padding on the left. It makes the content area smaller in this direction. Default: 0, inherited: No, layout: Yes, ext. draw: No.
+
+<span className="sr-only">Parameters</span>
+
+| Name | Description |
+|------|-------------|
+| `val` | Value to submit |
+
+
+</ApiMember>
+
+<ApiMember kind="macro" name="LV_STYLE_CONST_PAD_RIGHT" file="misc/lv_style_gen.h" line={1424} url="https://github.com/lvgl/lvgl/blob/master/src/misc/lv_style_gen.h#L1424">
+
+### LV_STYLE_CONST_PAD_RIGHT
+
+```c
+#define LV_STYLE_CONST_PAD_RIGHT(val) \
+    { \
+        .prop = LV_STYLE_PAD_RIGHT, .value = { .num = (int32_t)val } \
+    }
+```
+
+Sets the padding on the right. It makes the content area smaller in this direction. Default: 0, inherited: No, layout: Yes, ext. draw: No.
+
+<span className="sr-only">Parameters</span>
+
+| Name | Description |
+|------|-------------|
+| `val` | Value to submit |
+
+
+</ApiMember>
+
+<ApiMember kind="macro" name="LV_STYLE_CONST_PAD_ROW" file="misc/lv_style_gen.h" line={1434} url="https://github.com/lvgl/lvgl/blob/master/src/misc/lv_style_gen.h#L1434">
+
+### LV_STYLE_CONST_PAD_ROW
+
+```c
+#define LV_STYLE_CONST_PAD_ROW(val) \
+    { \
+        .prop = LV_STYLE_PAD_ROW, .value = { .num = (int32_t)val } \
+    }
+```
+
+Sets the padding between the rows. Used by the layouts. Default: 0, inherited: No, layout: Yes, ext. draw: No.
+
+<span className="sr-only">Parameters</span>
+
+| Name | Description |
+|------|-------------|
+| `val` | Value to submit |
+
+
+</ApiMember>
+
+<ApiMember kind="macro" name="LV_STYLE_CONST_PAD_COLUMN" file="misc/lv_style_gen.h" line={1444} url="https://github.com/lvgl/lvgl/blob/master/src/misc/lv_style_gen.h#L1444">
+
+### LV_STYLE_CONST_PAD_COLUMN
+
+```c
+#define LV_STYLE_CONST_PAD_COLUMN(val) \
+    { \
+        .prop = LV_STYLE_PAD_COLUMN, .value = { .num = (int32_t)val } \
+    }
+```
+
+Sets the padding between the columns. Used by the layouts. Default: 0, inherited: No, layout: Yes, ext. draw: No.
+
+<span className="sr-only">Parameters</span>
+
+| Name | Description |
+|------|-------------|
+| `val` | Value to submit |
+
+
+</ApiMember>
+
+<ApiMember kind="macro" name="LV_STYLE_CONST_PAD_RADIAL" file="misc/lv_style_gen.h" line={1454} url="https://github.com/lvgl/lvgl/blob/master/src/misc/lv_style_gen.h#L1454">
+
+### LV_STYLE_CONST_PAD_RADIAL
+
+```c
+#define LV_STYLE_CONST_PAD_RADIAL(val) \
+    { \
+        .prop = LV_STYLE_PAD_RADIAL, .value = { .num = (int32_t)val } \
+    }
+```
+
+Pad text labels away from the scale ticks/remainder of the `LV_PART_`. Default: 0, inherited: No, layout: No, ext. draw: No.
+
+<span className="sr-only">Parameters</span>
+
+| Name | Description |
+|------|-------------|
+| `val` | Value to submit |
+
+
+</ApiMember>
+
+<ApiMember kind="macro" name="LV_STYLE_CONST_MARGIN_TOP" file="misc/lv_style_gen.h" line={1464} url="https://github.com/lvgl/lvgl/blob/master/src/misc/lv_style_gen.h#L1464">
+
+### LV_STYLE_CONST_MARGIN_TOP
+
+```c
+#define LV_STYLE_CONST_MARGIN_TOP(val) \
+    { \
+        .prop = LV_STYLE_MARGIN_TOP, .value = { .num = (int32_t)val } \
+    }
+```
+
+Sets margin on the top. Widget will keep this space from its siblings in layouts. Default: 0, inherited: No, layout: Yes, ext. draw: No.
+
+<span className="sr-only">Parameters</span>
+
+| Name | Description |
+|------|-------------|
+| `val` | Value to submit |
+
+
+</ApiMember>
+
+<ApiMember kind="macro" name="LV_STYLE_CONST_MARGIN_BOTTOM" file="misc/lv_style_gen.h" line={1474} url="https://github.com/lvgl/lvgl/blob/master/src/misc/lv_style_gen.h#L1474">
+
+### LV_STYLE_CONST_MARGIN_BOTTOM
+
+```c
+#define LV_STYLE_CONST_MARGIN_BOTTOM(val) \
+    { \
+        .prop = LV_STYLE_MARGIN_BOTTOM, .value = { .num = (int32_t)val } \
+    }
+```
+
+Sets margin on the bottom. Widget will keep this space from its siblings in layouts. Default: 0, inherited: No, layout: Yes, ext. draw: No.
+
+<span className="sr-only">Parameters</span>
+
+| Name | Description |
+|------|-------------|
+| `val` | Value to submit |
+
+
+</ApiMember>
+
+<ApiMember kind="macro" name="LV_STYLE_CONST_MARGIN_LEFT" file="misc/lv_style_gen.h" line={1484} url="https://github.com/lvgl/lvgl/blob/master/src/misc/lv_style_gen.h#L1484">
+
+### LV_STYLE_CONST_MARGIN_LEFT
+
+```c
+#define LV_STYLE_CONST_MARGIN_LEFT(val) \
+    { \
+        .prop = LV_STYLE_MARGIN_LEFT, .value = { .num = (int32_t)val } \
+    }
+```
+
+Sets margin on the left. Widget will keep this space from its siblings in layouts. Default: 0, inherited: No, layout: Yes, ext. draw: No.
+
+<span className="sr-only">Parameters</span>
+
+| Name | Description |
+|------|-------------|
+| `val` | Value to submit |
+
+
+</ApiMember>
+
+<ApiMember kind="macro" name="LV_STYLE_CONST_MARGIN_RIGHT" file="misc/lv_style_gen.h" line={1494} url="https://github.com/lvgl/lvgl/blob/master/src/misc/lv_style_gen.h#L1494">
+
+### LV_STYLE_CONST_MARGIN_RIGHT
+
+```c
+#define LV_STYLE_CONST_MARGIN_RIGHT(val) \
+    { \
+        .prop = LV_STYLE_MARGIN_RIGHT, .value = { .num = (int32_t)val } \
+    }
+```
+
+Sets margin on the right. Widget will keep this space from its siblings in layouts. Default: 0, inherited: No, layout: Yes, ext. draw: No.
+
+<span className="sr-only">Parameters</span>
+
+| Name | Description |
+|------|-------------|
+| `val` | Value to submit |
+
+
+</ApiMember>
+
+<ApiMember kind="macro" name="LV_STYLE_CONST_BG_COLOR" file="misc/lv_style_gen.h" line={1504} url="https://github.com/lvgl/lvgl/blob/master/src/misc/lv_style_gen.h#L1504">
+
+### LV_STYLE_CONST_BG_COLOR
+
+```c
+#define LV_STYLE_CONST_BG_COLOR(val) \
+    { \
+        .prop = LV_STYLE_BG_COLOR, .value = { .color = val } \
+    }
+```
+
+Set background color of Widget. Default: `0xffffff`, inherited: No, layout: No, ext. draw: No.
+
+<span className="sr-only">Parameters</span>
+
+| Name | Description |
+|------|-------------|
+| `val` | Color to submit |
+
+
+</ApiMember>
+
+<ApiMember kind="macro" name="LV_STYLE_CONST_BG_OPA" file="misc/lv_style_gen.h" line={1516} url="https://github.com/lvgl/lvgl/blob/master/src/misc/lv_style_gen.h#L1516">
+
+### LV_STYLE_CONST_BG_OPA
+
+```c
+#define LV_STYLE_CONST_BG_OPA(val) \
+    { \
+        .prop = LV_STYLE_BG_OPA, .value = { .num = (int32_t)val } \
+    }
+```
+
+Set opacity of the background. Value 0, <ApiLink name="_lv_opacity_level_t" display="LV_OPA_0" /> or <ApiLink name="_lv_opacity_level_t" display="LV_OPA_TRANSP" /> means fully transparent, 255, <ApiLink name="_lv_opacity_level_t" display="LV_OPA_100" /> or <ApiLink name="_lv_opacity_level_t" display="LV_OPA_COVER" /> means fully covering, other values or LV_OPA_10, LV_OPA_20, etc means semi transparency. Default: <ApiLink name="_lv_opacity_level_t" display="LV_OPA_TRANSP" />, inherited: No, layout: No, ext. draw: No.
+
+<span className="sr-only">Parameters</span>
+
+| Name | Description |
+|------|-------------|
+| `val` | Value to submit |
+
+
+</ApiMember>
+
+<ApiMember kind="macro" name="LV_STYLE_CONST_BG_GRAD_COLOR" file="misc/lv_style_gen.h" line={1526} url="https://github.com/lvgl/lvgl/blob/master/src/misc/lv_style_gen.h#L1526">
+
+### LV_STYLE_CONST_BG_GRAD_COLOR
+
+```c
+#define LV_STYLE_CONST_BG_GRAD_COLOR(val) \
+    { \
+        .prop = LV_STYLE_BG_GRAD_COLOR, .value = { .color = val } \
+    }
+```
+
+Set gradient color of the background. Used only if `grad_dir` is not <ApiLink name="lv_grad_dir_t" display="LV_GRAD_DIR_NONE" />. Default: `0x000000`, inherited: No, layout: No, ext. draw: No.
+
+<span className="sr-only">Parameters</span>
+
+| Name | Description |
+|------|-------------|
+| `val` | Color to submit |
+
+
+</ApiMember>
+
+<ApiMember kind="macro" name="LV_STYLE_CONST_BG_GRAD_DIR" file="misc/lv_style_gen.h" line={1537} url="https://github.com/lvgl/lvgl/blob/master/src/misc/lv_style_gen.h#L1537">
+
+### LV_STYLE_CONST_BG_GRAD_DIR
+
+```c
+#define LV_STYLE_CONST_BG_GRAD_DIR(val) \
+    { \
+        .prop = LV_STYLE_BG_GRAD_DIR, .value = { .num = (int32_t)val } \
+    }
+```
+
+Set direction of the gradient of the background. Possible values are `LV_GRAD_DIR_NONE/HOR/VER`. Default: <ApiLink name="lv_grad_dir_t" display="LV_GRAD_DIR_NONE" />, inherited: No, layout: No, ext. draw: No.
+
+<span className="sr-only">Parameters</span>
+
+| Name | Description |
+|------|-------------|
+| `val` | Value to submit |
+
+
+</ApiMember>
+
+<ApiMember kind="macro" name="LV_STYLE_CONST_BG_MAIN_STOP" file="misc/lv_style_gen.h" line={1548} url="https://github.com/lvgl/lvgl/blob/master/src/misc/lv_style_gen.h#L1548">
+
+### LV_STYLE_CONST_BG_MAIN_STOP
+
+```c
+#define LV_STYLE_CONST_BG_MAIN_STOP(val) \
+    { \
+        .prop = LV_STYLE_BG_MAIN_STOP, .value = { .num = (int32_t)val } \
+    }
+```
+
+Set point from which background color should start for gradients. 0 means to top/left side, 255 the bottom/right side, 128 the center, and so on. Default: 0, inherited: No, layout: No, ext. draw: No.
+
+<span className="sr-only">Parameters</span>
+
+| Name | Description |
+|------|-------------|
+| `val` | Value to submit |
+
+
+</ApiMember>
+
+<ApiMember kind="macro" name="LV_STYLE_CONST_BG_GRAD_STOP" file="misc/lv_style_gen.h" line={1559} url="https://github.com/lvgl/lvgl/blob/master/src/misc/lv_style_gen.h#L1559">
+
+### LV_STYLE_CONST_BG_GRAD_STOP
+
+```c
+#define LV_STYLE_CONST_BG_GRAD_STOP(val) \
+    { \
+        .prop = LV_STYLE_BG_GRAD_STOP, .value = { .num = (int32_t)val } \
+    }
+```
+
+Set point from which background's gradient color should start. 0 means to top/left side, 255 the bottom/right side, 128 the center, and so on. Default: 255, inherited: No, layout: No, ext. draw: No.
+
+<span className="sr-only">Parameters</span>
+
+| Name | Description |
+|------|-------------|
+| `val` | Value to submit |
+
+
+</ApiMember>
+
+<ApiMember kind="macro" name="LV_STYLE_CONST_BG_MAIN_OPA" file="misc/lv_style_gen.h" line={1569} url="https://github.com/lvgl/lvgl/blob/master/src/misc/lv_style_gen.h#L1569">
+
+### LV_STYLE_CONST_BG_MAIN_OPA
+
+```c
+#define LV_STYLE_CONST_BG_MAIN_OPA(val) \
+    { \
+        .prop = LV_STYLE_BG_MAIN_OPA, .value = { .num = (int32_t)val } \
+    }
+```
+
+Set opacity of the first gradient color. Default: 255, inherited: No, layout: No, ext. draw: No.
+
+<span className="sr-only">Parameters</span>
+
+| Name | Description |
+|------|-------------|
+| `val` | Value to submit |
+
+
+</ApiMember>
+
+<ApiMember kind="macro" name="LV_STYLE_CONST_BG_GRAD_OPA" file="misc/lv_style_gen.h" line={1579} url="https://github.com/lvgl/lvgl/blob/master/src/misc/lv_style_gen.h#L1579">
+
+### LV_STYLE_CONST_BG_GRAD_OPA
+
+```c
+#define LV_STYLE_CONST_BG_GRAD_OPA(val) \
+    { \
+        .prop = LV_STYLE_BG_GRAD_OPA, .value = { .num = (int32_t)val } \
+    }
+```
+
+Set opacity of the second gradient color. Default: 255, inherited: No, layout: No, ext. draw: No.
+
+<span className="sr-only">Parameters</span>
+
+| Name | Description |
+|------|-------------|
+| `val` | Value to submit |
+
+
+</ApiMember>
+
+<ApiMember kind="macro" name="LV_STYLE_CONST_BG_GRAD" file="misc/lv_style_gen.h" line={1592} url="https://github.com/lvgl/lvgl/blob/master/src/misc/lv_style_gen.h#L1592">
+
+### LV_STYLE_CONST_BG_GRAD
+
+```c
+#define LV_STYLE_CONST_BG_GRAD(val) \
+    { \
+        .prop = LV_STYLE_BG_GRAD, .value = { .ptr = val } \
+    }
+```
+
+Set gradient definition. The pointed instance must exist while Widget is alive. NULL to disable. It wraps `BG_GRAD_COLOR`, `BG_GRAD_DIR`, `BG_MAIN_STOP` and `BG_GRAD_STOP` into one descriptor and allows creating gradients with more colors as well. If it's set other gradient related properties will be ignored. Default: `NULL`, inherited: No, layout: No, ext. draw: No.
+
+<span className="sr-only">Parameters</span>
+
+| Name | Description |
+|------|-------------|
+| `val` | Pointer to gradient descriptor |
+
+
+</ApiMember>
+
+<ApiMember kind="macro" name="LV_STYLE_CONST_BG_IMAGE_SRC" file="misc/lv_style_gen.h" line={1603} url="https://github.com/lvgl/lvgl/blob/master/src/misc/lv_style_gen.h#L1603">
+
+### LV_STYLE_CONST_BG_IMAGE_SRC
+
+```c
+#define LV_STYLE_CONST_BG_IMAGE_SRC(val) \
+    { \
+        .prop = LV_STYLE_BG_IMAGE_SRC, .value = { .ptr = val } \
+    }
+```
+
+Set a background image. Can be a pointer to <ApiLink name="lv_image_dsc_t" />, a path to a file or an `LV_SYMBOL_...`. Default: `NULL`, inherited: No, layout: No, ext. draw: Yes.
+
+<span className="sr-only">Parameters</span>
+
+| Name | Description |
+|------|-------------|
+| `val` | Pointer to image source |
+
+
+</ApiMember>
+
+<ApiMember kind="macro" name="LV_STYLE_CONST_BG_IMAGE_OPA" file="misc/lv_style_gen.h" line={1615} url="https://github.com/lvgl/lvgl/blob/master/src/misc/lv_style_gen.h#L1615">
+
+### LV_STYLE_CONST_BG_IMAGE_OPA
+
+```c
+#define LV_STYLE_CONST_BG_IMAGE_OPA(val) \
+    { \
+        .prop = LV_STYLE_BG_IMAGE_OPA, .value = { .num = (int32_t)val } \
+    }
+```
+
+Set opacity of the background image. Value 0, <ApiLink name="_lv_opacity_level_t" display="LV_OPA_0" /> or <ApiLink name="_lv_opacity_level_t" display="LV_OPA_TRANSP" /> means fully transparent, 255, <ApiLink name="_lv_opacity_level_t" display="LV_OPA_100" /> or <ApiLink name="_lv_opacity_level_t" display="LV_OPA_COVER" /> means fully covering, other values or LV_OPA_10, LV_OPA_20, etc means semi transparency. Default: <ApiLink name="_lv_opacity_level_t" display="LV_OPA_COVER" />, inherited: No, layout: No, ext. draw: No.
+
+<span className="sr-only">Parameters</span>
+
+| Name | Description |
+|------|-------------|
+| `val` | Value to submit |
+
+
+</ApiMember>
+
+<ApiMember kind="macro" name="LV_STYLE_CONST_BG_IMAGE_RECOLOR" file="misc/lv_style_gen.h" line={1625} url="https://github.com/lvgl/lvgl/blob/master/src/misc/lv_style_gen.h#L1625">
+
+### LV_STYLE_CONST_BG_IMAGE_RECOLOR
+
+```c
+#define LV_STYLE_CONST_BG_IMAGE_RECOLOR(val) \
+    { \
+        .prop = LV_STYLE_BG_IMAGE_RECOLOR, .value = { .color = val } \
+    }
+```
+
+Set a color to mix to the background image. Default: `0x000000`, inherited: No, layout: No, ext. draw: No.
+
+<span className="sr-only">Parameters</span>
+
+| Name | Description |
+|------|-------------|
+| `val` | Color to submit |
+
+
+</ApiMember>
+
+<ApiMember kind="macro" name="LV_STYLE_CONST_BG_IMAGE_RECOLOR_OPA" file="misc/lv_style_gen.h" line={1638} url="https://github.com/lvgl/lvgl/blob/master/src/misc/lv_style_gen.h#L1638">
+
+### LV_STYLE_CONST_BG_IMAGE_RECOLOR_OPA
+
+```c
+#define LV_STYLE_CONST_BG_IMAGE_RECOLOR_OPA(val) \
+    { \
+        .prop = LV_STYLE_BG_IMAGE_RECOLOR_OPA, .value = { .num = (int32_t)val } \
+    }
+```
+
+Set intensity of background image recoloring. Value 0, <ApiLink name="_lv_opacity_level_t" display="LV_OPA_0" /> or <ApiLink name="_lv_opacity_level_t" display="LV_OPA_TRANSP" /> means no mixing, 255, <ApiLink name="_lv_opacity_level_t" display="LV_OPA_100" /> or <ApiLink name="_lv_opacity_level_t" display="LV_OPA_COVER" /> means full recoloring, other values or LV_OPA_10, LV_OPA_20, etc are interpreted proportionally. Default: <ApiLink name="_lv_opacity_level_t" display="LV_OPA_TRANSP" />, inherited: No, layout: No, ext. draw: No.
+
+<span className="sr-only">Parameters</span>
+
+| Name | Description |
+|------|-------------|
+| `val` | Value to submit |
+
+
+</ApiMember>
+
+<ApiMember kind="macro" name="LV_STYLE_CONST_BG_IMAGE_TILED" file="misc/lv_style_gen.h" line={1648} url="https://github.com/lvgl/lvgl/blob/master/src/misc/lv_style_gen.h#L1648">
+
+### LV_STYLE_CONST_BG_IMAGE_TILED
+
+```c
+#define LV_STYLE_CONST_BG_IMAGE_TILED(val) \
+    { \
+        .prop = LV_STYLE_BG_IMAGE_TILED, .value = { .num = (int32_t)val } \
+    }
+```
+
+If enabled the background image will be tiled. Possible values are <ApiLink name="true" /> or <ApiLink name="false" />. Default: 0, inherited: No, layout: No, ext. draw: No.
+
+<span className="sr-only">Parameters</span>
+
+| Name | Description |
+|------|-------------|
+| `val` | Value to submit |
+
+
+</ApiMember>
+
+<ApiMember kind="macro" name="LV_STYLE_CONST_BORDER_COLOR" file="misc/lv_style_gen.h" line={1658} url="https://github.com/lvgl/lvgl/blob/master/src/misc/lv_style_gen.h#L1658">
+
+### LV_STYLE_CONST_BORDER_COLOR
+
+```c
+#define LV_STYLE_CONST_BORDER_COLOR(val) \
+    { \
+        .prop = LV_STYLE_BORDER_COLOR, .value = { .color = val } \
+    }
+```
+
+Set color of the border. Default: `0x000000`, inherited: No, layout: No, ext. draw: No.
+
+<span className="sr-only">Parameters</span>
+
+| Name | Description |
+|------|-------------|
+| `val` | Color to submit |
+
+
+</ApiMember>
+
+<ApiMember kind="macro" name="LV_STYLE_CONST_BORDER_OPA" file="misc/lv_style_gen.h" line={1670} url="https://github.com/lvgl/lvgl/blob/master/src/misc/lv_style_gen.h#L1670">
+
+### LV_STYLE_CONST_BORDER_OPA
+
+```c
+#define LV_STYLE_CONST_BORDER_OPA(val) \
+    { \
+        .prop = LV_STYLE_BORDER_OPA, .value = { .num = (int32_t)val } \
+    }
+```
+
+Set opacity of the border. Value 0, <ApiLink name="_lv_opacity_level_t" display="LV_OPA_0" /> or <ApiLink name="_lv_opacity_level_t" display="LV_OPA_TRANSP" /> means fully transparent, 255, <ApiLink name="_lv_opacity_level_t" display="LV_OPA_100" /> or <ApiLink name="_lv_opacity_level_t" display="LV_OPA_COVER" /> means fully covering, other values or LV_OPA_10, LV_OPA_20, etc means semi transparency. Default: <ApiLink name="_lv_opacity_level_t" display="LV_OPA_COVER" />, inherited: No, layout: No, ext. draw: No.
+
+<span className="sr-only">Parameters</span>
+
+| Name | Description |
+|------|-------------|
+| `val` | Value to submit |
+
+
+</ApiMember>
+
+<ApiMember kind="macro" name="LV_STYLE_CONST_BORDER_WIDTH" file="misc/lv_style_gen.h" line={1680} url="https://github.com/lvgl/lvgl/blob/master/src/misc/lv_style_gen.h#L1680">
+
+### LV_STYLE_CONST_BORDER_WIDTH
+
+```c
+#define LV_STYLE_CONST_BORDER_WIDTH(val) \
+    { \
+        .prop = LV_STYLE_BORDER_WIDTH, .value = { .num = (int32_t)val } \
+    }
+```
+
+Set width of the border. Only pixel values can be used. Default: 0, inherited: No, layout: Yes, ext. draw: No.
+
+<span className="sr-only">Parameters</span>
+
+| Name | Description |
+|------|-------------|
+| `val` | Value to submit |
+
+
+</ApiMember>
+
+<ApiMember kind="macro" name="LV_STYLE_CONST_BORDER_SIDE" file="misc/lv_style_gen.h" line={1692} url="https://github.com/lvgl/lvgl/blob/master/src/misc/lv_style_gen.h#L1692">
+
+### LV_STYLE_CONST_BORDER_SIDE
+
+```c
+#define LV_STYLE_CONST_BORDER_SIDE(val) \
+    { \
+        .prop = LV_STYLE_BORDER_SIDE, .value = { .num = (int32_t)val } \
+    }
+```
+
+Set only which side(s) the border should be drawn. Possible values are `LV_BORDER_SIDE_NONE/TOP/BOTTOM/LEFT/RIGHT/INTERNAL`. OR-ed values can be used as well, e.g. <ApiLink name="lv_border_side_t" display="LV_BORDER_SIDE_TOP" />` | `<ApiLink name="lv_border_side_t" display="LV_BORDER_SIDE_LEFT" />. Default: <ApiLink name="lv_border_side_t" display="LV_BORDER_SIDE_FULL" />, inherited: No, layout: No, ext. draw: No.
+
+<span className="sr-only">Parameters</span>
+
+| Name | Description |
+|------|-------------|
+| `val` | Value to submit |
+
+
+</ApiMember>
+
+<ApiMember kind="macro" name="LV_STYLE_CONST_BORDER_POST" file="misc/lv_style_gen.h" line={1703} url="https://github.com/lvgl/lvgl/blob/master/src/misc/lv_style_gen.h#L1703">
+
+### LV_STYLE_CONST_BORDER_POST
+
+```c
+#define LV_STYLE_CONST_BORDER_POST(val) \
+    { \
+        .prop = LV_STYLE_BORDER_POST, .value = { .num = (int32_t)val } \
+    }
+```
+
+Sets whether the border should be drawn before or after the children are drawn. <ApiLink name="true" />: after children, <ApiLink name="false" />: before children. Default: 0, inherited: No, layout: No, ext. draw: No.
+
+<span className="sr-only">Parameters</span>
+
+| Name | Description |
+|------|-------------|
+| `val` | Value to submit |
+
+
+</ApiMember>
+
+<ApiMember kind="macro" name="LV_STYLE_CONST_OUTLINE_WIDTH" file="misc/lv_style_gen.h" line={1713} url="https://github.com/lvgl/lvgl/blob/master/src/misc/lv_style_gen.h#L1713">
+
+### LV_STYLE_CONST_OUTLINE_WIDTH
+
+```c
+#define LV_STYLE_CONST_OUTLINE_WIDTH(val) \
+    { \
+        .prop = LV_STYLE_OUTLINE_WIDTH, .value = { .num = (int32_t)val } \
+    }
+```
+
+Set width of outline in pixels. Default: 0, inherited: No, layout: No, ext. draw: Yes.
+
+<span className="sr-only">Parameters</span>
+
+| Name | Description |
+|------|-------------|
+| `val` | Value to submit |
+
+
+</ApiMember>
+
+<ApiMember kind="macro" name="LV_STYLE_CONST_OUTLINE_COLOR" file="misc/lv_style_gen.h" line={1723} url="https://github.com/lvgl/lvgl/blob/master/src/misc/lv_style_gen.h#L1723">
+
+### LV_STYLE_CONST_OUTLINE_COLOR
+
+```c
+#define LV_STYLE_CONST_OUTLINE_COLOR(val) \
+    { \
+        .prop = LV_STYLE_OUTLINE_COLOR, .value = { .color = val } \
+    }
+```
+
+Set color of outline. Default: `0x000000`, inherited: No, layout: No, ext. draw: No.
+
+<span className="sr-only">Parameters</span>
+
+| Name | Description |
+|------|-------------|
+| `val` | Color to submit |
+
+
+</ApiMember>
+
+<ApiMember kind="macro" name="LV_STYLE_CONST_OUTLINE_OPA" file="misc/lv_style_gen.h" line={1735} url="https://github.com/lvgl/lvgl/blob/master/src/misc/lv_style_gen.h#L1735">
+
+### LV_STYLE_CONST_OUTLINE_OPA
+
+```c
+#define LV_STYLE_CONST_OUTLINE_OPA(val) \
+    { \
+        .prop = LV_STYLE_OUTLINE_OPA, .value = { .num = (int32_t)val } \
+    }
+```
+
+Set opacity of outline. Value 0, <ApiLink name="_lv_opacity_level_t" display="LV_OPA_0" /> or <ApiLink name="_lv_opacity_level_t" display="LV_OPA_TRANSP" /> means fully transparent, 255, <ApiLink name="_lv_opacity_level_t" display="LV_OPA_100" /> or <ApiLink name="_lv_opacity_level_t" display="LV_OPA_COVER" /> means fully covering, other values or LV_OPA_10, LV_OPA_20, etc means semi transparency. Default: <ApiLink name="_lv_opacity_level_t" display="LV_OPA_COVER" />, inherited: No, layout: No, ext. draw: Yes.
+
+<span className="sr-only">Parameters</span>
+
+| Name | Description |
+|------|-------------|
+| `val` | Value to submit |
+
+
+</ApiMember>
+
+<ApiMember kind="macro" name="LV_STYLE_CONST_OUTLINE_PAD" file="misc/lv_style_gen.h" line={1745} url="https://github.com/lvgl/lvgl/blob/master/src/misc/lv_style_gen.h#L1745">
+
+### LV_STYLE_CONST_OUTLINE_PAD
+
+```c
+#define LV_STYLE_CONST_OUTLINE_PAD(val) \
+    { \
+        .prop = LV_STYLE_OUTLINE_PAD, .value = { .num = (int32_t)val } \
+    }
+```
+
+Set padding of outline, i.e. the gap between Widget and the outline. Default: 0, inherited: No, layout: No, ext. draw: Yes.
+
+<span className="sr-only">Parameters</span>
+
+| Name | Description |
+|------|-------------|
+| `val` | Value to submit |
+
+
+</ApiMember>
+
+<ApiMember kind="macro" name="LV_STYLE_CONST_SHADOW_WIDTH" file="misc/lv_style_gen.h" line={1755} url="https://github.com/lvgl/lvgl/blob/master/src/misc/lv_style_gen.h#L1755">
+
+### LV_STYLE_CONST_SHADOW_WIDTH
+
+```c
+#define LV_STYLE_CONST_SHADOW_WIDTH(val) \
+    { \
+        .prop = LV_STYLE_SHADOW_WIDTH, .value = { .num = (int32_t)val } \
+    }
+```
+
+Set width of the shadow in pixels. The value should be >= 0. Default: 0, inherited: No, layout: No, ext. draw: Yes.
+
+<span className="sr-only">Parameters</span>
+
+| Name | Description |
+|------|-------------|
+| `val` | Value to submit |
+
+
+</ApiMember>
+
+<ApiMember kind="macro" name="LV_STYLE_CONST_SHADOW_OFFSET_X" file="misc/lv_style_gen.h" line={1765} url="https://github.com/lvgl/lvgl/blob/master/src/misc/lv_style_gen.h#L1765">
+
+### LV_STYLE_CONST_SHADOW_OFFSET_X
+
+```c
+#define LV_STYLE_CONST_SHADOW_OFFSET_X(val) \
+    { \
+        .prop = LV_STYLE_SHADOW_OFFSET_X, .value = { .num = (int32_t)val } \
+    }
+```
+
+Set an offset on the shadow in pixels in X direction. Default: 0, inherited: No, layout: No, ext. draw: Yes.
+
+<span className="sr-only">Parameters</span>
+
+| Name | Description |
+|------|-------------|
+| `val` | Value to submit |
+
+
+</ApiMember>
+
+<ApiMember kind="macro" name="LV_STYLE_CONST_SHADOW_OFFSET_Y" file="misc/lv_style_gen.h" line={1775} url="https://github.com/lvgl/lvgl/blob/master/src/misc/lv_style_gen.h#L1775">
+
+### LV_STYLE_CONST_SHADOW_OFFSET_Y
+
+```c
+#define LV_STYLE_CONST_SHADOW_OFFSET_Y(val) \
+    { \
+        .prop = LV_STYLE_SHADOW_OFFSET_Y, .value = { .num = (int32_t)val } \
+    }
+```
+
+Set an offset on the shadow in pixels in Y direction. Default: 0, inherited: No, layout: No, ext. draw: Yes.
+
+<span className="sr-only">Parameters</span>
+
+| Name | Description |
+|------|-------------|
+| `val` | Value to submit |
+
+
+</ApiMember>
+
+<ApiMember kind="macro" name="LV_STYLE_CONST_SHADOW_SPREAD" file="misc/lv_style_gen.h" line={1786} url="https://github.com/lvgl/lvgl/blob/master/src/misc/lv_style_gen.h#L1786">
+
+### LV_STYLE_CONST_SHADOW_SPREAD
+
+```c
+#define LV_STYLE_CONST_SHADOW_SPREAD(val) \
+    { \
+        .prop = LV_STYLE_SHADOW_SPREAD, .value = { .num = (int32_t)val } \
+    }
+```
+
+Make shadow calculation to use a larger or smaller rectangle as base. The value can be in pixels to make the area larger/smaller. Default: 0, inherited: No, layout: No, ext. draw: Yes.
+
+<span className="sr-only">Parameters</span>
+
+| Name | Description |
+|------|-------------|
+| `val` | Value to submit |
+
+
+</ApiMember>
+
+<ApiMember kind="macro" name="LV_STYLE_CONST_SHADOW_COLOR" file="misc/lv_style_gen.h" line={1796} url="https://github.com/lvgl/lvgl/blob/master/src/misc/lv_style_gen.h#L1796">
+
+### LV_STYLE_CONST_SHADOW_COLOR
+
+```c
+#define LV_STYLE_CONST_SHADOW_COLOR(val) \
+    { \
+        .prop = LV_STYLE_SHADOW_COLOR, .value = { .color = val } \
+    }
+```
+
+Set color of shadow. Default: `0x000000`, inherited: No, layout: No, ext. draw: No.
+
+<span className="sr-only">Parameters</span>
+
+| Name | Description |
+|------|-------------|
+| `val` | Color to submit |
+
+
+</ApiMember>
+
+<ApiMember kind="macro" name="LV_STYLE_CONST_SHADOW_OPA" file="misc/lv_style_gen.h" line={1808} url="https://github.com/lvgl/lvgl/blob/master/src/misc/lv_style_gen.h#L1808">
+
+### LV_STYLE_CONST_SHADOW_OPA
+
+```c
+#define LV_STYLE_CONST_SHADOW_OPA(val) \
+    { \
+        .prop = LV_STYLE_SHADOW_OPA, .value = { .num = (int32_t)val } \
+    }
+```
+
+Set opacity of shadow. Value 0, <ApiLink name="_lv_opacity_level_t" display="LV_OPA_0" /> or <ApiLink name="_lv_opacity_level_t" display="LV_OPA_TRANSP" /> means fully transparent, 255, <ApiLink name="_lv_opacity_level_t" display="LV_OPA_100" /> or <ApiLink name="_lv_opacity_level_t" display="LV_OPA_COVER" /> means fully covering, other values or LV_OPA_10, LV_OPA_20, etc means semi transparency. Default: <ApiLink name="_lv_opacity_level_t" display="LV_OPA_COVER" />, inherited: No, layout: No, ext. draw: Yes.
+
+<span className="sr-only">Parameters</span>
+
+| Name | Description |
+|------|-------------|
+| `val` | Value to submit |
+
+
+</ApiMember>
+
+<ApiMember kind="macro" name="LV_STYLE_CONST_IMAGE_OPA" file="misc/lv_style_gen.h" line={1820} url="https://github.com/lvgl/lvgl/blob/master/src/misc/lv_style_gen.h#L1820">
+
+### LV_STYLE_CONST_IMAGE_OPA
+
+```c
+#define LV_STYLE_CONST_IMAGE_OPA(val) \
+    { \
+        .prop = LV_STYLE_IMAGE_OPA, .value = { .num = (int32_t)val } \
+    }
+```
+
+Set opacity of an image. Value 0, <ApiLink name="_lv_opacity_level_t" display="LV_OPA_0" /> or <ApiLink name="_lv_opacity_level_t" display="LV_OPA_TRANSP" /> means fully transparent, 255, <ApiLink name="_lv_opacity_level_t" display="LV_OPA_100" /> or <ApiLink name="_lv_opacity_level_t" display="LV_OPA_COVER" /> means fully covering, other values or LV_OPA_10, LV_OPA_20, etc means semi transparency. Default: <ApiLink name="_lv_opacity_level_t" display="LV_OPA_COVER" />, inherited: No, layout: No, ext. draw: No.
+
+<span className="sr-only">Parameters</span>
+
+| Name | Description |
+|------|-------------|
+| `val` | Value to submit |
+
+
+</ApiMember>
+
+<ApiMember kind="macro" name="LV_STYLE_CONST_IMAGE_RECOLOR" file="misc/lv_style_gen.h" line={1830} url="https://github.com/lvgl/lvgl/blob/master/src/misc/lv_style_gen.h#L1830">
+
+### LV_STYLE_CONST_IMAGE_RECOLOR
+
+```c
+#define LV_STYLE_CONST_IMAGE_RECOLOR(val) \
+    { \
+        .prop = LV_STYLE_IMAGE_RECOLOR, .value = { .color = val } \
+    }
+```
+
+Set color to mix with the image. Default: `0x000000`, inherited: No, layout: No, ext. draw: No.
+
+<span className="sr-only">Parameters</span>
+
+| Name | Description |
+|------|-------------|
+| `val` | Color to submit |
+
+
+</ApiMember>
+
+<ApiMember kind="macro" name="LV_STYLE_CONST_IMAGE_RECOLOR_OPA" file="misc/lv_style_gen.h" line={1842} url="https://github.com/lvgl/lvgl/blob/master/src/misc/lv_style_gen.h#L1842">
+
+### LV_STYLE_CONST_IMAGE_RECOLOR_OPA
+
+```c
+#define LV_STYLE_CONST_IMAGE_RECOLOR_OPA(val) \
+    { \
+        .prop = LV_STYLE_IMAGE_RECOLOR_OPA, .value = { .num = (int32_t)val } \
+    }
+```
+
+Set intensity of color mixing. Value 0, <ApiLink name="_lv_opacity_level_t" display="LV_OPA_0" /> or <ApiLink name="_lv_opacity_level_t" display="LV_OPA_TRANSP" /> means fully transparent, 255, <ApiLink name="_lv_opacity_level_t" display="LV_OPA_100" /> or <ApiLink name="_lv_opacity_level_t" display="LV_OPA_COVER" /> means fully covering, other values or LV_OPA_10, LV_OPA_20, etc means semi transparency. Default: 0, inherited: No, layout: No, ext. draw: No.
+
+<span className="sr-only">Parameters</span>
+
+| Name | Description |
+|------|-------------|
+| `val` | Value to submit |
+
+
+</ApiMember>
+
+<ApiMember kind="macro" name="LV_STYLE_CONST_IMAGE_COLORKEY" file="misc/lv_style_gen.h" line={1854} url="https://github.com/lvgl/lvgl/blob/master/src/misc/lv_style_gen.h#L1854">
+
+### LV_STYLE_CONST_IMAGE_COLORKEY
+
+```c
+#define LV_STYLE_CONST_IMAGE_COLORKEY(val) \
+    { \
+        .prop = LV_STYLE_IMAGE_COLORKEY, .value = { .ptr = val } \
+    }
+```
+
+Set image colorkey definition. The <ApiLink name="lv_image_colorkey_t" /> contains two color values: `high_color` and `low_color`. the color of pixels ranging from `low_color` to `high_color` will be transparent. Default: `NULL`, inherited: No, layout: No, ext. draw: No.
+
+<span className="sr-only">Parameters</span>
+
+| Name | Description |
+|------|-------------|
+| `val` | Pointer to image color key |
+
+
+</ApiMember>
+
+<ApiMember kind="macro" name="LV_STYLE_CONST_LINE_WIDTH" file="misc/lv_style_gen.h" line={1864} url="https://github.com/lvgl/lvgl/blob/master/src/misc/lv_style_gen.h#L1864">
+
+### LV_STYLE_CONST_LINE_WIDTH
+
+```c
+#define LV_STYLE_CONST_LINE_WIDTH(val) \
+    { \
+        .prop = LV_STYLE_LINE_WIDTH, .value = { .num = (int32_t)val } \
+    }
+```
+
+Set width of lines in pixels. Default: 0, inherited: No, layout: No, ext. draw: Yes.
+
+<span className="sr-only">Parameters</span>
+
+| Name | Description |
+|------|-------------|
+| `val` | Value to submit |
+
+
+</ApiMember>
+
+<ApiMember kind="macro" name="LV_STYLE_CONST_LINE_DASH_WIDTH" file="misc/lv_style_gen.h" line={1874} url="https://github.com/lvgl/lvgl/blob/master/src/misc/lv_style_gen.h#L1874">
+
+### LV_STYLE_CONST_LINE_DASH_WIDTH
+
+```c
+#define LV_STYLE_CONST_LINE_DASH_WIDTH(val) \
+    { \
+        .prop = LV_STYLE_LINE_DASH_WIDTH, .value = { .num = (int32_t)val } \
+    }
+```
+
+Set width of dashes in pixels. Note that dash works only on horizontal and vertical lines. Default: 0, inherited: No, layout: No, ext. draw: No.
+
+<span className="sr-only">Parameters</span>
+
+| Name | Description |
+|------|-------------|
+| `val` | Value to submit |
+
+
+</ApiMember>
+
+<ApiMember kind="macro" name="LV_STYLE_CONST_LINE_DASH_GAP" file="misc/lv_style_gen.h" line={1885} url="https://github.com/lvgl/lvgl/blob/master/src/misc/lv_style_gen.h#L1885">
+
+### LV_STYLE_CONST_LINE_DASH_GAP
+
+```c
+#define LV_STYLE_CONST_LINE_DASH_GAP(val) \
+    { \
+        .prop = LV_STYLE_LINE_DASH_GAP, .value = { .num = (int32_t)val } \
+    }
+```
+
+Set gap between dashes in pixels. Note that dash works only on horizontal and vertical lines. Default: 0, inherited: No, layout: No, ext. draw: No.
+
+<span className="sr-only">Parameters</span>
+
+| Name | Description |
+|------|-------------|
+| `val` | Value to submit |
+
+
+</ApiMember>
+
+<ApiMember kind="macro" name="LV_STYLE_CONST_LINE_ROUNDED" file="misc/lv_style_gen.h" line={1895} url="https://github.com/lvgl/lvgl/blob/master/src/misc/lv_style_gen.h#L1895">
+
+### LV_STYLE_CONST_LINE_ROUNDED
+
+```c
+#define LV_STYLE_CONST_LINE_ROUNDED(val) \
+    { \
+        .prop = LV_STYLE_LINE_ROUNDED, .value = { .num = (int32_t)val } \
+    }
+```
+
+Make end points of the lines rounded. <ApiLink name="true" />: rounded, <ApiLink name="false" />: perpendicular line ending. Default: 0, inherited: No, layout: No, ext. draw: No.
+
+<span className="sr-only">Parameters</span>
+
+| Name | Description |
+|------|-------------|
+| `val` | Value to submit |
+
+
+</ApiMember>
+
+<ApiMember kind="macro" name="LV_STYLE_CONST_LINE_COLOR" file="misc/lv_style_gen.h" line={1905} url="https://github.com/lvgl/lvgl/blob/master/src/misc/lv_style_gen.h#L1905">
+
+### LV_STYLE_CONST_LINE_COLOR
+
+```c
+#define LV_STYLE_CONST_LINE_COLOR(val) \
+    { \
+        .prop = LV_STYLE_LINE_COLOR, .value = { .color = val } \
+    }
+```
+
+Set color of lines. Default: `0x000000`, inherited: No, layout: No, ext. draw: No.
+
+<span className="sr-only">Parameters</span>
+
+| Name | Description |
+|------|-------------|
+| `val` | Color to submit |
+
+
+</ApiMember>
+
+<ApiMember kind="macro" name="LV_STYLE_CONST_LINE_OPA" file="misc/lv_style_gen.h" line={1915} url="https://github.com/lvgl/lvgl/blob/master/src/misc/lv_style_gen.h#L1915">
+
+### LV_STYLE_CONST_LINE_OPA
+
+```c
+#define LV_STYLE_CONST_LINE_OPA(val) \
+    { \
+        .prop = LV_STYLE_LINE_OPA, .value = { .num = (int32_t)val } \
+    }
+```
+
+Set opacity of lines. Default: <ApiLink name="_lv_opacity_level_t" display="LV_OPA_COVER" />, inherited: No, layout: No, ext. draw: No.
+
+<span className="sr-only">Parameters</span>
+
+| Name | Description |
+|------|-------------|
+| `val` | Value to submit |
+
+
+</ApiMember>
+
+<ApiMember kind="macro" name="LV_STYLE_CONST_ARC_WIDTH" file="misc/lv_style_gen.h" line={1925} url="https://github.com/lvgl/lvgl/blob/master/src/misc/lv_style_gen.h#L1925">
+
+### LV_STYLE_CONST_ARC_WIDTH
+
+```c
+#define LV_STYLE_CONST_ARC_WIDTH(val) \
+    { \
+        .prop = LV_STYLE_ARC_WIDTH, .value = { .num = (int32_t)val } \
+    }
+```
+
+Set width (thickness) of arcs in pixels. Default: 0, inherited: No, layout: No, ext. draw: Yes.
+
+<span className="sr-only">Parameters</span>
+
+| Name | Description |
+|------|-------------|
+| `val` | Value to submit |
+
+
+</ApiMember>
+
+<ApiMember kind="macro" name="LV_STYLE_CONST_ARC_ROUNDED" file="misc/lv_style_gen.h" line={1935} url="https://github.com/lvgl/lvgl/blob/master/src/misc/lv_style_gen.h#L1935">
+
+### LV_STYLE_CONST_ARC_ROUNDED
+
+```c
+#define LV_STYLE_CONST_ARC_ROUNDED(val) \
+    { \
+        .prop = LV_STYLE_ARC_ROUNDED, .value = { .num = (int32_t)val } \
+    }
+```
+
+Make end points of arcs rounded. <ApiLink name="true" />: rounded, <ApiLink name="false" />: perpendicular line ending. Default: 0, inherited: No, layout: No, ext. draw: No.
+
+<span className="sr-only">Parameters</span>
+
+| Name | Description |
+|------|-------------|
+| `val` | Value to submit |
+
+
+</ApiMember>
+
+<ApiMember kind="macro" name="LV_STYLE_CONST_ARC_COLOR" file="misc/lv_style_gen.h" line={1945} url="https://github.com/lvgl/lvgl/blob/master/src/misc/lv_style_gen.h#L1945">
+
+### LV_STYLE_CONST_ARC_COLOR
+
+```c
+#define LV_STYLE_CONST_ARC_COLOR(val) \
+    { \
+        .prop = LV_STYLE_ARC_COLOR, .value = { .color = val } \
+    }
+```
+
+Set color of arc. Default: `0x000000`, inherited: No, layout: No, ext. draw: No.
+
+<span className="sr-only">Parameters</span>
+
+| Name | Description |
+|------|-------------|
+| `val` | Color to submit |
+
+
+</ApiMember>
+
+<ApiMember kind="macro" name="LV_STYLE_CONST_ARC_OPA" file="misc/lv_style_gen.h" line={1955} url="https://github.com/lvgl/lvgl/blob/master/src/misc/lv_style_gen.h#L1955">
+
+### LV_STYLE_CONST_ARC_OPA
+
+```c
+#define LV_STYLE_CONST_ARC_OPA(val) \
+    { \
+        .prop = LV_STYLE_ARC_OPA, .value = { .num = (int32_t)val } \
+    }
+```
+
+Set opacity of arcs. Default: <ApiLink name="_lv_opacity_level_t" display="LV_OPA_COVER" />, inherited: No, layout: No, ext. draw: No.
+
+<span className="sr-only">Parameters</span>
+
+| Name | Description |
+|------|-------------|
+| `val` | Value to submit |
+
+
+</ApiMember>
+
+<ApiMember kind="macro" name="LV_STYLE_CONST_ARC_IMAGE_SRC" file="misc/lv_style_gen.h" line={1966} url="https://github.com/lvgl/lvgl/blob/master/src/misc/lv_style_gen.h#L1966">
+
+### LV_STYLE_CONST_ARC_IMAGE_SRC
+
+```c
+#define LV_STYLE_CONST_ARC_IMAGE_SRC(val) \
+    { \
+        .prop = LV_STYLE_ARC_IMAGE_SRC, .value = { .ptr = val } \
+    }
+```
+
+Set an image from which arc will be masked out. It's useful to display complex effects on the arcs. Can be a pointer to <ApiLink name="lv_image_dsc_t" /> or a path to a file. Default: `NULL`, inherited: No, layout: No, ext. draw: No.
+
+<span className="sr-only">Parameters</span>
+
+| Name | Description |
+|------|-------------|
+| `val` | Pointer to image source |
+
+
+</ApiMember>
+
+<ApiMember kind="macro" name="LV_STYLE_CONST_TEXT_COLOR" file="misc/lv_style_gen.h" line={1976} url="https://github.com/lvgl/lvgl/blob/master/src/misc/lv_style_gen.h#L1976">
+
+### LV_STYLE_CONST_TEXT_COLOR
+
+```c
+#define LV_STYLE_CONST_TEXT_COLOR(val) \
+    { \
+        .prop = LV_STYLE_TEXT_COLOR, .value = { .color = val } \
+    }
+```
+
+Sets color of text. Default: `0x000000`, inherited: Yes, layout: No, ext. draw: No.
+
+<span className="sr-only">Parameters</span>
+
+| Name | Description |
+|------|-------------|
+| `val` | Color to submit |
+
+
+</ApiMember>
+
+<ApiMember kind="macro" name="LV_STYLE_CONST_TEXT_OPA" file="misc/lv_style_gen.h" line={1988} url="https://github.com/lvgl/lvgl/blob/master/src/misc/lv_style_gen.h#L1988">
+
+### LV_STYLE_CONST_TEXT_OPA
+
+```c
+#define LV_STYLE_CONST_TEXT_OPA(val) \
+    { \
+        .prop = LV_STYLE_TEXT_OPA, .value = { .num = (int32_t)val } \
+    }
+```
+
+Set opacity of text. Value 0, <ApiLink name="_lv_opacity_level_t" display="LV_OPA_0" /> or <ApiLink name="_lv_opacity_level_t" display="LV_OPA_TRANSP" /> means fully transparent, 255, <ApiLink name="_lv_opacity_level_t" display="LV_OPA_100" /> or <ApiLink name="_lv_opacity_level_t" display="LV_OPA_COVER" /> means fully covering, other values or LV_OPA_10, LV_OPA_20, etc means semi transparency. Default: <ApiLink name="_lv_opacity_level_t" display="LV_OPA_COVER" />, inherited: Yes, layout: No, ext. draw: No.
+
+<span className="sr-only">Parameters</span>
+
+| Name | Description |
+|------|-------------|
+| `val` | Value to submit |
+
+
+</ApiMember>
+
+<ApiMember kind="macro" name="LV_STYLE_CONST_TEXT_FONT" file="misc/lv_style_gen.h" line={1998} url="https://github.com/lvgl/lvgl/blob/master/src/misc/lv_style_gen.h#L1998">
+
+### LV_STYLE_CONST_TEXT_FONT
+
+```c
+#define LV_STYLE_CONST_TEXT_FONT(val) \
+    { \
+        .prop = LV_STYLE_TEXT_FONT, .value = { .ptr = val } \
+    }
+```
+
+Set font of text (a pointer <ApiLink name="lv_font_t" />` *`). Default: <ApiLink name="LV_FONT_DEFAULT" />, inherited: Yes, layout: Yes, ext. draw: No.
+
+<span className="sr-only">Parameters</span>
+
+| Name | Description |
+|------|-------------|
+| `val` | Pointer to font |
+
+
+</ApiMember>
+
+<ApiMember kind="macro" name="LV_STYLE_CONST_TEXT_LETTER_SPACE" file="misc/lv_style_gen.h" line={2008} url="https://github.com/lvgl/lvgl/blob/master/src/misc/lv_style_gen.h#L2008">
+
+### LV_STYLE_CONST_TEXT_LETTER_SPACE
+
+```c
+#define LV_STYLE_CONST_TEXT_LETTER_SPACE(val) \
+    { \
+        .prop = LV_STYLE_TEXT_LETTER_SPACE, .value = { .num = (int32_t)val } \
+    }
+```
+
+Set letter space in pixels. Default: 0, inherited: Yes, layout: Yes, ext. draw: No.
+
+<span className="sr-only">Parameters</span>
+
+| Name | Description |
+|------|-------------|
+| `val` | Value to submit |
+
+
+</ApiMember>
+
+<ApiMember kind="macro" name="LV_STYLE_CONST_TEXT_LINE_SPACE" file="misc/lv_style_gen.h" line={2018} url="https://github.com/lvgl/lvgl/blob/master/src/misc/lv_style_gen.h#L2018">
+
+### LV_STYLE_CONST_TEXT_LINE_SPACE
+
+```c
+#define LV_STYLE_CONST_TEXT_LINE_SPACE(val) \
+    { \
+        .prop = LV_STYLE_TEXT_LINE_SPACE, .value = { .num = (int32_t)val } \
+    }
+```
+
+Set line space in pixels. Default: 0, inherited: Yes, layout: Yes, ext. draw: No.
+
+<span className="sr-only">Parameters</span>
+
+| Name | Description |
+|------|-------------|
+| `val` | Value to submit |
+
+
+</ApiMember>
+
+<ApiMember kind="macro" name="LV_STYLE_CONST_TEXT_DECOR" file="misc/lv_style_gen.h" line={2029} url="https://github.com/lvgl/lvgl/blob/master/src/misc/lv_style_gen.h#L2029">
+
+### LV_STYLE_CONST_TEXT_DECOR
+
+```c
+#define LV_STYLE_CONST_TEXT_DECOR(val) \
+    { \
+        .prop = LV_STYLE_TEXT_DECOR, .value = { .num = (int32_t)val } \
+    }
+```
+
+Set decoration for the text. Possible values are `LV_TEXT_DECOR_NONE/UNDERLINE/STRIKETHROUGH`. OR-ed values can be used as well. Default: <ApiLink name="lv_text_decor_t" display="LV_TEXT_DECOR_NONE" />, inherited: Yes, layout: No, ext. draw: No.
+
+<span className="sr-only">Parameters</span>
+
+| Name | Description |
+|------|-------------|
+| `val` | Value to submit |
+
+
+</ApiMember>
+
+<ApiMember kind="macro" name="LV_STYLE_CONST_TEXT_ALIGN" file="misc/lv_style_gen.h" line={2042} url="https://github.com/lvgl/lvgl/blob/master/src/misc/lv_style_gen.h#L2042">
+
+### LV_STYLE_CONST_TEXT_ALIGN
+
+```c
+#define LV_STYLE_CONST_TEXT_ALIGN(val) \
+    { \
+        .prop = LV_STYLE_TEXT_ALIGN, .value = { .num = (int32_t)val } \
+    }
+```
+
+Set how to align the lines of the text. Note that it doesn't align the Widget itself, only the lines inside the Widget. Possible values are `LV_TEXT_ALIGN_LEFT/CENTER/RIGHT/AUTO`. <ApiLink name="lv_text_align_t" display="LV_TEXT_ALIGN_AUTO" /> detect the text base direction and uses left or right alignment accordingly. Default: <ApiLink name="lv_text_align_t" display="LV_TEXT_ALIGN_AUTO" />, inherited: Yes, layout: Yes, ext. draw: No.
+
+<span className="sr-only">Parameters</span>
+
+| Name | Description |
+|------|-------------|
+| `val` | Value to submit |
+
+
+</ApiMember>
+
+<ApiMember kind="macro" name="LV_STYLE_CONST_TEXT_OUTLINE_STROKE_COLOR" file="misc/lv_style_gen.h" line={2052} url="https://github.com/lvgl/lvgl/blob/master/src/misc/lv_style_gen.h#L2052">
+
+### LV_STYLE_CONST_TEXT_OUTLINE_STROKE_COLOR
+
+```c
+#define LV_STYLE_CONST_TEXT_OUTLINE_STROKE_COLOR(val) \
+    { \
+        .prop = LV_STYLE_TEXT_OUTLINE_STROKE_COLOR, .value = { .color = val } \
+    }
+```
+
+Sets the color of letter outline stroke. Default: `0x000000`, inherited: Yes, layout: No, ext. draw: No.
+
+<span className="sr-only">Parameters</span>
+
+| Name | Description |
+|------|-------------|
+| `val` | Color to submit |
+
+
+</ApiMember>
+
+<ApiMember kind="macro" name="LV_STYLE_CONST_TEXT_OUTLINE_STROKE_WIDTH" file="misc/lv_style_gen.h" line={2062} url="https://github.com/lvgl/lvgl/blob/master/src/misc/lv_style_gen.h#L2062">
+
+### LV_STYLE_CONST_TEXT_OUTLINE_STROKE_WIDTH
+
+```c
+#define LV_STYLE_CONST_TEXT_OUTLINE_STROKE_WIDTH(val) \
+    { \
+        .prop = LV_STYLE_TEXT_OUTLINE_STROKE_WIDTH, .value = { .num = (int32_t)val } \
+    }
+```
+
+Set the letter outline stroke width in pixels. Default: 0, inherited: Yes, layout: Yes, ext. draw: No.
+
+<span className="sr-only">Parameters</span>
+
+| Name | Description |
+|------|-------------|
+| `val` | Value to submit |
+
+
+</ApiMember>
+
+<ApiMember kind="macro" name="LV_STYLE_CONST_TEXT_OUTLINE_STROKE_OPA" file="misc/lv_style_gen.h" line={2074} url="https://github.com/lvgl/lvgl/blob/master/src/misc/lv_style_gen.h#L2074">
+
+### LV_STYLE_CONST_TEXT_OUTLINE_STROKE_OPA
+
+```c
+#define LV_STYLE_CONST_TEXT_OUTLINE_STROKE_OPA(val) \
+    { \
+        .prop = LV_STYLE_TEXT_OUTLINE_STROKE_OPA, .value = { .num = (int32_t)val } \
+    }
+```
+
+Set the opacity of the letter outline stroke. Value 0, <ApiLink name="_lv_opacity_level_t" display="LV_OPA_0" /> or <ApiLink name="_lv_opacity_level_t" display="LV_OPA_TRANSP" /> means fully transparent, 255, <ApiLink name="_lv_opacity_level_t" display="LV_OPA_100" /> or <ApiLink name="_lv_opacity_level_t" display="LV_OPA_COVER" /> means fully covering, other values or LV_OPA_10, LV_OPA_20, etc means semi transparency. Default: <ApiLink name="_lv_opacity_level_t" display="LV_OPA_COVER" />, inherited: Yes, layout: No, ext. draw: No.
+
+<span className="sr-only">Parameters</span>
+
+| Name | Description |
+|------|-------------|
+| `val` | Value to submit |
+
+
+</ApiMember>
+
+<ApiMember kind="macro" name="LV_STYLE_CONST_BLUR_RADIUS" file="misc/lv_style_gen.h" line={2085} url="https://github.com/lvgl/lvgl/blob/master/src/misc/lv_style_gen.h#L2085">
+
+### LV_STYLE_CONST_BLUR_RADIUS
+
+```c
+#define LV_STYLE_CONST_BLUR_RADIUS(val) \
+    { \
+        .prop = LV_STYLE_BLUR_RADIUS, .value = { .num = (int32_t)val } \
+    }
+```
+
+Sets the intensity of blurring. Applied on each lv_part separately before the children are rendered. Default: `0`, inherited: No, layout: No, ext. draw: No.
+
+<span className="sr-only">Parameters</span>
+
+| Name | Description |
+|------|-------------|
+| `val` | Value to submit |
+
+
+</ApiMember>
+
+<ApiMember kind="macro" name="LV_STYLE_CONST_BLUR_BACKDROP" file="misc/lv_style_gen.h" line={2097} url="https://github.com/lvgl/lvgl/blob/master/src/misc/lv_style_gen.h#L2097">
+
+### LV_STYLE_CONST_BLUR_BACKDROP
+
+```c
+#define LV_STYLE_CONST_BLUR_BACKDROP(val) \
+    { \
+        .prop = LV_STYLE_BLUR_BACKDROP, .value = { .num = (int32_t)val } \
+    }
+```
+
+If <ApiLink name="true" /> the background of the widget will be blurred. The part should have \< 100% opacity to make it visible. If <ApiLink name="false" /> the given part will be blurred when it's rendered but before drawing the children. Default: <ApiLink name="false" />, inherited: No, layout: No, ext. draw: No.
+
+<span className="sr-only">Parameters</span>
+
+| Name | Description |
+|------|-------------|
+| `val` | Value to submit |
+
+
+</ApiMember>
+
+<ApiMember kind="macro" name="LV_STYLE_CONST_BLUR_QUALITY" file="misc/lv_style_gen.h" line={2109} url="https://github.com/lvgl/lvgl/blob/master/src/misc/lv_style_gen.h#L2109">
+
+### LV_STYLE_CONST_BLUR_QUALITY
+
+```c
+#define LV_STYLE_CONST_BLUR_QUALITY(val) \
+    { \
+        .prop = LV_STYLE_BLUR_QUALITY, .value = { .num = (int32_t)val } \
+    }
+```
+
+Setting to <ApiLink name="lv_blur_quality_t" display="LV_BLUR_QUALITY_SPEED" /> the blurring algorithm will prefer speed over quality. <ApiLink name="lv_blur_quality_t" display="LV_BLUR_QUALITY_PRECISION" /> will force using higher quality but slower blur. With <ApiLink name="lv_blur_quality_t" display="LV_BLUR_QUALITY_AUTO" /> the quality will be selected automatically. Default: <ApiLink name="lv_blur_quality_t" display="LV_BLUR_QUALITY_AUTO" />, inherited: No, layout: No, ext. draw: No.
+
+<span className="sr-only">Parameters</span>
+
+| Name | Description |
+|------|-------------|
+| `val` | Value to submit |
+
+
+</ApiMember>
+
+<ApiMember kind="macro" name="LV_STYLE_CONST_DROP_SHADOW_RADIUS" file="misc/lv_style_gen.h" line={2120} url="https://github.com/lvgl/lvgl/blob/master/src/misc/lv_style_gen.h#L2120">
+
+### LV_STYLE_CONST_DROP_SHADOW_RADIUS
+
+```c
+#define LV_STYLE_CONST_DROP_SHADOW_RADIUS(val) \
+    { \
+        .prop = LV_STYLE_DROP_SHADOW_RADIUS, .value = { .num = (int32_t)val } \
+    }
+```
+
+Sets the intensity of blurring. Applied on each lv_part separately before the children are rendered. Default: `0`, inherited: No, layout: No, ext. draw: Yes.
+
+<span className="sr-only">Parameters</span>
+
+| Name | Description |
+|------|-------------|
+| `val` | Value to submit |
+
+
+</ApiMember>
+
+<ApiMember kind="macro" name="LV_STYLE_CONST_DROP_SHADOW_OFFSET_X" file="misc/lv_style_gen.h" line={2130} url="https://github.com/lvgl/lvgl/blob/master/src/misc/lv_style_gen.h#L2130">
+
+### LV_STYLE_CONST_DROP_SHADOW_OFFSET_X
+
+```c
+#define LV_STYLE_CONST_DROP_SHADOW_OFFSET_X(val) \
+    { \
+        .prop = LV_STYLE_DROP_SHADOW_OFFSET_X, .value = { .num = (int32_t)val } \
+    }
+```
+
+Set an offset on the shadow in pixels in X direction. Default: `0`, inherited: No, layout: No, ext. draw: Yes.
+
+<span className="sr-only">Parameters</span>
+
+| Name | Description |
+|------|-------------|
+| `val` | Value to submit |
+
+
+</ApiMember>
+
+<ApiMember kind="macro" name="LV_STYLE_CONST_DROP_SHADOW_OFFSET_Y" file="misc/lv_style_gen.h" line={2140} url="https://github.com/lvgl/lvgl/blob/master/src/misc/lv_style_gen.h#L2140">
+
+### LV_STYLE_CONST_DROP_SHADOW_OFFSET_Y
+
+```c
+#define LV_STYLE_CONST_DROP_SHADOW_OFFSET_Y(val) \
+    { \
+        .prop = LV_STYLE_DROP_SHADOW_OFFSET_Y, .value = { .num = (int32_t)val } \
+    }
+```
+
+Set an offset on the shadow in pixels in Y direction. Default: `0`, inherited: No, layout: No, ext. draw: Yes.
+
+<span className="sr-only">Parameters</span>
+
+| Name | Description |
+|------|-------------|
+| `val` | Value to submit |
+
+
+</ApiMember>
+
+<ApiMember kind="macro" name="LV_STYLE_CONST_DROP_SHADOW_COLOR" file="misc/lv_style_gen.h" line={2150} url="https://github.com/lvgl/lvgl/blob/master/src/misc/lv_style_gen.h#L2150">
+
+### LV_STYLE_CONST_DROP_SHADOW_COLOR
+
+```c
+#define LV_STYLE_CONST_DROP_SHADOW_COLOR(val) \
+    { \
+        .prop = LV_STYLE_DROP_SHADOW_COLOR, .value = { .color = val } \
+    }
+```
+
+Set the color of the shadow. Default: `0`, inherited: No, layout: No, ext. draw: No.
+
+<span className="sr-only">Parameters</span>
+
+| Name | Description |
+|------|-------------|
+| `val` | Color to submit |
+
+
+</ApiMember>
+
+<ApiMember kind="macro" name="LV_STYLE_CONST_DROP_SHADOW_OPA" file="misc/lv_style_gen.h" line={2160} url="https://github.com/lvgl/lvgl/blob/master/src/misc/lv_style_gen.h#L2160">
+
+### LV_STYLE_CONST_DROP_SHADOW_OPA
+
+```c
+#define LV_STYLE_CONST_DROP_SHADOW_OPA(val) \
+    { \
+        .prop = LV_STYLE_DROP_SHADOW_OPA, .value = { .num = (int32_t)val } \
+    }
+```
+
+Set the opacity of the shadow. Default: `0`, inherited: No, layout: No, ext. draw: No.
+
+<span className="sr-only">Parameters</span>
+
+| Name | Description |
+|------|-------------|
+| `val` | Value to submit |
+
+
+</ApiMember>
+
+<ApiMember kind="macro" name="LV_STYLE_CONST_DROP_SHADOW_QUALITY" file="misc/lv_style_gen.h" line={2172} url="https://github.com/lvgl/lvgl/blob/master/src/misc/lv_style_gen.h#L2172">
+
+### LV_STYLE_CONST_DROP_SHADOW_QUALITY
+
+```c
+#define LV_STYLE_CONST_DROP_SHADOW_QUALITY(val) \
+    { \
+        .prop = LV_STYLE_DROP_SHADOW_QUALITY, .value = { .num = (int32_t)val } \
+    }
+```
+
+Setting to <ApiLink name="lv_blur_quality_t" display="LV_BLUR_QUALITY_SPEED" /> the blurring algorithm will prefer speed over quality. <ApiLink name="lv_blur_quality_t" display="LV_BLUR_QUALITY_PRECISION" /> will force using higher quality but slower blur. With <ApiLink name="lv_blur_quality_t" display="LV_BLUR_QUALITY_AUTO" /> the quality will be selected automatically. Default: <ApiLink name="lv_blur_quality_t" display="LV_BLUR_QUALITY_PRECISION" />, inherited: No, layout: No, ext. draw: No.
+
+<span className="sr-only">Parameters</span>
+
+| Name | Description |
+|------|-------------|
+| `val` | Value to submit |
+
+
+</ApiMember>
+
+<ApiMember kind="macro" name="LV_STYLE_CONST_RADIUS" file="misc/lv_style_gen.h" line={2183} url="https://github.com/lvgl/lvgl/blob/master/src/misc/lv_style_gen.h#L2183">
+
+### LV_STYLE_CONST_RADIUS
+
+```c
+#define LV_STYLE_CONST_RADIUS(val) \
+    { \
+        .prop = LV_STYLE_RADIUS, .value = { .num = (int32_t)val } \
+    }
+```
+
+Set radius on every corner. The value is interpreted in pixels (>= 0) or <ApiLink name="LV_RADIUS_CIRCLE" /> for max radius. Default: 0, inherited: No, layout: No, ext. draw: No.
+
+<span className="sr-only">Parameters</span>
+
+| Name | Description |
+|------|-------------|
+| `val` | Value to submit |
+
+
+</ApiMember>
+
+<ApiMember kind="macro" name="LV_STYLE_CONST_RADIAL_OFFSET" file="misc/lv_style_gen.h" line={2193} url="https://github.com/lvgl/lvgl/blob/master/src/misc/lv_style_gen.h#L2193">
+
+### LV_STYLE_CONST_RADIAL_OFFSET
+
+```c
+#define LV_STYLE_CONST_RADIAL_OFFSET(val) \
+    { \
+        .prop = LV_STYLE_RADIAL_OFFSET, .value = { .num = (int32_t)val } \
+    }
+```
+
+Move start point of object (e.g. scale tick) radially. Default: 0, inherited: No, layout: No, ext. draw: No.
+
+<span className="sr-only">Parameters</span>
+
+| Name | Description |
+|------|-------------|
+| `val` | Value to submit |
+
+
+</ApiMember>
+
+<ApiMember kind="macro" name="LV_STYLE_CONST_CLIP_CORNER" file="misc/lv_style_gen.h" line={2204} url="https://github.com/lvgl/lvgl/blob/master/src/misc/lv_style_gen.h#L2204">
+
+### LV_STYLE_CONST_CLIP_CORNER
+
+```c
+#define LV_STYLE_CONST_CLIP_CORNER(val) \
+    { \
+        .prop = LV_STYLE_CLIP_CORNER, .value = { .num = (int32_t)val } \
+    }
+```
+
+Enable clipping of content that overflows rounded corners of parent Widget. Can be <ApiLink name="true" /> or <ApiLink name="false" />. Default: 0, inherited: No, layout: No, ext. draw: No.
+
+<span className="sr-only">Parameters</span>
+
+| Name | Description |
+|------|-------------|
+| `val` | Value to submit |
+
+
+</ApiMember>
+
+<ApiMember kind="macro" name="LV_STYLE_CONST_OPA" file="misc/lv_style_gen.h" line={2216} url="https://github.com/lvgl/lvgl/blob/master/src/misc/lv_style_gen.h#L2216">
+
+### LV_STYLE_CONST_OPA
+
+```c
+#define LV_STYLE_CONST_OPA(val) \
+    { \
+        .prop = LV_STYLE_OPA, .value = { .num = (int32_t)val } \
+    }
+```
+
+Scale down all opacity values of the Widget by this factor. Value 0, <ApiLink name="_lv_opacity_level_t" display="LV_OPA_0" /> or <ApiLink name="_lv_opacity_level_t" display="LV_OPA_TRANSP" /> means fully transparent, 255, <ApiLink name="_lv_opacity_level_t" display="LV_OPA_100" /> or <ApiLink name="_lv_opacity_level_t" display="LV_OPA_COVER" /> means fully covering, other values or LV_OPA_10, LV_OPA_20, etc means semi transparency. Default: <ApiLink name="_lv_opacity_level_t" display="LV_OPA_COVER" />, inherited: Yes, layout: No, ext. draw: No.
+
+<span className="sr-only">Parameters</span>
+
+| Name | Description |
+|------|-------------|
+| `val` | Value to submit |
+
+
+</ApiMember>
+
+<ApiMember kind="macro" name="LV_STYLE_CONST_OPA_LAYERED" file="misc/lv_style_gen.h" line={2229} url="https://github.com/lvgl/lvgl/blob/master/src/misc/lv_style_gen.h#L2229">
+
+### LV_STYLE_CONST_OPA_LAYERED
+
+```c
+#define LV_STYLE_CONST_OPA_LAYERED(val) \
+    { \
+        .prop = LV_STYLE_OPA_LAYERED, .value = { .num = (int32_t)val } \
+    }
+```
+
+First draw Widget on the layer, then scale down layer opacity factor. Value 0, <ApiLink name="_lv_opacity_level_t" display="LV_OPA_0" /> or <ApiLink name="_lv_opacity_level_t" display="LV_OPA_TRANSP" /> means fully transparent, 255, <ApiLink name="_lv_opacity_level_t" display="LV_OPA_100" /> or <ApiLink name="_lv_opacity_level_t" display="LV_OPA_COVER" /> means fully covering, other values or LV_OPA_10, LV_OPA_20, etc means semi transparency. Default: <ApiLink name="_lv_opacity_level_t" display="LV_OPA_COVER" />, inherited: Yes, layout: No, ext. draw: No.
+
+<span className="sr-only">Parameters</span>
+
+| Name | Description |
+|------|-------------|
+| `val` | Value to submit |
+
+
+</ApiMember>
+
+<ApiMember kind="macro" name="LV_STYLE_CONST_COLOR_FILTER_DSC" file="misc/lv_style_gen.h" line={2239} url="https://github.com/lvgl/lvgl/blob/master/src/misc/lv_style_gen.h#L2239">
+
+### LV_STYLE_CONST_COLOR_FILTER_DSC
+
+```c
+#define LV_STYLE_CONST_COLOR_FILTER_DSC(val) \
+    { \
+        .prop = LV_STYLE_COLOR_FILTER_DSC, .value = { .ptr = val } \
+    }
+```
+
+Mix a color with all colors of the Widget. Default: `NULL`, inherited: No, layout: No, ext. draw: No.
+
+<span className="sr-only">Parameters</span>
+
+| Name | Description |
+|------|-------------|
+| `val` | Pointer to color-filter descriptor |
+
+
+</ApiMember>
+
+<ApiMember kind="macro" name="LV_STYLE_CONST_COLOR_FILTER_OPA" file="misc/lv_style_gen.h" line={2249} url="https://github.com/lvgl/lvgl/blob/master/src/misc/lv_style_gen.h#L2249">
+
+### LV_STYLE_CONST_COLOR_FILTER_OPA
+
+```c
+#define LV_STYLE_CONST_COLOR_FILTER_OPA(val) \
+    { \
+        .prop = LV_STYLE_COLOR_FILTER_OPA, .value = { .num = (int32_t)val } \
+    }
+```
+
+The intensity of mixing of color filter. Default: <ApiLink name="_lv_opacity_level_t" display="LV_OPA_TRANSP" />, inherited: No, layout: No, ext. draw: No.
+
+<span className="sr-only">Parameters</span>
+
+| Name | Description |
+|------|-------------|
+| `val` | Value to submit |
+
+
+</ApiMember>
+
+<ApiMember kind="macro" name="LV_STYLE_CONST_RECOLOR" file="misc/lv_style_gen.h" line={2259} url="https://github.com/lvgl/lvgl/blob/master/src/misc/lv_style_gen.h#L2259">
+
+### LV_STYLE_CONST_RECOLOR
+
+```c
+#define LV_STYLE_CONST_RECOLOR(val) \
+    { \
+        .prop = LV_STYLE_RECOLOR, .value = { .color = val } \
+    }
+```
+
+Set a color to mix to the obj. Default: `0x000000`, inherited: No, layout: No, ext. draw: No.
+
+<span className="sr-only">Parameters</span>
+
+| Name | Description |
+|------|-------------|
+| `val` | Color to submit |
+
+
+</ApiMember>
+
+<ApiMember kind="macro" name="LV_STYLE_CONST_RECOLOR_OPA" file="misc/lv_style_gen.h" line={2272} url="https://github.com/lvgl/lvgl/blob/master/src/misc/lv_style_gen.h#L2272">
+
+### LV_STYLE_CONST_RECOLOR_OPA
+
+```c
+#define LV_STYLE_CONST_RECOLOR_OPA(val) \
+    { \
+        .prop = LV_STYLE_RECOLOR_OPA, .value = { .num = (int32_t)val } \
+    }
+```
+
+Sets the intensity of color mixing. Value 0, <ApiLink name="_lv_opacity_level_t" display="LV_OPA_0" /> or <ApiLink name="_lv_opacity_level_t" display="LV_OPA_TRANSP" /> means fully transparent. A value of 255, <ApiLink name="_lv_opacity_level_t" display="LV_OPA_100" /> or <ApiLink name="_lv_opacity_level_t" display="LV_OPA_COVER" /> means fully opaque. Intermediate values like LV_OPA_10, LV_OPA_20, etc result in semi-transparency. Default: <ApiLink name="_lv_opacity_level_t" display="LV_OPA_TRANSP" />, inherited: No, layout: No, ext. draw: No.
+
+<span className="sr-only">Parameters</span>
+
+| Name | Description |
+|------|-------------|
+| `val` | Value to submit |
+
+
+</ApiMember>
+
+<ApiMember kind="macro" name="LV_STYLE_CONST_ANIM" file="misc/lv_style_gen.h" line={2285} url="https://github.com/lvgl/lvgl/blob/master/src/misc/lv_style_gen.h#L2285">
+
+### LV_STYLE_CONST_ANIM
+
+```c
+#define LV_STYLE_CONST_ANIM(val) \
+    { \
+        .prop = LV_STYLE_ANIM, .value = { .ptr = val } \
+    }
+```
+
+Animation template for Widget's animation. Should be a pointer to <ApiLink name="lv_anim_t" />. The animation parameters are widget specific, e.g. animation time could be the E.g. blink time of the cursor on the Text Area or scroll time of a roller. See Widgets' documentation to learn more. Default: `NULL`, inherited: No, layout: No, ext. draw: No.
+
+<span className="sr-only">Parameters</span>
+
+| Name | Description |
+|------|-------------|
+| `val` | Pointer to animation descriptor |
+
+
+</ApiMember>
+
+<ApiMember kind="macro" name="LV_STYLE_CONST_ANIM_DURATION" file="misc/lv_style_gen.h" line={2297} url="https://github.com/lvgl/lvgl/blob/master/src/misc/lv_style_gen.h#L2297">
+
+### LV_STYLE_CONST_ANIM_DURATION
+
+```c
+#define LV_STYLE_CONST_ANIM_DURATION(val) \
+    { \
+        .prop = LV_STYLE_ANIM_DURATION, .value = { .num = (int32_t)val } \
+    }
+```
+
+Animation duration in milliseconds. Its meaning is widget specific. E.g. blink time of the cursor on the Text Area or scroll time of a roller. See Widgets' documentation to learn more. Default: 0, inherited: No, layout: No, ext. draw: No.
+
+<span className="sr-only">Parameters</span>
+
+| Name | Description |
+|------|-------------|
+| `val` | Value to submit |
+
+
+</ApiMember>
+
+<ApiMember kind="macro" name="LV_STYLE_CONST_TRANSITION" file="misc/lv_style_gen.h" line={2307} url="https://github.com/lvgl/lvgl/blob/master/src/misc/lv_style_gen.h#L2307">
+
+### LV_STYLE_CONST_TRANSITION
+
+```c
+#define LV_STYLE_CONST_TRANSITION(val) \
+    { \
+        .prop = LV_STYLE_TRANSITION, .value = { .ptr = val } \
+    }
+```
+
+An initialized <ApiLink name="lv_style_transition_dsc_t" /> to describe a transition. Default: `NULL`, inherited: No, layout: No, ext. draw: No.
+
+<span className="sr-only">Parameters</span>
+
+| Name | Description |
+|------|-------------|
+| `val` | Pointer to transition descriptor |
+
+
+</ApiMember>
+
+<ApiMember kind="macro" name="LV_STYLE_CONST_BLEND_MODE" file="misc/lv_style_gen.h" line={2318} url="https://github.com/lvgl/lvgl/blob/master/src/misc/lv_style_gen.h#L2318">
+
+### LV_STYLE_CONST_BLEND_MODE
+
+```c
+#define LV_STYLE_CONST_BLEND_MODE(val) \
+    { \
+        .prop = LV_STYLE_BLEND_MODE, .value = { .num = (int32_t)val } \
+    }
+```
+
+Describes how to blend the colors to the background. Possible values are `LV_BLEND_MODE_NORMAL/ADDITIVE/SUBTRACTIVE/MULTIPLY/DIFFERENCE`. Default: <ApiLink name="lv_blend_mode_t" display="LV_BLEND_MODE_NORMAL" />, inherited: No, layout: No, ext. draw: No.
+
+<span className="sr-only">Parameters</span>
+
+| Name | Description |
+|------|-------------|
+| `val` | Value to submit |
+
+
+</ApiMember>
+
+<ApiMember kind="macro" name="LV_STYLE_CONST_LAYOUT" file="misc/lv_style_gen.h" line={2329} url="https://github.com/lvgl/lvgl/blob/master/src/misc/lv_style_gen.h#L2329">
+
+### LV_STYLE_CONST_LAYOUT
+
+```c
+#define LV_STYLE_CONST_LAYOUT(val) \
+    { \
+        .prop = LV_STYLE_LAYOUT, .value = { .num = (int32_t)val } \
+    }
+```
+
+Set layout of Widget. Children will be repositioned and resized according to policies set for the layout. For possible values see documentation of the layouts. Default: 0, inherited: No, layout: Yes, ext. draw: No.
+
+<span className="sr-only">Parameters</span>
+
+| Name | Description |
+|------|-------------|
+| `val` | Value to submit |
+
+
+</ApiMember>
+
+<ApiMember kind="macro" name="LV_STYLE_CONST_BASE_DIR" file="misc/lv_style_gen.h" line={2339} url="https://github.com/lvgl/lvgl/blob/master/src/misc/lv_style_gen.h#L2339">
+
+### LV_STYLE_CONST_BASE_DIR
+
+```c
+#define LV_STYLE_CONST_BASE_DIR(val) \
+    { \
+        .prop = LV_STYLE_BASE_DIR, .value = { .num = (int32_t)val } \
+    }
+```
+
+Set base direction of Widget. Possible values are `LV_BIDI_DIR_LTR/RTL/AUTO`. Default: <ApiLink name="lv_base_dir_t" display="LV_BASE_DIR_AUTO" />, inherited: Yes, layout: Yes, ext. draw: No.
+
+<span className="sr-only">Parameters</span>
+
+| Name | Description |
+|------|-------------|
+| `val` | Value to submit |
+
+
+</ApiMember>
+
+<ApiMember kind="macro" name="LV_STYLE_CONST_BITMAP_MASK_SRC" file="misc/lv_style_gen.h" line={2350} url="https://github.com/lvgl/lvgl/blob/master/src/misc/lv_style_gen.h#L2350">
+
+### LV_STYLE_CONST_BITMAP_MASK_SRC
+
+```c
+#define LV_STYLE_CONST_BITMAP_MASK_SRC(val) \
+    { \
+        .prop = LV_STYLE_BITMAP_MASK_SRC, .value = { .ptr = val } \
+    }
+```
+
+If set, a layer will be created for the widget and the layer will be masked with this A8 bitmap mask. Default: `NULL`, inherited: No, layout: No, ext. draw: No.
+
+<span className="sr-only">Parameters</span>
+
+| Name | Description |
+|------|-------------|
+| `val` | Pointer to A8 bitmap mask |
+
+
+</ApiMember>
+
+<ApiMember kind="macro" name="LV_STYLE_CONST_ROTARY_SENSITIVITY" file="misc/lv_style_gen.h" line={2361} url="https://github.com/lvgl/lvgl/blob/master/src/misc/lv_style_gen.h#L2361">
+
+### LV_STYLE_CONST_ROTARY_SENSITIVITY
+
+```c
+#define LV_STYLE_CONST_ROTARY_SENSITIVITY(val) \
+    { \
+        .prop = LV_STYLE_ROTARY_SENSITIVITY, .value = { .num = (int32_t)val } \
+    }
+```
+
+Adjust sensitivity for rotary encoders in 1/256 unit. It means, 128: slow down the rotary to half, 512: speeds up to double, 256: no change. Default: `256`, inherited: Yes, layout: No, ext. draw: No.
+
+<span className="sr-only">Parameters</span>
+
+| Name | Description |
+|------|-------------|
+| `val` | Value to submit |
+
+
+</ApiMember>
+
+<ApiMember kind="macro" name="LV_STYLE_CONST_FLEX_FLOW" file="misc/lv_style_gen.h" line={2372} url="https://github.com/lvgl/lvgl/blob/master/src/misc/lv_style_gen.h#L2372">
+
+### LV_STYLE_CONST_FLEX_FLOW
+
+```c
+#define LV_STYLE_CONST_FLEX_FLOW(val) \
+    { \
+        .prop = LV_STYLE_FLEX_FLOW, .value = { .num = (int32_t)val } \
+    }
+```
+
+Defines in which direction the flex layout should arrange the children. Default: `LV_FLEX_FLOW_NONE`, inherited: No, layout: Yes, ext. draw: No.
+
+<span className="sr-only">Parameters</span>
+
+| Name | Description |
+|------|-------------|
+| `val` | Value to submit |
+
+
+</ApiMember>
+
+<ApiMember kind="macro" name="LV_STYLE_CONST_FLEX_MAIN_PLACE" file="misc/lv_style_gen.h" line={2382} url="https://github.com/lvgl/lvgl/blob/master/src/misc/lv_style_gen.h#L2382">
+
+### LV_STYLE_CONST_FLEX_MAIN_PLACE
+
+```c
+#define LV_STYLE_CONST_FLEX_MAIN_PLACE(val) \
+    { \
+        .prop = LV_STYLE_FLEX_MAIN_PLACE, .value = { .num = (int32_t)val } \
+    }
+```
+
+Defines how to align the children in the direction of flex flow. Default: `LV_FLEX_ALIGN_NONE`, inherited: No, layout: Yes, ext. draw: No.
+
+<span className="sr-only">Parameters</span>
+
+| Name | Description |
+|------|-------------|
+| `val` | Value to submit |
+
+
+</ApiMember>
+
+<ApiMember kind="macro" name="LV_STYLE_CONST_FLEX_CROSS_PLACE" file="misc/lv_style_gen.h" line={2392} url="https://github.com/lvgl/lvgl/blob/master/src/misc/lv_style_gen.h#L2392">
+
+### LV_STYLE_CONST_FLEX_CROSS_PLACE
+
+```c
+#define LV_STYLE_CONST_FLEX_CROSS_PLACE(val) \
+    { \
+        .prop = LV_STYLE_FLEX_CROSS_PLACE, .value = { .num = (int32_t)val } \
+    }
+```
+
+Defines how to align the children perpendicular to the direction of flex flow. Default: `LV_FLEX_ALIGN_NONE`, inherited: No, layout: Yes, ext. draw: No.
+
+<span className="sr-only">Parameters</span>
+
+| Name | Description |
+|------|-------------|
+| `val` | Value to submit |
+
+
+</ApiMember>
+
+<ApiMember kind="macro" name="LV_STYLE_CONST_FLEX_TRACK_PLACE" file="misc/lv_style_gen.h" line={2402} url="https://github.com/lvgl/lvgl/blob/master/src/misc/lv_style_gen.h#L2402">
+
+### LV_STYLE_CONST_FLEX_TRACK_PLACE
+
+```c
+#define LV_STYLE_CONST_FLEX_TRACK_PLACE(val) \
+    { \
+        .prop = LV_STYLE_FLEX_TRACK_PLACE, .value = { .num = (int32_t)val } \
+    }
+```
+
+Defines how to align the tracks of the flow. Default: `LV_FLEX_ALIGN_NONE`, inherited: No, layout: Yes, ext. draw: No.
+
+<span className="sr-only">Parameters</span>
+
+| Name | Description |
+|------|-------------|
+| `val` | Value to submit |
+
+
+</ApiMember>
+
+<ApiMember kind="macro" name="LV_STYLE_CONST_FLEX_GROW" file="misc/lv_style_gen.h" line={2412} url="https://github.com/lvgl/lvgl/blob/master/src/misc/lv_style_gen.h#L2412">
+
+### LV_STYLE_CONST_FLEX_GROW
+
+```c
+#define LV_STYLE_CONST_FLEX_GROW(val) \
+    { \
+        .prop = LV_STYLE_FLEX_GROW, .value = { .num = (int32_t)val } \
+    }
+```
+
+Defines how much space to take proportionally from the free space of the Widget's track. Default: `0`, inherited: No, layout: Yes, ext. draw: No.
+
+<span className="sr-only">Parameters</span>
+
+| Name | Description |
+|------|-------------|
+| `val` | Value to submit |
+
+
+</ApiMember>
+
+<ApiMember kind="macro" name="LV_STYLE_CONST_GRID_COLUMN_DSC_ARRAY" file="misc/lv_style_gen.h" line={2425} url="https://github.com/lvgl/lvgl/blob/master/src/misc/lv_style_gen.h#L2425">
+
+### LV_STYLE_CONST_GRID_COLUMN_DSC_ARRAY
+
+```c
+#define LV_STYLE_CONST_GRID_COLUMN_DSC_ARRAY(val) \
+    { \
+        .prop = LV_STYLE_GRID_COLUMN_DSC_ARRAY, .value = { .ptr = val } \
+    }
+```
+
+An array to describe the columns of the grid. Should be LV_GRID_TEMPLATE_LAST terminated. Default: `NULL`, inherited: No, layout: Yes, ext. draw: No.
+
+<span className="sr-only">Parameters</span>
+
+| Name | Description |
+|------|-------------|
+| `val` | Pointer to grid-column descriptor array |
+
+
+</ApiMember>
+
+<ApiMember kind="macro" name="LV_STYLE_CONST_GRID_COLUMN_ALIGN" file="misc/lv_style_gen.h" line={2435} url="https://github.com/lvgl/lvgl/blob/master/src/misc/lv_style_gen.h#L2435">
+
+### LV_STYLE_CONST_GRID_COLUMN_ALIGN
+
+```c
+#define LV_STYLE_CONST_GRID_COLUMN_ALIGN(val) \
+    { \
+        .prop = LV_STYLE_GRID_COLUMN_ALIGN, .value = { .num = (int32_t)val } \
+    }
+```
+
+Defines how to distribute the columns. Default: <ApiLink name="lv_grid_align_t" display="LV_GRID_ALIGN_START" />, inherited: No, layout: Yes, ext. draw: No.
+
+<span className="sr-only">Parameters</span>
+
+| Name | Description |
+|------|-------------|
+| `val` | Value to submit |
+
+
+</ApiMember>
+
+<ApiMember kind="macro" name="LV_STYLE_CONST_GRID_ROW_DSC_ARRAY" file="misc/lv_style_gen.h" line={2445} url="https://github.com/lvgl/lvgl/blob/master/src/misc/lv_style_gen.h#L2445">
+
+### LV_STYLE_CONST_GRID_ROW_DSC_ARRAY
+
+```c
+#define LV_STYLE_CONST_GRID_ROW_DSC_ARRAY(val) \
+    { \
+        .prop = LV_STYLE_GRID_ROW_DSC_ARRAY, .value = { .ptr = val } \
+    }
+```
+
+An array to describe the rows of the grid. Should be LV_GRID_TEMPLATE_LAST terminated. Default: `NULL`, inherited: No, layout: Yes, ext. draw: No.
+
+<span className="sr-only">Parameters</span>
+
+| Name | Description |
+|------|-------------|
+| `val` | Pointer to grid-row descriptor array |
+
+
+</ApiMember>
+
+<ApiMember kind="macro" name="LV_STYLE_CONST_GRID_ROW_ALIGN" file="misc/lv_style_gen.h" line={2455} url="https://github.com/lvgl/lvgl/blob/master/src/misc/lv_style_gen.h#L2455">
+
+### LV_STYLE_CONST_GRID_ROW_ALIGN
+
+```c
+#define LV_STYLE_CONST_GRID_ROW_ALIGN(val) \
+    { \
+        .prop = LV_STYLE_GRID_ROW_ALIGN, .value = { .num = (int32_t)val } \
+    }
+```
+
+Defines how to distribute the rows. Default: <ApiLink name="lv_grid_align_t" display="LV_GRID_ALIGN_START" />, inherited: No, layout: Yes, ext. draw: No.
+
+<span className="sr-only">Parameters</span>
+
+| Name | Description |
+|------|-------------|
+| `val` | Value to submit |
+
+
+</ApiMember>
+
+<ApiMember kind="macro" name="LV_STYLE_CONST_GRID_CELL_COLUMN_POS" file="misc/lv_style_gen.h" line={2465} url="https://github.com/lvgl/lvgl/blob/master/src/misc/lv_style_gen.h#L2465">
+
+### LV_STYLE_CONST_GRID_CELL_COLUMN_POS
+
+```c
+#define LV_STYLE_CONST_GRID_CELL_COLUMN_POS(val) \
+    { \
+        .prop = LV_STYLE_GRID_CELL_COLUMN_POS, .value = { .num = (int32_t)val } \
+    }
+```
+
+Set column in which Widget should be placed. Default: 0, inherited: No, layout: Yes, ext. draw: No.
+
+<span className="sr-only">Parameters</span>
+
+| Name | Description |
+|------|-------------|
+| `val` | Value to submit |
+
+
+</ApiMember>
+
+<ApiMember kind="macro" name="LV_STYLE_CONST_GRID_CELL_X_ALIGN" file="misc/lv_style_gen.h" line={2475} url="https://github.com/lvgl/lvgl/blob/master/src/misc/lv_style_gen.h#L2475">
+
+### LV_STYLE_CONST_GRID_CELL_X_ALIGN
+
+```c
+#define LV_STYLE_CONST_GRID_CELL_X_ALIGN(val) \
+    { \
+        .prop = LV_STYLE_GRID_CELL_X_ALIGN, .value = { .num = (int32_t)val } \
+    }
+```
+
+Set how to align Widget horizontally. Default: <ApiLink name="lv_grid_align_t" display="LV_GRID_ALIGN_START" />, inherited: No, layout: Yes, ext. draw: No.
+
+<span className="sr-only">Parameters</span>
+
+| Name | Description |
+|------|-------------|
+| `val` | Value to submit |
+
+
+</ApiMember>
+
+<ApiMember kind="macro" name="LV_STYLE_CONST_GRID_CELL_COLUMN_SPAN" file="misc/lv_style_gen.h" line={2485} url="https://github.com/lvgl/lvgl/blob/master/src/misc/lv_style_gen.h#L2485">
+
+### LV_STYLE_CONST_GRID_CELL_COLUMN_SPAN
+
+```c
+#define LV_STYLE_CONST_GRID_CELL_COLUMN_SPAN(val) \
+    { \
+        .prop = LV_STYLE_GRID_CELL_COLUMN_SPAN, .value = { .num = (int32_t)val } \
+    }
+```
+
+Set how many columns Widget should span. Needs to be >= 1. Default: 1, inherited: No, layout: Yes, ext. draw: No.
+
+<span className="sr-only">Parameters</span>
+
+| Name | Description |
+|------|-------------|
+| `val` | Value to submit |
+
+
+</ApiMember>
+
+<ApiMember kind="macro" name="LV_STYLE_CONST_GRID_CELL_ROW_POS" file="misc/lv_style_gen.h" line={2495} url="https://github.com/lvgl/lvgl/blob/master/src/misc/lv_style_gen.h#L2495">
+
+### LV_STYLE_CONST_GRID_CELL_ROW_POS
+
+```c
+#define LV_STYLE_CONST_GRID_CELL_ROW_POS(val) \
+    { \
+        .prop = LV_STYLE_GRID_CELL_ROW_POS, .value = { .num = (int32_t)val } \
+    }
+```
+
+Set row in which Widget should be placed. Default: 0, inherited: No, layout: Yes, ext. draw: No.
+
+<span className="sr-only">Parameters</span>
+
+| Name | Description |
+|------|-------------|
+| `val` | Value to submit |
+
+
+</ApiMember>
+
+<ApiMember kind="macro" name="LV_STYLE_CONST_GRID_CELL_Y_ALIGN" file="misc/lv_style_gen.h" line={2505} url="https://github.com/lvgl/lvgl/blob/master/src/misc/lv_style_gen.h#L2505">
+
+### LV_STYLE_CONST_GRID_CELL_Y_ALIGN
+
+```c
+#define LV_STYLE_CONST_GRID_CELL_Y_ALIGN(val) \
+    { \
+        .prop = LV_STYLE_GRID_CELL_Y_ALIGN, .value = { .num = (int32_t)val } \
+    }
+```
+
+Set how to align Widget vertically. Default: <ApiLink name="lv_grid_align_t" display="LV_GRID_ALIGN_START" />, inherited: No, layout: Yes, ext. draw: No.
+
+<span className="sr-only">Parameters</span>
+
+| Name | Description |
+|------|-------------|
+| `val` | Value to submit |
+
+
+</ApiMember>
+
+<ApiMember kind="macro" name="LV_STYLE_CONST_GRID_CELL_ROW_SPAN" file="misc/lv_style_gen.h" line={2515} url="https://github.com/lvgl/lvgl/blob/master/src/misc/lv_style_gen.h#L2515">
+
+### LV_STYLE_CONST_GRID_CELL_ROW_SPAN
+
+```c
+#define LV_STYLE_CONST_GRID_CELL_ROW_SPAN(val) \
+    { \
+        .prop = LV_STYLE_GRID_CELL_ROW_SPAN, .value = { .num = (int32_t)val } \
+    }
+```
+
+Set how many rows Widget should span. Needs to be >= 1. Default: 1, inherited: No, layout: Yes, ext. draw: No.
+
+<span className="sr-only">Parameters</span>
+
+| Name | Description |
+|------|-------------|
+| `val` | Value to submit |
+
+
+</ApiMember>
+
+## Dependencies
+
+<FileIncludes
+  includedBy={["lv_style.h"]}
+/>

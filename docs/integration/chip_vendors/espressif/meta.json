@@ -1,0 +1,25 @@
+{
+  "title": "Espressif",
+  "pages": [
+    {
+      "slug": "overview",
+      "title": "Overview"
+    },
+    {
+      "slug": "add_lvgl_to_esp32_idf_project",
+      "title": "Add Lvgl to Esp32 Idf Project"
+    },
+    {
+      "slug": "hardware_accelerator_dma2d",
+      "title": "Hardware Accelerator Dma2d"
+    },
+    {
+      "slug": "hardware_accelerator_ppa",
+      "title": "Hardware Accelerator Ppa"
+    },
+    {
+      "slug": "tips_and_tricks",
+      "title": "Tips and Tricks"
+    }
+  ]
+}

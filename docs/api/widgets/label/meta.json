@@ -1,0 +1,14 @@
+{
+  "title": "Label",
+  "pages": [
+    "index",
+    {
+      "slug": "lv_label_h",
+      "title": "lv_label.h"
+    },
+    {
+      "slug": "lv_label_private_h",
+      "title": "lv_label_private.h"
+    }
+  ]
+}

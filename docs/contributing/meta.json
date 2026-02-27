@@ -1,0 +1,25 @@
+{
+  "title": "Contributing",
+  "pages": [
+    {
+      "slug": "introduction",
+      "title": "Introduction"
+    },
+    {
+      "slug": "ways_to_contribute",
+      "title": "Ways to Contribute"
+    },
+    {
+      "slug": "pull_requests",
+      "title": "Pull Requests"
+    },
+    {
+      "slug": "dco",
+      "title": "DCO"
+    },
+    {
+      "slug": "coding_style",
+      "title": "Coding Style"
+    }
+  ]
+}

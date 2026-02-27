@@ -1,0 +1,57 @@
+{
+  "title": "Common Widget Features",
+  "pages": [
+    {
+      "slug": "basics",
+      "title": "Basics"
+    },
+    {
+      "slug": "api",
+      "title": "API"
+    },
+    {
+      "slug": "tree",
+      "title": "Tree"
+    },
+    {
+      "slug": "screens",
+      "title": "Screens"
+    },
+    {
+      "slug": "coordinates",
+      "title": "Coordinates"
+    },
+    {
+      "slug": "parts_and_states",
+      "title": "Parts and States"
+    },
+    {
+      "slug": "layers",
+      "title": "Layers"
+    },
+    {
+      "slug": "styles",
+      "title": "Styles"
+    },
+    {
+      "slug": "events",
+      "title": "Events"
+    },
+    {
+      "slug": "flags",
+      "title": "Flags"
+    },
+    {
+      "slug": "layouts",
+      "title": "Layouts"
+    },
+    {
+      "slug": "scrolling",
+      "title": "Scrolling"
+    },
+    {
+      "slug": "obj_property",
+      "title": "Obj Property"
+    }
+  ]
+}

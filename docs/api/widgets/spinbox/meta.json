@@ -1,0 +1,14 @@
+{
+  "title": "Spinbox",
+  "pages": [
+    "index",
+    {
+      "slug": "lv_spinbox_h",
+      "title": "lv_spinbox.h"
+    },
+    {
+      "slug": "lv_spinbox_private_h",
+      "title": "lv_spinbox_private.h"
+    }
+  ]
+}

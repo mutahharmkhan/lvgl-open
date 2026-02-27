@@ -1,0 +1,37 @@
+{
+  "title": "Renesas",
+  "pages": [
+    {
+      "slug": "built_in_drivers",
+      "title": "Built in Drivers"
+    },
+    {
+      "slug": "ra_family",
+      "title": "Ra Family"
+    },
+    {
+      "slug": "rx_family",
+      "title": "Rx Family"
+    },
+    {
+      "slug": "rzg_family",
+      "title": "Rzg Family"
+    },
+    {
+      "slug": "rza_family",
+      "title": "Rza Family"
+    },
+    {
+      "slug": "supported_boards",
+      "title": "Supported Boards"
+    },
+    {
+      "slug": "glcdc",
+      "title": "Glcdc"
+    },
+    {
+      "slug": "dave2d_gpu",
+      "title": "Dave2d GPU"
+    }
+  ]
+}

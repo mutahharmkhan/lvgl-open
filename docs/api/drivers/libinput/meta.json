@@ -1,0 +1,22 @@
+{
+  "title": "Libinput",
+  "pages": [
+    "index",
+    {
+      "slug": "lv_libinput_h",
+      "title": "lv_libinput.h"
+    },
+    {
+      "slug": "lv_libinput_private_h",
+      "title": "lv_libinput_private.h"
+    },
+    {
+      "slug": "lv_xkb_h",
+      "title": "lv_xkb.h"
+    },
+    {
+      "slug": "lv_xkb_private_h",
+      "title": "lv_xkb_private.h"
+    }
+  ]
+}

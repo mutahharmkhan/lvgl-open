@@ -1,0 +1,14 @@
+{
+  "title": "Scale",
+  "pages": [
+    "index",
+    {
+      "slug": "lv_scale_h",
+      "title": "lv_scale.h"
+    },
+    {
+      "slug": "lv_scale_private_h",
+      "title": "lv_scale_private.h"
+    }
+  ]
+}

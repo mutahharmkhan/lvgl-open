@@ -1,0 +1,13 @@
+{
+  "title": "Auxiliary Modules",
+  "pages": [
+    {
+      "slug": "file_explorer",
+      "title": "File Explorer"
+    },
+    {
+      "slug": "fragment",
+      "title": "Fragment"
+    }
+  ]
+}

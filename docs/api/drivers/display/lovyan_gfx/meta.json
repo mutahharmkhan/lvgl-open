@@ -1,0 +1,18 @@
+{
+  "title": "Lovyan_gfx",
+  "pages": [
+    "index",
+    {
+      "slug": "lv_lgfx_user_hpp",
+      "title": "lv_lgfx_user.hpp"
+    },
+    {
+      "slug": "lv_lgfx_user_hpp",
+      "title": "LGFX"
+    },
+    {
+      "slug": "lv_lovyan_gfx_h",
+      "title": "lv_lovyan_gfx.h"
+    }
+  ]
+}

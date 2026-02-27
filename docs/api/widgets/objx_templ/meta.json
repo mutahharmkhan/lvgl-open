@@ -1,0 +1,10 @@
+{
+  "title": "Objx_templ",
+  "pages": [
+    "index",
+    {
+      "slug": "lv_objx_templ_h",
+      "title": "lv_objx_templ.h"
+    }
+  ]
+}

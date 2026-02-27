@@ -1,0 +1,17 @@
+{
+  "title": "Getting started",
+  "pages": [
+    {
+      "slug": "learn_the_basics",
+      "title": "Learn the Basics"
+    },
+    {
+      "slug": "examples",
+      "title": "Examples"
+    },
+    {
+      "slug": "whats_next",
+      "title": "What's Next"
+    }
+  ]
+}

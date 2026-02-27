@@ -1,0 +1,13 @@
+{
+  "title": "Video Support",
+  "pages": [
+    {
+      "slug": "ffmpeg",
+      "title": "Ffmpeg"
+    },
+    {
+      "slug": "gstreamer",
+      "title": "Gstreamer"
+    }
+  ]
+}

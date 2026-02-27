@@ -1,0 +1,38 @@
+{
+  "title": "Uefi",
+  "pages": [
+    "index",
+    {
+      "slug": "lv_uefi_context_h",
+      "title": "lv_uefi_context.h"
+    },
+    {
+      "slug": "lv_uefi_display_h",
+      "title": "lv_uefi_display.h"
+    },
+    {
+      "slug": "lv_uefi_edk2_h",
+      "title": "lv_uefi_edk2.h"
+    },
+    {
+      "slug": "lv_uefi_gnu_efi_h",
+      "title": "lv_uefi_gnu_efi.h"
+    },
+    {
+      "slug": "lv_uefi_h",
+      "title": "lv_uefi.h"
+    },
+    {
+      "slug": "lv_uefi_indev_h",
+      "title": "lv_uefi_indev.h"
+    },
+    {
+      "slug": "lv_uefi_private_h",
+      "title": "lv_uefi_private.h"
+    },
+    {
+      "slug": "lv_uefi_std_wrapper_h",
+      "title": "lv_uefi_std_wrapper.h"
+    }
+  ]
+}

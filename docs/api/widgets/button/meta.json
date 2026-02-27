@@ -1,0 +1,14 @@
+{
+  "title": "Button",
+  "pages": [
+    "index",
+    {
+      "slug": "lv_button_h",
+      "title": "lv_button.h"
+    },
+    {
+      "slug": "lv_button_private_h",
+      "title": "lv_button_private.h"
+    }
+  ]
+}

@@ -1,0 +1,14 @@
+{
+  "title": "Arc",
+  "pages": [
+    "index",
+    {
+      "slug": "lv_arc_h",
+      "title": "lv_arc.h"
+    },
+    {
+      "slug": "lv_arc_private_h",
+      "title": "lv_arc_private.h"
+    }
+  ]
+}

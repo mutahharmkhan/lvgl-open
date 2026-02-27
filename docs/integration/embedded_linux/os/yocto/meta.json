@@ -1,0 +1,17 @@
+{
+  "title": "Yocto",
+  "pages": [
+    {
+      "slug": "core_components",
+      "title": "Core Components"
+    },
+    {
+      "slug": "lvgl_recipe",
+      "title": "Lvgl Recipe"
+    },
+    {
+      "slug": "terms_and_variables",
+      "title": "Terms and Variables"
+    }
+  ]
+}

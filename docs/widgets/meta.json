@@ -1,0 +1,153 @@
+{
+  "title": "All Widgets",
+  "pages": [
+    {
+      "slug": "3dtexture",
+      "title": "3dtexture"
+    },
+    {
+      "slug": "animimg",
+      "title": "Animimg"
+    },
+    {
+      "slug": "arc",
+      "title": "Arc"
+    },
+    {
+      "slug": "arclabel",
+      "title": "Arclabel"
+    },
+    {
+      "slug": "bar",
+      "title": "Bar"
+    },
+    {
+      "slug": "button",
+      "title": "Button"
+    },
+    {
+      "slug": "buttonmatrix",
+      "title": "Buttonmatrix"
+    },
+    {
+      "slug": "calendar",
+      "title": "Calendar"
+    },
+    {
+      "slug": "canvas",
+      "title": "Canvas"
+    },
+    {
+      "slug": "chart",
+      "title": "Chart"
+    },
+    {
+      "slug": "checkbox",
+      "title": "Checkbox"
+    },
+    {
+      "slug": "dropdown",
+      "title": "Dropdown"
+    },
+    {
+      "slug": "gif",
+      "title": "Gif"
+    },
+    {
+      "slug": "image",
+      "title": "Image"
+    },
+    {
+      "slug": "imagebutton",
+      "title": "Imagebutton"
+    },
+    {
+      "slug": "ime_pinyin",
+      "title": "Ime Pinyin"
+    },
+    {
+      "slug": "keyboard",
+      "title": "Keyboard"
+    },
+    {
+      "slug": "label",
+      "title": "Label"
+    },
+    {
+      "slug": "led",
+      "title": "Led"
+    },
+    {
+      "slug": "line",
+      "title": "Line"
+    },
+    {
+      "slug": "list",
+      "title": "List"
+    },
+    {
+      "slug": "lottie",
+      "title": "Lottie"
+    },
+    {
+      "slug": "menu",
+      "title": "Menu"
+    },
+    {
+      "slug": "msgbox",
+      "title": "Msgbox"
+    },
+    {
+      "slug": "roller",
+      "title": "Roller"
+    },
+    {
+      "slug": "scale",
+      "title": "Scale"
+    },
+    {
+      "slug": "slider",
+      "title": "Slider"
+    },
+    {
+      "slug": "spangroup",
+      "title": "Spangroup"
+    },
+    {
+      "slug": "spinbox",
+      "title": "Spinbox"
+    },
+    {
+      "slug": "spinner",
+      "title": "Spinner"
+    },
+    {
+      "slug": "switch",
+      "title": "Switch"
+    },
+    {
+      "slug": "table",
+      "title": "Table"
+    },
+    {
+      "slug": "tabview",
+      "title": "Tabview"
+    },
+    {
+      "slug": "textarea",
+      "title": "Textarea"
+    },
+    {
+      "slug": "tileview",
+      "title": "Tileview"
+    },
+    {
+      "slug": "win",
+      "title": "Win"
+    },
+    {
+      "slug": "new_widget",
+      "title": "New Widget"
+    }
+  ]
+}

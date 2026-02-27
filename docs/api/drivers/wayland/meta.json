@@ -1,0 +1,38 @@
+{
+  "title": "Wayland",
+  "pages": [
+    "index",
+    {
+      "slug": "lv_wayland_h",
+      "title": "lv_wayland.h"
+    },
+    {
+      "slug": "lv_wayland_private_h",
+      "title": "lv_wayland_private.h"
+    },
+    {
+      "slug": "lv_wl_backend_private_h",
+      "title": "lv_wl_backend_private.h"
+    },
+    {
+      "slug": "lv_wl_keyboard_h",
+      "title": "lv_wl_keyboard.h"
+    },
+    {
+      "slug": "lv_wl_pointer_axis_h",
+      "title": "lv_wl_pointer_axis.h"
+    },
+    {
+      "slug": "lv_wl_pointer_h",
+      "title": "lv_wl_pointer.h"
+    },
+    {
+      "slug": "lv_wl_touch_h",
+      "title": "lv_wl_touch.h"
+    },
+    {
+      "slug": "lv_wl_window_h",
+      "title": "lv_wl_window.h"
+    }
+  ]
+}

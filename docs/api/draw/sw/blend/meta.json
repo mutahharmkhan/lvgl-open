@@ -1,0 +1,54 @@
+{
+  "title": "Blend",
+  "pages": [
+    "index",
+    "arm2d",
+    "helium",
+    "neon",
+    "riscv_v",
+    {
+      "slug": "lv_draw_sw_blend_h",
+      "title": "lv_draw_sw_blend.h"
+    },
+    {
+      "slug": "lv_draw_sw_blend_private_h",
+      "title": "lv_draw_sw_blend_private.h"
+    },
+    {
+      "slug": "lv_draw_sw_blend_to_a8_h",
+      "title": "lv_draw_sw_blend_to_a8.h"
+    },
+    {
+      "slug": "lv_draw_sw_blend_to_al88_h",
+      "title": "lv_draw_sw_blend_to_al88.h"
+    },
+    {
+      "slug": "lv_draw_sw_blend_to_argb8888_h",
+      "title": "lv_draw_sw_blend_to_argb8888.h"
+    },
+    {
+      "slug": "lv_draw_sw_blend_to_argb8888_premultiplied_h",
+      "title": "lv_draw_sw_blend_to_argb8888_premultiplied.h"
+    },
+    {
+      "slug": "lv_draw_sw_blend_to_i1_h",
+      "title": "lv_draw_sw_blend_to_i1.h"
+    },
+    {
+      "slug": "lv_draw_sw_blend_to_l8_h",
+      "title": "lv_draw_sw_blend_to_l8.h"
+    },
+    {
+      "slug": "lv_draw_sw_blend_to_rgb565_h",
+      "title": "lv_draw_sw_blend_to_rgb565.h"
+    },
+    {
+      "slug": "lv_draw_sw_blend_to_rgb565_swapped_h",
+      "title": "lv_draw_sw_blend_to_rgb565_swapped.h"
+    },
+    {
+      "slug": "lv_draw_sw_blend_to_rgb888_h",
+      "title": "lv_draw_sw_blend_to_rgb888.h"
+    }
+  ]
+}

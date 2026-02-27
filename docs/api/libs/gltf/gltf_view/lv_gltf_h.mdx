@@ -1,0 +1,1052 @@
+---
+title: lv_gltf.h
+description: API reference for lv_gltf.h
+api:
+  functions: [lv_gltf_create, lv_gltf_set_environment, lv_gltf_load_model_from_file, lv_gltf_load_model_from_bytes, lv_gltf_get_model_count, lv_gltf_get_model_by_index, lv_gltf_get_primary_model, lv_gltf_set_yaw, lv_gltf_get_yaw, lv_gltf_set_pitch, lv_gltf_get_pitch, lv_gltf_set_distance, lv_gltf_get_distance, lv_gltf_get_world_distance, lv_gltf_set_fov, lv_gltf_get_fov, lv_gltf_set_focal_x, lv_gltf_get_focal_x, lv_gltf_set_focal_y, lv_gltf_get_focal_y, lv_gltf_set_focal_z, lv_gltf_get_focal_z, lv_gltf_recenter, lv_gltf_set_camera, lv_gltf_get_camera, lv_gltf_get_camera_count, lv_gltf_set_animation_speed, lv_gltf_get_animation_speed, lv_gltf_set_background_mode, lv_gltf_get_background_mode, lv_gltf_set_background_blur, lv_gltf_get_background_blur, lv_gltf_set_env_brightness, lv_gltf_get_env_brightness, lv_gltf_set_image_exposure, lv_gltf_get_image_exposure, lv_gltf_set_antialiasing_mode, lv_gltf_get_antialiasing_mode, lv_intersect_ray_with_plane, lv_gltf_get_current_view_plane, lv_gltf_get_ray_from_2d_coordinate, lv_gltf_world_to_screen]
+  enums: [lv_gltf_aa_mode_t, lv_gltf_bg_mode_t]
+  macros: [LV_GLTF_ANIM_SPEED_TENTH, LV_GLTF_ANIM_SPEED_QUARTER, LV_GLTF_ANIM_SPEED_HALF, LV_GLTF_ANIM_SPEED_NORMAL, LV_GLTF_ANIM_SPEED_2X, LV_GLTF_ANIM_SPEED_3X, LV_GLTF_ANIM_SPEED_4X, LV_GLTF_DEFAULT_CAMERA]
+---
+
+<ApiSummary functions={42} enums={2} macros={8} />
+
+## Functions
+
+<ApiTabs items={["Setters (15)","Getters (21)","Other (6)"]}>
+<ApiTab value="Setters (15)">
+
+<ApiMember kind="function" name="lv_gltf_set_environment" file="libs/gltf/gltf_view/lv_gltf.h" line={74} url="https://github.com/lvgl/lvgl/blob/master/src/libs/gltf/gltf_view/lv_gltf.h#L74">
+
+### lv_gltf_set_environment
+
+Assign an environment to a glTF object for IBL rendering
+
+```c
+void lv_gltf_set_environment(lv_obj_t *obj, lv_gltf_environment_t *environment)
+```
+
+<span className="sr-only">Parameters</span>
+
+| Name | Type | Description |
+|------|------|-------------|
+| `obj` | <ApiLink name="lv_obj_t" display="lv_obj_t *" /> | pointer to a glTF viewer object |
+| `environment` | <ApiLink name="lv_gltf_environment_t" display="lv_gltf_environment_t *" /> | pointer to the environment to use |
+
+<Callout type="info">
+The environment can be shared across multiple glTF objects
+</Callout>
+
+<Callout type="info">
+If no environment is set before attempting to load a file, a default one will be created for you
+</Callout>
+
+
+</ApiMember>
+
+<ApiMember kind="function" name="lv_gltf_set_yaw" file="libs/gltf/gltf_view/lv_gltf.h" line={122} url="https://github.com/lvgl/lvgl/blob/master/src/libs/gltf/gltf_view/lv_gltf.h#L122">
+
+### lv_gltf_set_yaw
+
+Set the yaw (horizontal rotation) of the camera
+
+```c
+void lv_gltf_set_yaw(lv_obj_t *obj, float yaw)
+```
+
+<span className="sr-only">Parameters</span>
+
+| Name | Type | Description |
+|------|------|-------------|
+| `obj` | <ApiLink name="lv_obj_t" display="lv_obj_t *" /> | pointer to a glTF viewer object |
+| `yaw` | `float` | yaw angle in degrees |
+
+
+</ApiMember>
+
+<ApiMember kind="function" name="lv_gltf_set_pitch" file="libs/gltf/gltf_view/lv_gltf.h" line={136} url="https://github.com/lvgl/lvgl/blob/master/src/libs/gltf/gltf_view/lv_gltf.h#L136">
+
+### lv_gltf_set_pitch
+
+Set the pitch (vertical rotation) of the camera
+
+```c
+void lv_gltf_set_pitch(lv_obj_t *obj, float pitch)
+```
+
+<span className="sr-only">Parameters</span>
+
+| Name | Type | Description |
+|------|------|-------------|
+| `obj` | <ApiLink name="lv_obj_t" display="lv_obj_t *" /> | pointer to a glTF viewer object |
+| `pitch` | `float` | pitch angle in degrees |
+
+
+</ApiMember>
+
+<ApiMember kind="function" name="lv_gltf_set_distance" file="libs/gltf/gltf_view/lv_gltf.h" line={150} url="https://github.com/lvgl/lvgl/blob/master/src/libs/gltf/gltf_view/lv_gltf.h#L150">
+
+### lv_gltf_set_distance
+
+Set the camera distance from the focal point
+
+```c
+void lv_gltf_set_distance(lv_obj_t *obj, float value)
+```
+
+<span className="sr-only">Parameters</span>
+
+| Name | Type | Description |
+|------|------|-------------|
+| `obj` | <ApiLink name="lv_obj_t" display="lv_obj_t *" /> | pointer to a glTF viewer object |
+| `value` | `float` | distance value |
+
+
+</ApiMember>
+
+<ApiMember kind="function" name="lv_gltf_set_fov" file="libs/gltf/gltf_view/lv_gltf.h" line={175} url="https://github.com/lvgl/lvgl/blob/master/src/libs/gltf/gltf_view/lv_gltf.h#L175">
+
+### lv_gltf_set_fov
+
+Set the field of view
+
+```c
+void lv_gltf_set_fov(lv_obj_t *obj, float value)
+```
+
+<span className="sr-only">Parameters</span>
+
+| Name | Type | Description |
+|------|------|-------------|
+| `obj` | <ApiLink name="lv_obj_t" display="lv_obj_t *" /> | pointer to a glTF viewer object |
+| `value` | `float` | vertical FOV in degrees. If zero, the view will be orthographic (non-perspective) |
+
+
+</ApiMember>
+
+<ApiMember kind="function" name="lv_gltf_set_focal_x" file="libs/gltf/gltf_view/lv_gltf.h" line={193} url="https://github.com/lvgl/lvgl/blob/master/src/libs/gltf/gltf_view/lv_gltf.h#L193">
+
+### lv_gltf_set_focal_x
+
+Set the X coordinate of the camera focal point
+
+```c
+void lv_gltf_set_focal_x(lv_obj_t *obj, float value)
+```
+
+<span className="sr-only">Parameters</span>
+
+| Name | Type | Description |
+|------|------|-------------|
+| `obj` | <ApiLink name="lv_obj_t" display="lv_obj_t *" /> | pointer to a glTF viewer object |
+| `value` | `float` | X coordinate |
+
+
+</ApiMember>
+
+<ApiMember kind="function" name="lv_gltf_set_focal_y" file="libs/gltf/gltf_view/lv_gltf.h" line={207} url="https://github.com/lvgl/lvgl/blob/master/src/libs/gltf/gltf_view/lv_gltf.h#L207">
+
+### lv_gltf_set_focal_y
+
+Set the Y coordinate of the camera focal point
+
+```c
+void lv_gltf_set_focal_y(lv_obj_t *obj, float value)
+```
+
+<span className="sr-only">Parameters</span>
+
+| Name | Type | Description |
+|------|------|-------------|
+| `obj` | <ApiLink name="lv_obj_t" display="lv_obj_t *" /> | pointer to a glTF viewer object |
+| `value` | `float` | Y coordinate |
+
+
+</ApiMember>
+
+<ApiMember kind="function" name="lv_gltf_set_focal_z" file="libs/gltf/gltf_view/lv_gltf.h" line={221} url="https://github.com/lvgl/lvgl/blob/master/src/libs/gltf/gltf_view/lv_gltf.h#L221">
+
+### lv_gltf_set_focal_z
+
+Set the Z coordinate of the camera focal point
+
+```c
+void lv_gltf_set_focal_z(lv_obj_t *obj, float value)
+```
+
+<span className="sr-only">Parameters</span>
+
+| Name | Type | Description |
+|------|------|-------------|
+| `obj` | <ApiLink name="lv_obj_t" display="lv_obj_t *" /> | pointer to a glTF viewer object |
+| `value` | `float` | Z coordinate |
+
+
+</ApiMember>
+
+<ApiMember kind="function" name="lv_gltf_set_camera" file="libs/gltf/gltf_view/lv_gltf.h" line={249} url="https://github.com/lvgl/lvgl/blob/master/src/libs/gltf/gltf_view/lv_gltf.h#L249">
+
+### lv_gltf_set_camera
+
+Set the active camera index The camera is selected from the first glTF model added to the viewer
+
+```c
+void lv_gltf_set_camera(lv_obj_t *obj, uint32_t value)
+```
+
+<span className="sr-only">Parameters</span>
+
+| Name | Type | Description |
+|------|------|-------------|
+| `obj` | <ApiLink name="lv_obj_t" display="lv_obj_t *" /> | pointer to a glTF viewer object |
+| `value` | <ApiLink name="uint32_t" /> | camera index (0 for default camera, 1+ for scene camera index) |
+
+<Callout type="info">
+Values higher than the scene's camera count will be clamped to the maximum available camera index
+</Callout>
+
+
+</ApiMember>
+
+<ApiMember kind="function" name="lv_gltf_set_animation_speed" file="libs/gltf/gltf_view/lv_gltf.h" line={281} url="https://github.com/lvgl/lvgl/blob/master/src/libs/gltf/gltf_view/lv_gltf.h#L281">
+
+### lv_gltf_set_animation_speed
+
+Set the animation speed ratio
+
+The actual ratio is the value parameter / LV_GLTF_ANIM_SPEED_NORMAL Values greater than LV_GLTF_ANIM_SPEED_NORMAL will speed-up the animation Values less than LV_GLTF_ANIM_SPEED_NORMAL will slow down the animation
+
+```c
+void lv_gltf_set_animation_speed(lv_obj_t *obj, uint32_t value)
+```
+
+<span className="sr-only">Parameters</span>
+
+| Name | Type | Description |
+|------|------|-------------|
+| `obj` | <ApiLink name="lv_obj_t" display="lv_obj_t *" /> | pointer to a glTF viewer object |
+| `value` | <ApiLink name="uint32_t" /> | speed-up ratio of the animation |
+
+
+</ApiMember>
+
+<ApiMember kind="function" name="lv_gltf_set_background_mode" file="libs/gltf/gltf_view/lv_gltf.h" line={301} url="https://github.com/lvgl/lvgl/blob/master/src/libs/gltf/gltf_view/lv_gltf.h#L301">
+
+### lv_gltf_set_background_mode
+
+Set the background mode
+
+```c
+void lv_gltf_set_background_mode(lv_obj_t *obj, lv_gltf_bg_mode_t value)
+```
+
+<span className="sr-only">Parameters</span>
+
+| Name | Type | Description |
+|------|------|-------------|
+| `obj` | <ApiLink name="lv_obj_t" display="lv_obj_t *" /> | pointer to a glTF viewer object |
+| `value` | <ApiLink name="lv_gltf_bg_mode_t" /> | background mode |
+
+
+</ApiMember>
+
+<ApiMember kind="function" name="lv_gltf_set_background_blur" file="libs/gltf/gltf_view/lv_gltf.h" line={315} url="https://github.com/lvgl/lvgl/blob/master/src/libs/gltf/gltf_view/lv_gltf.h#L315">
+
+### lv_gltf_set_background_blur
+
+Set the background blur amount
+
+```c
+void lv_gltf_set_background_blur(lv_obj_t *obj, uint32_t value)
+```
+
+<span className="sr-only">Parameters</span>
+
+| Name | Type | Description |
+|------|------|-------------|
+| `obj` | <ApiLink name="lv_obj_t" display="lv_obj_t *" /> | pointer to a glTF viewer object |
+| `value` | <ApiLink name="uint32_t" /> | blur amount between 0 and 100 |
+
+
+</ApiMember>
+
+<ApiMember kind="function" name="lv_gltf_set_env_brightness" file="libs/gltf/gltf_view/lv_gltf.h" line={329} url="https://github.com/lvgl/lvgl/blob/master/src/libs/gltf/gltf_view/lv_gltf.h#L329">
+
+### lv_gltf_set_env_brightness
+
+Set the environmental brightness/power
+
+```c
+void lv_gltf_set_env_brightness(lv_obj_t *obj, uint32_t value)
+```
+
+<span className="sr-only">Parameters</span>
+
+| Name | Type | Description |
+|------|------|-------------|
+| `obj` | <ApiLink name="lv_obj_t" display="lv_obj_t *" /> | pointer to a glTF viewer object |
+| `value` | <ApiLink name="uint32_t" /> | brightness multiplier |
+
+
+</ApiMember>
+
+<ApiMember kind="function" name="lv_gltf_set_image_exposure" file="libs/gltf/gltf_view/lv_gltf.h" line={343} url="https://github.com/lvgl/lvgl/blob/master/src/libs/gltf/gltf_view/lv_gltf.h#L343">
+
+### lv_gltf_set_image_exposure
+
+Set the image exposure level
+
+```c
+void lv_gltf_set_image_exposure(lv_obj_t *obj, float value)
+```
+
+<span className="sr-only">Parameters</span>
+
+| Name | Type | Description |
+|------|------|-------------|
+| `obj` | <ApiLink name="lv_obj_t" display="lv_obj_t *" /> | pointer to a glTF viewer object |
+| `value` | `float` | exposure level (1.0 is default) |
+
+
+</ApiMember>
+
+<ApiMember kind="function" name="lv_gltf_set_antialiasing_mode" file="libs/gltf/gltf_view/lv_gltf.h" line={361} url="https://github.com/lvgl/lvgl/blob/master/src/libs/gltf/gltf_view/lv_gltf.h#L361">
+
+### lv_gltf_set_antialiasing_mode
+
+Set the anti-aliasing mode
+
+```c
+void lv_gltf_set_antialiasing_mode(lv_obj_t *obj, lv_gltf_aa_mode_t value)
+```
+
+<span className="sr-only">Parameters</span>
+
+| Name | Type | Description |
+|------|------|-------------|
+| `obj` | <ApiLink name="lv_obj_t" display="lv_obj_t *" /> | pointer to a glTF viewer object |
+| `value` | <ApiLink name="lv_gltf_aa_mode_t" /> | anti-aliasing mode |
+
+
+</ApiMember>
+
+</ApiTab>
+<ApiTab value="Getters (21)">
+
+<ApiMember kind="function" name="lv_gltf_get_model_count" file="libs/gltf/gltf_view/lv_gltf.h" line={98} url="https://github.com/lvgl/lvgl/blob/master/src/libs/gltf/gltf_view/lv_gltf.h#L98">
+
+### lv_gltf_get_model_count
+
+Get the number of models loaded in the glTF viewer
+
+```c
+size_t lv_gltf_get_model_count(lv_obj_t *obj)
+```
+
+<span className="sr-only">Parameters</span>
+
+| Name | Type | Description |
+|------|------|-------------|
+| `obj` | <ApiLink name="lv_obj_t" display="lv_obj_t *" /> | pointer to a glTF viewer object |
+
+**Returns:** <ApiLink name="size_t" /> — the total number of models in the viewer
+
+
+</ApiMember>
+
+<ApiMember kind="function" name="lv_gltf_get_model_by_index" file="libs/gltf/gltf_view/lv_gltf.h" line={106} url="https://github.com/lvgl/lvgl/blob/master/src/libs/gltf/gltf_view/lv_gltf.h#L106">
+
+### lv_gltf_get_model_by_index
+
+Get a specific model by its index
+
+```c
+lv_gltf_model_t * lv_gltf_get_model_by_index(lv_obj_t *obj, size_t id)
+```
+
+<span className="sr-only">Parameters</span>
+
+| Name | Type | Description |
+|------|------|-------------|
+| `obj` | <ApiLink name="lv_obj_t" display="lv_obj_t *" /> | pointer to a glTF viewer object |
+| `id` | <ApiLink name="size_t" /> | index of the model to retrieve (0-based) |
+
+**Returns:** <ApiLink name="lv_gltf_model_t" display="lv_gltf_model_t *" /> — pointer to the model at the specified index, or NULL if index is invalid
+
+
+</ApiMember>
+
+<ApiMember kind="function" name="lv_gltf_get_primary_model" file="libs/gltf/gltf_view/lv_gltf.h" line={115} url="https://github.com/lvgl/lvgl/blob/master/src/libs/gltf/gltf_view/lv_gltf.h#L115">
+
+### lv_gltf_get_primary_model
+
+Get the primary model from the glTF viewer The primary model is the first model added to the viewer and can be used for camera selection and other primary operations
+
+```c
+lv_gltf_model_t * lv_gltf_get_primary_model(lv_obj_t *obj)
+```
+
+<span className="sr-only">Parameters</span>
+
+| Name | Type | Description |
+|------|------|-------------|
+| `obj` | <ApiLink name="lv_obj_t" display="lv_obj_t *" /> | pointer to a glTF viewer object |
+
+**Returns:** <ApiLink name="lv_gltf_model_t" display="lv_gltf_model_t *" /> — pointer to the primary model, or NULL if no models are loaded
+
+
+</ApiMember>
+
+<ApiMember kind="function" name="lv_gltf_get_yaw" file="libs/gltf/gltf_view/lv_gltf.h" line={129} url="https://github.com/lvgl/lvgl/blob/master/src/libs/gltf/gltf_view/lv_gltf.h#L129">
+
+### lv_gltf_get_yaw
+
+Get the yaw (horizontal rotation) of the camera
+
+```c
+float lv_gltf_get_yaw(const lv_obj_t *obj)
+```
+
+<span className="sr-only">Parameters</span>
+
+| Name | Type | Description |
+|------|------|-------------|
+| `obj` | <ApiLink name="lv_obj_t" display="const lv_obj_t *" /> | pointer to a glTF viewer object |
+
+**Returns:** `float` — yaw angle in degrees
+
+
+</ApiMember>
+
+<ApiMember kind="function" name="lv_gltf_get_pitch" file="libs/gltf/gltf_view/lv_gltf.h" line={143} url="https://github.com/lvgl/lvgl/blob/master/src/libs/gltf/gltf_view/lv_gltf.h#L143">
+
+### lv_gltf_get_pitch
+
+Get the pitch (vertical rotation) of the camera
+
+```c
+float lv_gltf_get_pitch(const lv_obj_t *obj)
+```
+
+<span className="sr-only">Parameters</span>
+
+| Name | Type | Description |
+|------|------|-------------|
+| `obj` | <ApiLink name="lv_obj_t" display="const lv_obj_t *" /> | pointer to a glTF viewer object |
+
+**Returns:** `float` — pitch angle in degrees
+
+
+</ApiMember>
+
+<ApiMember kind="function" name="lv_gltf_get_distance" file="libs/gltf/gltf_view/lv_gltf.h" line={157} url="https://github.com/lvgl/lvgl/blob/master/src/libs/gltf/gltf_view/lv_gltf.h#L157">
+
+### lv_gltf_get_distance
+
+Get the camera distance scale factor from the focal point
+
+```c
+float lv_gltf_get_distance(const lv_obj_t *obj)
+```
+
+<span className="sr-only">Parameters</span>
+
+| Name | Type | Description |
+|------|------|-------------|
+| `obj` | <ApiLink name="lv_obj_t" display="const lv_obj_t *" /> | pointer to a glTF viewer object |
+
+**Returns:** `float` — distance scaling factor value
+
+
+</ApiMember>
+
+<ApiMember kind="function" name="lv_gltf_get_world_distance" file="libs/gltf/gltf_view/lv_gltf.h" line={164} url="https://github.com/lvgl/lvgl/blob/master/src/libs/gltf/gltf_view/lv_gltf.h#L164">
+
+### lv_gltf_get_world_distance
+
+Get the camera distance from the focal point in world units
+
+```c
+float lv_gltf_get_world_distance(const lv_obj_t *obj)
+```
+
+<span className="sr-only">Parameters</span>
+
+| Name | Type | Description |
+|------|------|-------------|
+| `obj` | <ApiLink name="lv_obj_t" display="const lv_obj_t *" /> | pointer to a GLTF viewer object |
+
+**Returns:** `float` — world unit distance value
+
+
+</ApiMember>
+
+<ApiMember kind="function" name="lv_gltf_get_fov" file="libs/gltf/gltf_view/lv_gltf.h" line={182} url="https://github.com/lvgl/lvgl/blob/master/src/libs/gltf/gltf_view/lv_gltf.h#L182">
+
+### lv_gltf_get_fov
+
+Get the field of view
+
+```c
+float lv_gltf_get_fov(const lv_obj_t *obj)
+```
+
+<span className="sr-only">Parameters</span>
+
+| Name | Type | Description |
+|------|------|-------------|
+| `obj` | <ApiLink name="lv_obj_t" display="const lv_obj_t *" /> | pointer to a glTF viewer object |
+
+**Returns:** `float` — vertical FOV in degrees
+
+
+</ApiMember>
+
+<ApiMember kind="function" name="lv_gltf_get_focal_x" file="libs/gltf/gltf_view/lv_gltf.h" line={200} url="https://github.com/lvgl/lvgl/blob/master/src/libs/gltf/gltf_view/lv_gltf.h#L200">
+
+### lv_gltf_get_focal_x
+
+Get the X coordinate of the camera focal point
+
+```c
+float lv_gltf_get_focal_x(const lv_obj_t *obj)
+```
+
+<span className="sr-only">Parameters</span>
+
+| Name | Type | Description |
+|------|------|-------------|
+| `obj` | <ApiLink name="lv_obj_t" display="const lv_obj_t *" /> | pointer to a glTF viewer object |
+
+**Returns:** `float` — X coordinate
+
+
+</ApiMember>
+
+<ApiMember kind="function" name="lv_gltf_get_focal_y" file="libs/gltf/gltf_view/lv_gltf.h" line={214} url="https://github.com/lvgl/lvgl/blob/master/src/libs/gltf/gltf_view/lv_gltf.h#L214">
+
+### lv_gltf_get_focal_y
+
+Get the Y coordinate of the camera focal point
+
+```c
+float lv_gltf_get_focal_y(const lv_obj_t *obj)
+```
+
+<span className="sr-only">Parameters</span>
+
+| Name | Type | Description |
+|------|------|-------------|
+| `obj` | <ApiLink name="lv_obj_t" display="const lv_obj_t *" /> | pointer to a glTF viewer object |
+
+**Returns:** `float` — Y coordinate
+
+
+</ApiMember>
+
+<ApiMember kind="function" name="lv_gltf_get_focal_z" file="libs/gltf/gltf_view/lv_gltf.h" line={228} url="https://github.com/lvgl/lvgl/blob/master/src/libs/gltf/gltf_view/lv_gltf.h#L228">
+
+### lv_gltf_get_focal_z
+
+Get the Z coordinate of the camera focal point
+
+```c
+float lv_gltf_get_focal_z(const lv_obj_t *obj)
+```
+
+<span className="sr-only">Parameters</span>
+
+| Name | Type | Description |
+|------|------|-------------|
+| `obj` | <ApiLink name="lv_obj_t" display="const lv_obj_t *" /> | pointer to a glTF viewer object |
+
+**Returns:** `float` — Z coordinate
+
+
+</ApiMember>
+
+<ApiMember kind="function" name="lv_gltf_get_camera" file="libs/gltf/gltf_view/lv_gltf.h" line={256} url="https://github.com/lvgl/lvgl/blob/master/src/libs/gltf/gltf_view/lv_gltf.h#L256">
+
+### lv_gltf_get_camera
+
+Get the active camera index
+
+```c
+uint32_t lv_gltf_get_camera(const lv_obj_t *obj)
+```
+
+<span className="sr-only">Parameters</span>
+
+| Name | Type | Description |
+|------|------|-------------|
+| `obj` | <ApiLink name="lv_obj_t" display="const lv_obj_t *" /> | pointer to a glTF viewer object |
+
+**Returns:** <ApiLink name="uint32_t" /> — active camera index
+
+
+</ApiMember>
+
+<ApiMember kind="function" name="lv_gltf_get_camera_count" file="libs/gltf/gltf_view/lv_gltf.h" line={269} url="https://github.com/lvgl/lvgl/blob/master/src/libs/gltf/gltf_view/lv_gltf.h#L269">
+
+### lv_gltf_get_camera_count
+
+Get the number of cameras in the first glTF model added to the viewer This count represents the valid range for the camera index parameter used with <ApiLink name="lv_gltf_set_camera" display="lv_gltf_set_camera()" />
+
+To get the camera count of other models, call lv_gltf_model_get_camera_count(model) directly with the specific model
+
+```c
+uint32_t lv_gltf_get_camera_count(const lv_obj_t *obj)
+```
+
+<span className="sr-only">Parameters</span>
+
+| Name | Type | Description |
+|------|------|-------------|
+| `obj` | <ApiLink name="lv_obj_t" display="const lv_obj_t *" /> | pointer to a glTF viewer object |
+
+**Returns:** <ApiLink name="uint32_t" /> — number of available cameras
+
+
+</ApiMember>
+
+<ApiMember kind="function" name="lv_gltf_get_animation_speed" file="libs/gltf/gltf_view/lv_gltf.h" line={290} url="https://github.com/lvgl/lvgl/blob/master/src/libs/gltf/gltf_view/lv_gltf.h#L290">
+
+### lv_gltf_get_animation_speed
+
+Get the animation speed ratio
+
+The actual ratio is the return value / LV_GLTF_ANIM_SPEED_NORMAL
+
+```c
+uint32_t lv_gltf_get_animation_speed(const lv_obj_t *obj)
+```
+
+<span className="sr-only">Parameters</span>
+
+| Name | Type | Description |
+|------|------|-------------|
+| `obj` | <ApiLink name="lv_obj_t" display="const lv_obj_t *" /> | pointer to a glTF viewer object |
+
+
+</ApiMember>
+
+<ApiMember kind="function" name="lv_gltf_get_background_mode" file="libs/gltf/gltf_view/lv_gltf.h" line={308} url="https://github.com/lvgl/lvgl/blob/master/src/libs/gltf/gltf_view/lv_gltf.h#L308">
+
+### lv_gltf_get_background_mode
+
+Get the background mode
+
+```c
+lv_gltf_bg_mode_t lv_gltf_get_background_mode(const lv_obj_t *obj)
+```
+
+<span className="sr-only">Parameters</span>
+
+| Name | Type | Description |
+|------|------|-------------|
+| `obj` | <ApiLink name="lv_obj_t" display="const lv_obj_t *" /> | pointer to a glTF viewer object |
+
+**Returns:** <ApiLink name="lv_gltf_bg_mode_t" /> — background mode
+
+
+</ApiMember>
+
+<ApiMember kind="function" name="lv_gltf_get_background_blur" file="libs/gltf/gltf_view/lv_gltf.h" line={322} url="https://github.com/lvgl/lvgl/blob/master/src/libs/gltf/gltf_view/lv_gltf.h#L322">
+
+### lv_gltf_get_background_blur
+
+Get the background blur amount
+
+```c
+uint32_t lv_gltf_get_background_blur(const lv_obj_t *obj)
+```
+
+<span className="sr-only">Parameters</span>
+
+| Name | Type | Description |
+|------|------|-------------|
+| `obj` | <ApiLink name="lv_obj_t" display="const lv_obj_t *" /> | pointer to a glTF viewer object |
+
+**Returns:** <ApiLink name="uint32_t" /> — blur amount between 0 and 100
+
+
+</ApiMember>
+
+<ApiMember kind="function" name="lv_gltf_get_env_brightness" file="libs/gltf/gltf_view/lv_gltf.h" line={336} url="https://github.com/lvgl/lvgl/blob/master/src/libs/gltf/gltf_view/lv_gltf.h#L336">
+
+### lv_gltf_get_env_brightness
+
+Get the environmental brightness/power
+
+```c
+uint32_t lv_gltf_get_env_brightness(const lv_obj_t *obj)
+```
+
+<span className="sr-only">Parameters</span>
+
+| Name | Type | Description |
+|------|------|-------------|
+| `obj` | <ApiLink name="lv_obj_t" display="const lv_obj_t *" /> | pointer to a glTF viewer object |
+
+**Returns:** <ApiLink name="uint32_t" /> — brightness multiplier
+
+
+</ApiMember>
+
+<ApiMember kind="function" name="lv_gltf_get_image_exposure" file="libs/gltf/gltf_view/lv_gltf.h" line={350} url="https://github.com/lvgl/lvgl/blob/master/src/libs/gltf/gltf_view/lv_gltf.h#L350">
+
+### lv_gltf_get_image_exposure
+
+Get the image exposure level
+
+```c
+float lv_gltf_get_image_exposure(const lv_obj_t *obj)
+```
+
+<span className="sr-only">Parameters</span>
+
+| Name | Type | Description |
+|------|------|-------------|
+| `obj` | <ApiLink name="lv_obj_t" display="const lv_obj_t *" /> | pointer to a glTF viewer object |
+
+**Returns:** `float` — exposure level
+
+
+</ApiMember>
+
+<ApiMember kind="function" name="lv_gltf_get_antialiasing_mode" file="libs/gltf/gltf_view/lv_gltf.h" line={368} url="https://github.com/lvgl/lvgl/blob/master/src/libs/gltf/gltf_view/lv_gltf.h#L368">
+
+### lv_gltf_get_antialiasing_mode
+
+Get the anti-aliasing mode
+
+```c
+lv_gltf_aa_mode_t lv_gltf_get_antialiasing_mode(const lv_obj_t *obj)
+```
+
+<span className="sr-only">Parameters</span>
+
+| Name | Type | Description |
+|------|------|-------------|
+| `obj` | <ApiLink name="lv_obj_t" display="const lv_obj_t *" /> | pointer to a glTF viewer object |
+
+**Returns:** <ApiLink name="lv_gltf_aa_mode_t" /> — anti-aliasing mode
+
+
+</ApiMember>
+
+<ApiMember kind="function" name="lv_gltf_get_current_view_plane" file="libs/gltf/gltf_view/lv_gltf.h" line={390} url="https://github.com/lvgl/lvgl/blob/master/src/libs/gltf/gltf_view/lv_gltf.h#L390">
+
+### lv_gltf_get_current_view_plane
+
+Get a plane that faces the current view camera, centered some units in front of it
+
+```c
+lv_3dplane_t lv_gltf_get_current_view_plane(lv_obj_t *obj, float distance)
+```
+
+<span className="sr-only">Parameters</span>
+
+| Name | Type | Description |
+|------|------|-------------|
+| `obj` | <ApiLink name="lv_obj_t" display="lv_obj_t *" /> | pointer to a GLTF viewer object |
+| `distance` | `float` | distance in front of the camera to set the plane, in world units. see lv_gltf_get_world_distance to get the auto-distance |
+
+**Returns:** <ApiLink name="lv_3dplane_t" /> — camera facing plane
+
+
+</ApiMember>
+
+<ApiMember kind="function" name="lv_gltf_get_ray_from_2d_coordinate" file="libs/gltf/gltf_view/lv_gltf.h" line={398} url="https://github.com/lvgl/lvgl/blob/master/src/libs/gltf/gltf_view/lv_gltf.h#L398">
+
+### lv_gltf_get_ray_from_2d_coordinate
+
+Calculates a ray originating from the camera and passing through the specified mouse position on the screen.
+
+```c
+lv_3dray_t lv_gltf_get_ray_from_2d_coordinate(lv_obj_t *obj, const lv_point_t *screen_pos)
+```
+
+<span className="sr-only">Parameters</span>
+
+| Name | Type | Description |
+|------|------|-------------|
+| `obj` | <ApiLink name="lv_obj_t" display="lv_obj_t *" /> | pointer to a GLTF viewer object |
+| `screen_pos` | <ApiLink name="lv_point_t" display="const lv_point_t *" /> | screen co-ordinate, in pixels |
+
+**Returns:** <ApiLink name="lv_3dray_t" /> — mouse point ray
+
+
+</ApiMember>
+
+</ApiTab>
+<ApiTab value="Other (6)">
+
+<ApiMember kind="function" name="lv_gltf_create" file="libs/gltf/gltf_view/lv_gltf.h" line={64} url="https://github.com/lvgl/lvgl/blob/master/src/libs/gltf/gltf_view/lv_gltf.h#L64">
+
+### lv_gltf_create
+
+Create a glTF object
+
+```c
+lv_obj_t * lv_gltf_create(lv_obj_t *parent)
+```
+
+<span className="sr-only">Parameters</span>
+
+| Name | Type | Description |
+|------|------|-------------|
+| `parent` | <ApiLink name="lv_obj_t" display="lv_obj_t *" /> | pointer to the parent object |
+
+**Returns:** <ApiLink name="lv_obj_t" display="lv_obj_t *" /> — pointer to the created glTF object
+
+
+</ApiMember>
+
+<ApiMember kind="function" name="lv_gltf_load_model_from_file" file="libs/gltf/gltf_view/lv_gltf.h" line={82} url="https://github.com/lvgl/lvgl/blob/master/src/libs/gltf/gltf_view/lv_gltf.h#L82">
+
+### lv_gltf_load_model_from_file
+
+Load a glTF model from a file into the viewer
+
+```c
+lv_gltf_model_t * lv_gltf_load_model_from_file(lv_obj_t *obj, const char *path)
+```
+
+<span className="sr-only">Parameters</span>
+
+| Name | Type | Description |
+|------|------|-------------|
+| `obj` | <ApiLink name="lv_obj_t" display="lv_obj_t *" /> | pointer to a glTF viewer object |
+| `path` | `const char *` | file path to the glTF model to load |
+
+**Returns:** <ApiLink name="lv_gltf_model_t" display="lv_gltf_model_t *" /> — pointer to the loaded glTF model, or NULL on failure
+
+
+</ApiMember>
+
+<ApiMember kind="function" name="lv_gltf_load_model_from_bytes" file="libs/gltf/gltf_view/lv_gltf.h" line={91} url="https://github.com/lvgl/lvgl/blob/master/src/libs/gltf/gltf_view/lv_gltf.h#L91">
+
+### lv_gltf_load_model_from_bytes
+
+Load a glTF model from a byte array into the viewer
+
+```c
+lv_gltf_model_t * lv_gltf_load_model_from_bytes(lv_obj_t *obj, const uint8_t *bytes, size_t len)
+```
+
+<span className="sr-only">Parameters</span>
+
+| Name | Type | Description |
+|------|------|-------------|
+| `obj` | <ApiLink name="lv_obj_t" display="lv_obj_t *" /> | pointer to a glTF viewer object |
+| `bytes` | <ApiLink name="uint8_t" display="const uint8_t *" /> | glTF raw data |
+| `len` | <ApiLink name="size_t" /> | glTF raw data length in bytes |
+
+**Returns:** <ApiLink name="lv_gltf_model_t" display="lv_gltf_model_t *" /> — pointer to the loaded glTF model, or NULL on failure
+
+
+</ApiMember>
+
+<ApiMember kind="function" name="lv_gltf_recenter" file="libs/gltf/gltf_view/lv_gltf.h" line={235} url="https://github.com/lvgl/lvgl/blob/master/src/libs/gltf/gltf_view/lv_gltf.h#L235">
+
+### lv_gltf_recenter
+
+Set the focal coordinates to the center point of the model object
+
+```c
+void lv_gltf_recenter(lv_obj_t *obj, lv_gltf_model_t *model)
+```
+
+<span className="sr-only">Parameters</span>
+
+| Name | Type | Description |
+|------|------|-------------|
+| `obj` | <ApiLink name="lv_obj_t" display="lv_obj_t *" /> | pointer to a glTF viewer object |
+| `model` | <ApiLink name="lv_gltf_model_t" display="lv_gltf_model_t *" /> | a model attached to this viewer or NULL for the first model |
+
+
+</ApiMember>
+
+<ApiMember kind="function" name="lv_intersect_ray_with_plane" file="libs/gltf/gltf_view/lv_gltf.h" line={381} url="https://github.com/lvgl/lvgl/blob/master/src/libs/gltf/gltf_view/lv_gltf.h#L381">
+
+### lv_intersect_ray_with_plane
+
+Get the point that a given ray intersects with a specified plane at, if any
+
+```c
+lv_result_t lv_intersect_ray_with_plane(const lv_3dray_t *ray, const lv_3dplane_t *plane, lv_3dpoint_t *collision_point)
+```
+
+<span className="sr-only">Parameters</span>
+
+| Name | Type | Description |
+|------|------|-------------|
+| `ray` | <ApiLink name="lv_3dray_t" display="const lv_3dray_t *" /> | the intersection test ray |
+| `plane` | <ApiLink name="lv_3dplane_t" display="const lv_3dplane_t *" /> |  |
+| `collision_point` | <ApiLink name="lv_3dpoint_t" display="lv_3dpoint_t *" /> | output <ApiLink name="lv_3dpoint_t" /> holder, values are only valid if true is the return value |
+
+**Returns:** <ApiLink name="lv_result_t" /> — LV_RESULT_OK if intersection, LV_RESULT_INVALID if no intersection
+
+
+</ApiMember>
+
+<ApiMember kind="function" name="lv_gltf_world_to_screen" file="libs/gltf/gltf_view/lv_gltf.h" line={408} url="https://github.com/lvgl/lvgl/blob/master/src/libs/gltf/gltf_view/lv_gltf.h#L408">
+
+### lv_gltf_world_to_screen
+
+Get the screen position of a 3d point
+
+```c
+lv_result_t lv_gltf_world_to_screen(lv_obj_t *obj, const lv_3dpoint_t world_pos, lv_point_t *screen_pos)
+```
+
+<span className="sr-only">Parameters</span>
+
+| Name | Type | Description |
+|------|------|-------------|
+| `obj` | <ApiLink name="lv_obj_t" display="lv_obj_t *" /> | pointer to a GLTF viewer object |
+| `world_pos` | <ApiLink name="lv_3dpoint_t" display="const lv_3dpoint_t" /> | world position to convert |
+| `screen_pos` | <ApiLink name="lv_point_t" display="lv_point_t *" /> |  |
+
+**Returns:** <ApiLink name="lv_result_t" /> — LV_RESULT_OK if conversion valid, LV_RESULT_INVALID if no valid conversion
+
+
+</ApiMember>
+
+</ApiTab>
+</ApiTabs>
+## Enums
+
+<ApiMember kind="enum" name="lv_gltf_aa_mode_t" file="libs/gltf/gltf_view/lv_gltf.h" line={43} url="https://github.com/lvgl/lvgl/blob/master/src/libs/gltf/gltf_view/lv_gltf.h#L43">
+
+### lv_gltf_aa_mode_t
+
+| Name | Value | Description |
+|------|------|------|
+| `LV_GLTF_AA_MODE_OFF` | `0` |  |
+| `LV_GLTF_AA_MODE_ON` | `1` | Anti aliasing off |
+| `LV_GLTF_AA_MODE_DYNAMIC` | `2` | Anti aliasing on |
+
+
+</ApiMember>
+
+<TypeUsedBy name="lv_gltf_aa_mode_t" count={1}>
+
+- `lv_gltf_set_antialiasing_mode` — param `value`
+
+</TypeUsedBy>
+
+<ApiMember kind="enum" name="lv_gltf_bg_mode_t" file="libs/gltf/gltf_view/lv_gltf.h" line={49} url="https://github.com/lvgl/lvgl/blob/master/src/libs/gltf/gltf_view/lv_gltf.h#L49">
+
+### lv_gltf_bg_mode_t
+
+| Name | Value | Description |
+|------|------|------|
+| `LV_GLTF_BG_MODE_SOLID` | `0` |  |
+| `LV_GLTF_BG_MODE_ENVIRONMENT` | `1` | Solid background. Use <ApiLink name="lv_obj_set_style_bg_color" /> to set the background color |
+
+
+</ApiMember>
+
+<TypeUsedBy name="lv_gltf_bg_mode_t" count={1}>
+
+- `lv_gltf_set_background_mode` — param `value`
+
+</TypeUsedBy>
+
+## Macros
+
+<ApiMember kind="macro" name="LV_GLTF_ANIM_SPEED_TENTH" file="libs/gltf/gltf_view/lv_gltf.h" line={30} url="https://github.com/lvgl/lvgl/blob/master/src/libs/gltf/gltf_view/lv_gltf.h#L30">
+
+### LV_GLTF_ANIM_SPEED_TENTH
+
+```c
+#define LV_GLTF_ANIM_SPEED_TENTH 100
+```
+
+
+</ApiMember>
+
+<ApiMember kind="macro" name="LV_GLTF_ANIM_SPEED_QUARTER" file="libs/gltf/gltf_view/lv_gltf.h" line={31} url="https://github.com/lvgl/lvgl/blob/master/src/libs/gltf/gltf_view/lv_gltf.h#L31">
+
+### LV_GLTF_ANIM_SPEED_QUARTER
+
+```c
+#define LV_GLTF_ANIM_SPEED_QUARTER 250
+```
+
+
+</ApiMember>
+
+<ApiMember kind="macro" name="LV_GLTF_ANIM_SPEED_HALF" file="libs/gltf/gltf_view/lv_gltf.h" line={32} url="https://github.com/lvgl/lvgl/blob/master/src/libs/gltf/gltf_view/lv_gltf.h#L32">
+
+### LV_GLTF_ANIM_SPEED_HALF
+
+```c
+#define LV_GLTF_ANIM_SPEED_HALF 500
+```
+
+
+</ApiMember>
+
+<ApiMember kind="macro" name="LV_GLTF_ANIM_SPEED_NORMAL" file="libs/gltf/gltf_view/lv_gltf.h" line={33} url="https://github.com/lvgl/lvgl/blob/master/src/libs/gltf/gltf_view/lv_gltf.h#L33">
+
+### LV_GLTF_ANIM_SPEED_NORMAL
+
+```c
+#define LV_GLTF_ANIM_SPEED_NORMAL 1000
+```
+
+
+</ApiMember>
+
+<ApiMember kind="macro" name="LV_GLTF_ANIM_SPEED_2X" file="libs/gltf/gltf_view/lv_gltf.h" line={34} url="https://github.com/lvgl/lvgl/blob/master/src/libs/gltf/gltf_view/lv_gltf.h#L34">
+
+### LV_GLTF_ANIM_SPEED_2X
+
+```c
+#define LV_GLTF_ANIM_SPEED_2X 2000
+```
+
+
+</ApiMember>
+
+<ApiMember kind="macro" name="LV_GLTF_ANIM_SPEED_3X" file="libs/gltf/gltf_view/lv_gltf.h" line={35} url="https://github.com/lvgl/lvgl/blob/master/src/libs/gltf/gltf_view/lv_gltf.h#L35">
+
+### LV_GLTF_ANIM_SPEED_3X
+
+```c
+#define LV_GLTF_ANIM_SPEED_3X 3000
+```
+
+
+</ApiMember>
+
+<ApiMember kind="macro" name="LV_GLTF_ANIM_SPEED_4X" file="libs/gltf/gltf_view/lv_gltf.h" line={36} url="https://github.com/lvgl/lvgl/blob/master/src/libs/gltf/gltf_view/lv_gltf.h#L36">
+
+### LV_GLTF_ANIM_SPEED_4X
+
+```c
+#define LV_GLTF_ANIM_SPEED_4X 4000
+```
+
+
+</ApiMember>
+
+<ApiMember kind="macro" name="LV_GLTF_DEFAULT_CAMERA" file="libs/gltf/gltf_view/lv_gltf.h" line={37} url="https://github.com/lvgl/lvgl/blob/master/src/libs/gltf/gltf_view/lv_gltf.h#L37">
+
+### LV_GLTF_DEFAULT_CAMERA
+
+```c
+#define LV_GLTF_DEFAULT_CAMERA 0
+```
+
+
+</ApiMember>
+
+## Dependencies
+
+<FileIncludes
+  includes={["lv_conf_internal.h", "lv_3dmath.h", "lv_types.h", "lv_area.h", "lv_gltf_model.h"]}
+  includedBy={["lv_gltf_data_internal.hpp", "lv_gltf_view_internal.h"]}
+  transitiveIncludes={["lv_array.h", "lv_conf_kconfig.h", "lv_event.h", "lv_gltf_model_node.h", "lv_math.h"]}
+/>

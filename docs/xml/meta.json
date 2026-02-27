@@ -1,0 +1,41 @@
+{
+  "title": "LVGL Pro and XML",
+  "pages": [
+    {
+      "slug": "intro",
+      "title": "Intro"
+    },
+    {
+      "slug": "learn_by_examples",
+      "title": "Learn by Examples"
+    },
+    {
+      "slug": "editor",
+      "title": "Editor"
+    },
+    {
+      "slug": "xml",
+      "title": "XML"
+    },
+    {
+      "slug": "integration",
+      "title": "Integration"
+    },
+    {
+      "slug": "ui_elements",
+      "title": "UI Elements"
+    },
+    {
+      "slug": "assets",
+      "title": "Assets"
+    },
+    {
+      "slug": "features",
+      "title": "Features"
+    },
+    {
+      "slug": "tools",
+      "title": "Tools"
+    }
+  ]
+}

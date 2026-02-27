@@ -1,0 +1,29 @@
+{
+  "title": "Chip Vendor Support",
+  "pages": [
+    {
+      "slug": "alif",
+      "title": "Alif"
+    },
+    {
+      "slug": "arm",
+      "title": "Arm"
+    },
+    {
+      "slug": "espressif",
+      "title": "Espressif"
+    },
+    {
+      "slug": "nxp",
+      "title": "Nxp"
+    },
+    {
+      "slug": "renesas",
+      "title": "Renesas"
+    },
+    {
+      "slug": "stm32",
+      "title": "Stm32"
+    }
+  ]
+}
