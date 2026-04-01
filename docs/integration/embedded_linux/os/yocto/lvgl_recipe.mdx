@@ -383,7 +383,7 @@ their build system.
 configuration step.
 
 **S**: This variable defines the source directory where the unpacked source
-code will be located after fetching. `${WORKDIR}` is a standard
+code will be located after fetching. `\${WORKDIR}` is a standard
 variable in BitBake that points to the working directory for the recipe.
 
 **require**: This line includes another configuration file, `lv-conf.inc`,
@@ -447,7 +447,7 @@ Patch task locates the patch files and applies the patches to the sources
    available.
 
 Patch file is also defined in **SRC_URI** variable. By default it runs in
-   current source directory **${S}**.
+   current source directory **\${S}**.
 
 Configure (do_configure)
 
@@ -499,7 +499,7 @@ bitbake lvgl -c install
 ```
 
 The Install task copies files that are to be packaged into the holding area
-   **${D}**. This task runs with the current working directory **${S}** which
+   **\${D}**. This task runs with the current working directory **\${S}** which
    is the compilation directory.
 
 It creates the necessary directory for the header files in the destination
