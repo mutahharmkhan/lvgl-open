@@ -24,7 +24,7 @@ Once enabled, several things change:
 - two additional configuration macros both <ApiLink name="LV_OBJ_ID_AUTO_ASSIGN" /> and
   <ApiLink name="LV_USE_OBJ_ID_BUILTIN" /> now have meaning.
 
-### <ApiLink name="LV_OBJ_ID_AUTO_ASSIGN" />
+### `LV_OBJ_ID_AUTO_ASSIGN`
 
 This macro  in `lv_conf.h` defaults to whatever value <ApiLink name="LV_USE_OBJ_ID" />
 equates to.  You can change this if you wish.  Either way, if it equates to a
@@ -39,19 +39,19 @@ Because of this timing, custom versions of these functions can be used according
 the below, and they can even be used like "event hooks" to implement a trace
 operation that occurs when each Widget is created and deleted.
 
-##### <ApiLink name="lv_obj_assign_id" display="lv_obj_assign_id(class_p, widget)" />
+##### `lv_obj_assign_id(class_p, widget)`
 
 This function (whether provided by LVGL or by you --- more on this below) is
 responsible for assigning a value to the Widget's `id` field, and possibly do
 other things, depending on the implementation.
 
-##### <ApiLink name="lv_obj_free_id" display="lv_obj_free_id(widget)" />
+##### `lv_obj_free_id(widget)`
 
 This function (whether provided by LVGL or by you --- more on this below) is
 responsible for doing the clean-up of any resources allocated by
 <ApiLink name="lv_obj_assign_id" />
 
-### <ApiLink name="LV_USE_OBJ_ID_BUILTIN" />
+### `LV_USE_OBJ_ID_BUILTIN`
 
 This macro  in `lv_conf.h` equates to `1` by default.  You can change this if you
 wish.  When it equates to a non-zero value the following function implementations are
