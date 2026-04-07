@@ -169,7 +169,7 @@ this field.  The possible "json_type" values are:
   Fields:
   
   - `"name"`: struct name (data type if defined by `typedef`)
-  - `"type"`: a "primitive_type" object {"name": "struct", "json_type": "primitive_type"}.  (See definition above.)
+  - `"type"`: a "primitive_type" object `{"name": "struct", "json_type": "primitive_type"}`.  (See definition above.)
   - `"docstring"`: string containing Doxygen-extracted documentation
   - `"fields"`: array of `"field"` objects (See definition above.)
   - `"quals"`: array of any qualifiers present, e.g. "const"
@@ -178,7 +178,7 @@ this field.  The possible "json_type" values are:
   Fields:
   
   - `"name"`: union name (data type if defined by `typedef`)
-  - `"type"`: a "primitive_type" object {"name": "union", "json_type": "primitive_type"}.  (See definition above.)
+  - `"type"`: a "primitive_type" object `{"name": "union", "json_type": "primitive_type"}`.  (See definition above.)
   - `"docstring"`: string containing Doxygen-extracted documentation
   - `"fields"`: array of `"field"` elements.
   - `"quals"`: array of any qualifiers present, e.g. "const"
@@ -232,7 +232,7 @@ this field.  The possible "json_type" values are:
   Fields:
   
   - `"name"`: type name (e.g. `lv_part_t`)
-  - `"type"`: a "primitive_type" object {"name": "uint32_t", "json_type": "stdlib_type"}.  (See definition above.)
+  - `"type"`: a "primitive_type" object `{"name": "uint32_t", "json_type": "stdlib_type"}`.  (See definition above.)
   - `"json_type"` carries object type (e.g. "enum", "function", etc.) identifying the top-level group it comes from.
   - `"docstring"`: string containing Doxygen-extracted documentation
   - `"quals"`: array of any qualifiers present, e.g. "const"

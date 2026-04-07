@@ -18,14 +18,14 @@ the content of the UI.
 
 Screens can have only the following child XML tags:
 
-- <consts> <xml_consts>
-- <styles> <xml_styles>
-- <view> <xml_view>
+- `<consts>`
+- `<styles>`
+- `<view>`
 
 That is, Screens **cannot** have:
 
-- <api> <xml_api>: Screens are always created as they are, with no parameters.
-- <preview> <xml_preview>: In LVGL's UI Editor, `<preview>` is used to set the style, size, and other parameters of the previewing "screen". For Screens, the
+- `<api>`: Screens are always created as they are, with no parameters.
+- `<preview>`: In LVGL's UI Editor, `<preview>` is used to set the style, size, and other parameters of the previewing "screen". For Screens, the
   preview options are defined in `project.xml`. Learn more in [Screen preview](/xml/ui_elements/screens)
 
 ## Usage
