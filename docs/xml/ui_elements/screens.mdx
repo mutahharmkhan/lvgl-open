@@ -18,14 +18,14 @@ the content of the UI.
 
 Screens can have only the following child XML tags:
 
-- `<consts>`
-- `<styles>`
-- `<view>`
+- [&lt;consts>](/xml/ui_elements/consts)
+- [&lt;styles>](/xml/ui_elements/styles)
+- [&lt;view>](/xml/ui_elements/view)
 
 That is, Screens **cannot** have:
 
-- `<api>`: Screens are always created as they are, with no parameters.
-- `<preview>`: In LVGL's UI Editor, `<preview>` is used to set the style, size, and other parameters of the previewing "screen". For Screens, the
+- [&lt;api>](/xml/ui_elements/api): Screens are always created as they are, with no parameters.
+- [&lt;preview>](/xml/ui_elements/preview): In LVGL's UI Editor, `<preview>` is used to set the style, size, and other parameters of the previewing "screen". For Screens, the
   preview options are defined in `project.xml`. Learn more in [Screen preview](/xml/ui_elements/screens)
 
 ## Usage
@@ -88,7 +88,7 @@ non-permanent screens need to be **created** by
 
 ## Preview
 
-Screens don't support the `<preview>` tag because it doesn't make
+Screens don't support the [&lt;preview>](/xml/ui_elements/preview) tag because it doesn't make
 sense to preview each screen in different resolutions.
 
 As Screens are related to the target hardware in the `project.xml` file, multiple

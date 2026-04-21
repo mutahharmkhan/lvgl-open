@@ -1,17 +1,10 @@
 {
   "title": "Themes",
   "pages": [
-    "index",
     "default",
     "mono",
     "simple",
-    {
-      "slug": "lv_theme_h",
-      "title": "lv_theme.h"
-    },
-    {
-      "slug": "lv_theme_private_h",
-      "title": "lv_theme_private.h"
-    }
+    "lv_theme_h",
+    "lv_theme_private_h"
   ]
 }

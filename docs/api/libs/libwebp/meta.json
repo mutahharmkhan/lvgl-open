@@ -1,10 +1,6 @@
 {
   "title": "Libwebp",
   "pages": [
-    "index",
-    {
-      "slug": "lv_libwebp_h",
-      "title": "lv_libwebp.h"
-    }
+    "lv_libwebp_h"
   ]
 }

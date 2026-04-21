@@ -1,10 +1,6 @@
 {
   "title": "Bmp",
   "pages": [
-    "index",
-    {
-      "slug": "lv_bmp_h",
-      "title": "lv_bmp.h"
-    }
+    "lv_bmp_h"
   ]
 }

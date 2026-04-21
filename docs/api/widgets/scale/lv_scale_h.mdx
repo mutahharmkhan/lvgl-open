@@ -193,18 +193,7 @@ void lv_scale_set_rotation(lv_obj_t *obj, int32_t rotation)
 | Name | Type | Description |
 |------|------|-------------|
 | `obj` | <ApiLink name="lv_obj_t" display="lv_obj_t *" /> | pointer to Scale Widget |
-| `rotation` | <ApiLink name="int32_t" /> | clockwise angular offset (in degrees) from the 3-o'clock position of the low end of the scale; negative and >360 values are first normalized to range [0..360]. Examples:
-- 0 = 3 o'clock (right side)
-- 30 = 4 o'clock
-- 60 = 5 o'clock
-- 90 = 6 o'clock
-- 135 = midway between 7 and 8 o'clock (default)
-- 180 = 9 o'clock
-- 270 = 12 o'clock
-- 300 = 1 o'clock
-- 330 = 2 o'clock
-- -30 = 2 o'clock
-- 390 = 4 o'clock |
+| `rotation` | <ApiLink name="int32_t" /> | clockwise angular offset (in degrees) from the 3-o'clock position of the low end of the scale; negative and >360 values are first normalized to range [0..360]. Examples:<br/>- 0 = 3 o'clock (right side)<br/>- 30 = 4 o'clock<br/>- 60 = 5 o'clock<br/>- 90 = 6 o'clock<br/>- 135 = midway between 7 and 8 o'clock (default)<br/>- 180 = 9 o'clock<br/>- 270 = 12 o'clock<br/>- 300 = 1 o'clock<br/>- 330 = 2 o'clock<br/>- -30 = 2 o'clock<br/>- 390 = 4 o'clock |
 
 
 </ApiMember>
@@ -225,9 +214,7 @@ void lv_scale_set_line_needle_value(lv_obj_t *obj, lv_obj_t *needle_line, int32_
 |------|------|-------------|
 | `obj` | <ApiLink name="lv_obj_t" display="lv_obj_t *" /> | pointer to Scale Widget |
 | `needle_line` | <ApiLink name="lv_obj_t" display="lv_obj_t *" /> | needle_line of the Scale. The line points will be allocated and managed by the Scale unless the line point array was previously set using <ApiLink name="lv_line_set_points_mutable" />. |
-| `needle_length` | <ApiLink name="int32_t" /> | length of the needle
-- needle_length>0: needle_length=needle_length;
-- needle_length\<0: needle_length=radius-|needle_length|; |
+| `needle_length` | <ApiLink name="int32_t" /> | length of the needle<br/>- needle_length>0: needle_length=needle_length;<br/>- needle_length\<0: needle_length=radius-\|needle_length\|; |
 | `value` | <ApiLink name="int32_t" /> | Scale value needle will point to |
 
 

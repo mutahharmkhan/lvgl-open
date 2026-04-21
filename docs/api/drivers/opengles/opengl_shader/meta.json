@@ -1,10 +1,6 @@
 {
   "title": "Opengl_shader",
   "pages": [
-    "index",
-    {
-      "slug": "lv_opengl_shader_internal_h",
-      "title": "lv_opengl_shader_internal.h"
-    }
+    "lv_opengl_shader_internal_h"
   ]
 }

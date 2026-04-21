@@ -1,10 +1,6 @@
 {
   "title": "Ili9341",
   "pages": [
-    "index",
-    {
-      "slug": "lv_ili9341_h",
-      "title": "lv_ili9341.h"
-    }
+    "lv_ili9341_h"
   ]
 }

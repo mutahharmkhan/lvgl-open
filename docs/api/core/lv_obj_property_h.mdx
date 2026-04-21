@@ -246,14 +246,8 @@ Group of predefined widget ID start value.
 | `color` | <ApiLink name="lv_color_t" /> | Colors |
 | `precise` | <ApiLink name="lv_value_precise_t" /> | float or int for precise value |
 | `point` | <ApiLink name="lv_point_t" /> | Point, contains two <ApiLink name="int32_t" /> |
-| `style` | <ApiLink name="lv_style_value_t" /> | Note that place struct member style at first place is intended. style shares same memory with num, ptr, color. So we set the style value directly without using `prop.style.num`.
-
-E.g.
-
-static const <ApiLink name="lv_property_t" /> obj_pos_x = \{ .id = LV_PROPERTY_STYLE_X, .num = 123, .selector = LV_STATE_PRESSED, \}
-
-instead of: static const <ApiLink name="lv_property_t" /> obj_pos_x = \{ .id = LV_PROPERTY_STYLE_X, .style.num = 123, // note this line. .selector = LV_STATE_PRESSED, \} Make sure it's the first element in struct. |
-| `selector` | <ApiLink name="uint32_t" /> | Style selector, <ApiLink name="lv_part_t" /> | <ApiLink name="lv_state_t" /> |
+| `style` | <ApiLink name="lv_style_value_t" /> | Note that place struct member style at first place is intended. style shares same memory with num, ptr, color. So we set the style value directly without using `prop.style.num`.<br/><br/>E.g.<br/><br/>static const <ApiLink name="lv_property_t" /> obj_pos_x = \{ .id = LV_PROPERTY_STYLE_X, .num = 123, .selector = LV_STATE_PRESSED, \}<br/><br/>instead of: static const <ApiLink name="lv_property_t" /> obj_pos_x = \{ .id = LV_PROPERTY_STYLE_X, .style.num = 123, // note this line. .selector = LV_STATE_PRESSED, \} Make sure it's the first element in struct. |
+| `selector` | <ApiLink name="uint32_t" /> | Style selector, <ApiLink name="lv_part_t" /> \| <ApiLink name="lv_state_t" /> |
 | `arg1` | `(anonymous union)::@335136057345362022203225305313326313305017252136::@126144125202033026001204047125312050107110014077` |  |
 | `arg2` | `(anonymous union)::@335136057345362022203225305313326313305017252136::@126144125202033026001204047125312050107110014077` |  |
 | `@347241260141206001221245227317300332013104117240` | `(anonymous union)` |  |

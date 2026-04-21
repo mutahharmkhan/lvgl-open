@@ -1,64 +1,19 @@
 {
   "pages": [
-    {
-      "slug": "introduction",
-      "title": "Introduction"
-    },
-    {
-      "slug": "getting_started",
-      "title": "Getting Started"
-    },
-    {
-      "slug": "examples",
-      "title": "Examples"
-    },
-    {
-      "slug": "integration",
-      "title": "Integration"
-    },
-    {
-      "slug": "main-modules",
-      "title": "Main Modules"
-    },
-    {
-      "slug": "common-widget-features",
-      "title": "Common Widget Features"
-    },
-    {
-      "slug": "widgets",
-      "title": "Widgets"
-    },
-    {
-      "slug": "xml",
-      "title": "XML"
-    },
-    {
-      "slug": "auxiliary-modules",
-      "title": "Auxiliary Modules"
-    },
-    {
-      "slug": "libs",
-      "title": "Libs"
-    },
-    {
-      "slug": "debugging",
-      "title": "Debugging"
-    },
-    {
-      "slug": "guides",
-      "title": "Guides"
-    },
-    {
-      "slug": "contributing",
-      "title": "Contributing"
-    },
-    {
-      "slug": "CHANGELOG",
-      "title": "CHANGELOG"
-    },
-    {
-      "slug": "api",
-      "title": "API"
-    }
+    "introduction",
+    "getting_started",
+    "examples",
+    "integration",
+    "main-modules",
+    "common-widget-features",
+    "widgets",
+    "xml",
+    "auxiliary-modules",
+    "libs",
+    "debugging",
+    "guides",
+    "contributing",
+    "CHANGELOG",
+    "API"
   ]
 }

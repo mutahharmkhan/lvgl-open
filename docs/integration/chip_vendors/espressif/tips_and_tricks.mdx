@@ -200,30 +200,30 @@ Some ESP file systems provide automatic generation from a host folder using CMak
   
   The core functionality requires only a few lines. The following example draws the image as well.
   
-  ```c
-  #include "esp_spiffs.h"
-
-  void lv_example_image_from_esp_fs(void) {
-
-     esp_vfs_spiffs_conf_t conf = {
-        .base_path = "/spiffs",
-        .partition_label = NULL,
-        .max_files = 5,
-        .format_if_mount_failed = false
-     };
-
-     esp_err_t ret = esp_vfs_spiffs_register(&conf);
-
-     if (ret != ESP_OK) {
-        ESP_LOGE(TAG, "Failed to register SPIFF filesystem");
-        return;
-     }
-
-     lv_obj_t * obj = lv_image_create(lv_screen_active());
-     lv_image_set_src(widget, "A:/spiffs/logo.bin");
-     lv_obj_center(widget);
-  }
-  ```
+  .. code:: c
+  
+     #include "esp_spiffs.h"
+  
+     void lv_example_image_from_esp_fs(void) \{
+  
+        esp_vfs_spiffs_conf_t conf = \{
+           .base_path = "/spiffs",
+           .partition_label = NULL,
+           .max_files = 5,
+           .format_if_mount_failed = false
+        \};
+  
+        esp_err_t ret = esp_vfs_spiffs_register(&conf);
+  
+        if (ret != ESP_OK) \{
+           ESP_LOGE(TAG, "Failed to register SPIFF filesystem");
+           return;
+        \}
+  
+        lv_obj_t * obj = lv_image_create(lv_screen_active());
+        lv_image_set_src(widget, "A:/spiffs/logo.bin");
+        lv_obj_center(widget);
+     \}
 - **Build and flash**
   
   After calling `idf.py build flash` the picture should be displayed on the screen.

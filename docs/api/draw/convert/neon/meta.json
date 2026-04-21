@@ -1,10 +1,6 @@
 {
   "title": "Neon",
   "pages": [
-    "index",
-    {
-      "slug": "lv_draw_buf_convert_neon_h",
-      "title": "lv_draw_buf_convert_neon.h"
-    }
+    "lv_draw_buf_convert_neon_h"
   ]
 }

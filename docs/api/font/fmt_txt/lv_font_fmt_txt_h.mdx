@@ -176,9 +176,7 @@ Describe store for additional data for fonts
 | `glyph_bitmap` | <ApiLink name="uint8_t" display="const uint8_t *" /> | The bitmaps of all glyphs |
 | `glyph_dsc` | <ApiLink name="lv_font_fmt_txt_glyph_dsc_t" display="const lv_font_fmt_txt_glyph_dsc_t *" /> | Describe the glyphs |
 | `cmaps` | <ApiLink name="lv_font_fmt_txt_cmap_t" display="const lv_font_fmt_txt_cmap_t *" /> | Map the glyphs to Unicode characters. Array of `lv_font_cmap_fmt_txt_t` variables |
-| `kern_scale` | <ApiLink name="uint16_t" /> | Store kerning values. Can be <ApiLink name="lv_font_fmt_txt_kern_pair_t" />` * or `lv_font_kern_classes_fmt_txt_t *` depending on `kern_classes` */ const void * kern_dsc;
-
-/** Scale kern values in 12.4 format |
+| `kern_scale` | <ApiLink name="uint16_t" /> | Store kerning values. Can be <ApiLink name="lv_font_fmt_txt_kern_pair_t" />` * or `lv_font_kern_classes_fmt_txt_t *` depending on `kern_classes` */ const void * kern_dsc;<br/><br/>/** Scale kern values in 12.4 format |
 | `cmap_num` | <ApiLink name="uint16_t" /> | Number of cmap tables |
 | `bpp` | <ApiLink name="uint16_t" /> | Bit per pixel: 1, 2, 3, 4, 8 |
 | `kern_classes` | <ApiLink name="uint16_t" /> | Type of `kern_dsc` |

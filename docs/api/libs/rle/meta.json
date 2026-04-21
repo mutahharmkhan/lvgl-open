@@ -1,10 +1,6 @@
 {
   "title": "Rle",
   "pages": [
-    "index",
-    {
-      "slug": "lv_rle_h",
-      "title": "lv_rle.h"
-    }
+    "lv_rle_h"
   ]
 }

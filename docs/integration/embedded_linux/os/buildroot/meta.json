@@ -1,17 +1,8 @@
 {
   "title": "OS Support",
   "pages": [
-    {
-      "slug": "buildroot",
-      "title": "Buildroot"
-    },
-    {
-      "slug": "yocto",
-      "title": "Yocto"
-    },
-    {
-      "slug": "torizon_os",
-      "title": "Torizon OS"
-    }
+    "buildroot",
+    "yocto",
+    "torizon_os"
   ]
 }

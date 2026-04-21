@@ -1,7 +1,6 @@
 {
   "title": "Drivers",
   "pages": [
-    "index",
     "display",
     "draw",
     "evdev",
@@ -14,9 +13,6 @@
     "wayland",
     "windows",
     "x11",
-    {
-      "slug": "lv_drivers_h",
-      "title": "lv_drivers.h"
-    }
+    "lv_drivers_h"
   ]
 }

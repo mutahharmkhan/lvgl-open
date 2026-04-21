@@ -1,14 +1,7 @@
 {
   "title": "Spinner",
   "pages": [
-    "index",
-    {
-      "slug": "lv_spinner_h",
-      "title": "lv_spinner.h"
-    },
-    {
-      "slug": "lv_spinner_private_h",
-      "title": "lv_spinner_private.h"
-    }
+    "lv_spinner_h",
+    "lv_spinner_private_h"
   ]
 }

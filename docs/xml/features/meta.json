@@ -1,17 +1,8 @@
 {
   "title": "Features",
   "pages": [
-    {
-      "slug": "subjects",
-      "title": "Subjects"
-    },
-    {
-      "slug": "tests",
-      "title": "Tests"
-    },
-    {
-      "slug": "translations",
-      "title": "Translations"
-    }
+    "subjects",
+    "tests",
+    "translations"
   ]
 }

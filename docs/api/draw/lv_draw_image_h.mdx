@@ -51,10 +51,7 @@ lv_image_src_t lv_image_src_get_type(const void *src)
 
 | Name | Type | Description |
 |------|------|-------------|
-| `src` | `const void *` | pointer to an image source:
-- pointer to an '<ApiLink name="lv_image_t" />' variable (image stored internally and compiled into the code)
-- a path to a file (e.g. "S:/folder/image.bin")
-- or a symbol (e.g. LV_SYMBOL_CLOSE) |
+| `src` | `const void *` | pointer to an image source:<br/>- pointer to an '<ApiLink name="lv_image_t" />' variable (image stored internally and compiled into the code)<br/>- a path to a file (e.g. "S:/folder/image.bin")<br/>- or a symbol (e.g. LV_SYMBOL_CLOSE) |
 
 **Returns:** <ApiLink name="lv_image_src_t" /> — type of the image source LV_IMAGE_SRC_VARIABLE/FILE/SYMBOL/UNKNOWN
 
@@ -161,9 +158,7 @@ void lv_draw_layer(lv_layer_t *layer, const lv_draw_image_dsc_t *dsc, const lv_a
 | `tile` | <ApiLink name="uint16_t" /> | If the image is smaller than the image_area field of <ApiLink name="lv_draw_image_dsc_t" /> tile the image (repeat is both horizontally and vertically) to fill the image_area area |
 | `colorkey` | <ApiLink name="lv_image_colorkey_t" display="const lv_image_colorkey_t *" /> |  |
 | `sup` | <ApiLink name="lv_draw_image_sup_t" display="lv_draw_image_sup_t *" /> | Used internally to store some information about the palette or the color of A8 images |
-| `image_area` | <ApiLink name="lv_area_t" /> | Used to indicate the entire original, non-clipped area where the image is to be drawn. This is important for:
-1. Layer rendering, where it might happen that only a smaller area of the layer is rendered and e.g. clip_radius needs to know what the original image was.
-2. Tiled images, where the target draw area is larger than the image to be tiled. |
+| `image_area` | <ApiLink name="lv_area_t" /> | Used to indicate the entire original, non-clipped area where the image is to be drawn. This is important for:<br/>1. Layer rendering, where it might happen that only a smaller area of the layer is rendered and e.g. clip_radius needs to know what the original image was.<br/>2. Tiled images, where the target draw area is larger than the image to be tiled. |
 | `bitmap_mask_src` | <ApiLink name="lv_image_dsc_t" display="const lv_image_dsc_t *" /> | Pointer to an A8 or L8 image descriptor to mask the image with. The mask is always center aligned. |
 
 

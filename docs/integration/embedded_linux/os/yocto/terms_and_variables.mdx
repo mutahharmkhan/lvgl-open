@@ -22,9 +22,9 @@ S
 -
 
 The location in the Build Directory where unpacked recipe source code resides.
-By default, this directory is `${WORKDIR}/${BPN}-${PV}`, where `${BPN}` is the
-base recipe name and `${PV}` is the recipe version. If the source tarball
-extracts the code to a directory named anything other than `${BPN}-${PV}`, or if
+By default, this directory is $\{WORKDIR\}/$\{BPN\}-$\{PV\}, where $\{BPN\} is the
+base recipe name and $\{PV\} is the recipe version. If the source tarball
+extracts the code to a directory named anything other than $\{BPN\}-$\{PV\}, or if
 the source code is fetched from an SCM such as Git or Subversion, then you
 must set S in the recipe so that the OpenEmbedded build system knows where to
 find the unpacked source.
@@ -40,7 +40,7 @@ poky/build/tmp/work/qemux86-poky-linux/db/5.1.19-r3/db-5.1.19
 The unpacked source code resides in the db-5.1.19 folder.
 
 This next example assumes a Git repository. By default, Git repositories are
-cloned to `${WORKDIR}/git` during do_fetch. Since this path is different from the
+cloned to $\{WORKDIR\}/git during do_fetch. Since this path is different from the
 default value of S, you must set it specifically so the source can be located:
 
 ```bash

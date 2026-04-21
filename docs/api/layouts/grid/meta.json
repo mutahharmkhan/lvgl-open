@@ -1,10 +1,6 @@
 {
   "title": "Grid",
   "pages": [
-    "index",
-    {
-      "slug": "lv_grid_h",
-      "title": "lv_grid.h"
-    }
+    "lv_grid_h"
   ]
 }

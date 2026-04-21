@@ -1,16 +1,9 @@
 {
   "title": "Layouts",
   "pages": [
-    "index",
     "flex",
     "grid",
-    {
-      "slug": "lv_layout_h",
-      "title": "lv_layout.h"
-    },
-    {
-      "slug": "lv_layout_private_h",
-      "title": "lv_layout_private.h"
-    }
+    "lv_layout_h",
+    "lv_layout_private_h"
   ]
 }

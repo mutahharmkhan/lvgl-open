@@ -38,10 +38,7 @@ void lv_subject_set_external_data(lv_subject_t *subject, void *data, void(*free_
 |------|------|-------------|
 | `subject` | <ApiLink name="lv_subject_t" display="lv_subject_t *" /> | pointer to Subject |
 | `data` | `void *` | User-defined data pointer to associate |
-| `free_cb` | `void(*)(void *data)` | Cleanup function called when:
-- Observer is explicitly deleted
-- Observed object is deleted
-- New data replaces current association NULL indicates no cleanup required |
+| `free_cb` | `void(*)(void *data)` | Cleanup function called when:<br/>- Observer is explicitly deleted<br/>- Observed object is deleted<br/>- New data replaces current association NULL indicates no cleanup required |
 
 
 </ApiMember>

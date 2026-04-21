@@ -1,10 +1,6 @@
 {
   "title": "Fastgltf",
   "pages": [
-    "index",
-    {
-      "slug": "lv_fastgltf_hpp",
-      "title": "lv_fastgltf.hpp"
-    }
+    "lv_fastgltf_hpp"
   ]
 }

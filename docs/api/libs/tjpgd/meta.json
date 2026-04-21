@@ -1,10 +1,6 @@
 {
   "title": "Tjpgd",
   "pages": [
-    "index",
-    {
-      "slug": "lv_tjpgd_h",
-      "title": "lv_tjpgd.h"
-    }
+    "lv_tjpgd_h"
   ]
 }

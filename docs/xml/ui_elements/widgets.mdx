@@ -14,11 +14,11 @@ The XML file of a Widget is wrapped in a `<widget>` XML root element.
 
 `<widget>`\s support the following child XML tags:
 
-- `<consts>`
-- `<api>`
-- `<styles>`
-- `<view>`
-- `<previews>`
+- [&lt;consts>](/xml/ui_elements/consts)
+- [&lt;api>](/xml/ui_elements/api)
+- [&lt;styles>](/xml/ui_elements/styles)
+- [&lt;view>](/xml/ui_elements/view)
+- [&lt;previews>](/xml/ui_elements/preview)
 
 Just like Components, Widgets can also be children of other Widgets and Components.
 
@@ -141,12 +141,12 @@ When an XML file is created and the `<widget>` root element is used, the followi
 
 | Field | Description |
 |-------|-------------|
-| `<widget_name>_gen.h` | Contains the generated API implementation of the Widget (overwritten on each code export) |
-| `<widget_name>_private_gen.h` | Contains private API and data for the Widget (overwritten on each code export) |
-| `<widget_name>_gen.c` | Contains the internals of the Widget, e.g., constructor with children, destructor, event handler, etc. (overwritten on each code export) |
-| `<widget_name>.h` | Includes `<widget_name>_gen.h` and allows the user to define custom APIs. Only a skeleton is exported once |
-| `<widget_name>.c` | Contains hooks from `<widget_name>_gen.c` and allows the user to write custom code. Only a skeleton is exported once |
-| `<widget_name>_xml_parser.c` | Processes the XML strings and calls the required functions according to the set attributes. Only a skeleton is exported once |
+| `&lt;widget_name>_gen.h` | Contains the generated API implementation of the Widget (overwritten on each code export) |
+| `&lt;widget_name>_private_gen.h` | Contains private API and data for the Widget (overwritten on each code export) |
+| `&lt;widget_name>_gen.c` | Contains the internals of the Widget, e.g., constructor with children, destructor, event handler, etc. (overwritten on each code export) |
+| `&lt;widget_name>.h` | Includes `<widget_name>_gen.h` and allows the user to define custom APIs. Only a skeleton is exported once |
+| `&lt;widget_name>.c` | Contains hooks from `<widget_name>_gen.c` and allows the user to write custom code. Only a skeleton is exported once |
+| `&lt;widget_name>_xml_parser.c` | Processes the XML strings and calls the required functions according to the set attributes. Only a skeleton is exported once |
 
 ### Adding Custom Code
 
@@ -173,4 +173,4 @@ For example: tabs of a tabview, list of a dropdown, series of a chart, etc.
 Just like any other Widget API properties, Elements can also be defined in the `<api>`
 tag of the Widget's XML.
 
-Learn more about Elements in the documentation page for `<api>`.
+Learn more about Elements in the documentation page for [&lt;api>](/xml/ui_elements/api).

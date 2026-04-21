@@ -1,45 +1,15 @@
 {
   "title": "UI Elements",
   "pages": [
-    {
-      "slug": "components",
-      "title": "Components"
-    },
-    {
-      "slug": "widgets",
-      "title": "Widgets"
-    },
-    {
-      "slug": "screens",
-      "title": "Screens"
-    },
-    {
-      "slug": "animations",
-      "title": "Animations"
-    },
-    {
-      "slug": "api",
-      "title": "API"
-    },
-    {
-      "slug": "consts",
-      "title": "Consts"
-    },
-    {
-      "slug": "events",
-      "title": "Events"
-    },
-    {
-      "slug": "preview",
-      "title": "Preview"
-    },
-    {
-      "slug": "styles",
-      "title": "Styles"
-    },
-    {
-      "slug": "view",
-      "title": "View"
-    }
+    "components",
+    "widgets",
+    "screens",
+    "animations",
+    "api",
+    "consts",
+    "events",
+    "preview",
+    "styles",
+    "view"
   ]
 }

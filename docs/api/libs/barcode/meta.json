@@ -1,14 +1,7 @@
 {
   "title": "Barcode",
   "pages": [
-    "index",
-    {
-      "slug": "lv_barcode_h",
-      "title": "lv_barcode.h"
-    },
-    {
-      "slug": "lv_barcode_private_h",
-      "title": "lv_barcode_private.h"
-    }
+    "lv_barcode_h",
+    "lv_barcode_private_h"
   ]
 }

@@ -1,7 +1,6 @@
 {
   "title": "Display",
   "pages": [
-    "index",
     "drm",
     "fb",
     "ft81x",

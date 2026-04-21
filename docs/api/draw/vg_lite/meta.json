@@ -1,46 +1,15 @@
 {
   "title": "Vg_lite",
   "pages": [
-    "index",
-    {
-      "slug": "lv_draw_vg_lite_h",
-      "title": "lv_draw_vg_lite.h"
-    },
-    {
-      "slug": "lv_draw_vg_lite_type_h",
-      "title": "lv_draw_vg_lite_type.h"
-    },
-    {
-      "slug": "lv_vg_lite_bitmap_font_cache_h",
-      "title": "lv_vg_lite_bitmap_font_cache.h"
-    },
-    {
-      "slug": "lv_vg_lite_decoder_h",
-      "title": "lv_vg_lite_decoder.h"
-    },
-    {
-      "slug": "lv_vg_lite_grad_h",
-      "title": "lv_vg_lite_grad.h"
-    },
-    {
-      "slug": "lv_vg_lite_math_h",
-      "title": "lv_vg_lite_math.h"
-    },
-    {
-      "slug": "lv_vg_lite_path_h",
-      "title": "lv_vg_lite_path.h"
-    },
-    {
-      "slug": "lv_vg_lite_pending_h",
-      "title": "lv_vg_lite_pending.h"
-    },
-    {
-      "slug": "lv_vg_lite_stroke_h",
-      "title": "lv_vg_lite_stroke.h"
-    },
-    {
-      "slug": "lv_vg_lite_utils_h",
-      "title": "lv_vg_lite_utils.h"
-    }
+    "lv_draw_vg_lite_h",
+    "lv_draw_vg_lite_type_h",
+    "lv_vg_lite_bitmap_font_cache_h",
+    "lv_vg_lite_decoder_h",
+    "lv_vg_lite_grad_h",
+    "lv_vg_lite_math_h",
+    "lv_vg_lite_path_h",
+    "lv_vg_lite_pending_h",
+    "lv_vg_lite_stroke_h",
+    "lv_vg_lite_utils_h"
   ]
 }

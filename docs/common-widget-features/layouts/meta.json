@@ -1,17 +1,8 @@
 {
   "title": "Layouts",
   "pages": [
-    {
-      "slug": "overview",
-      "title": "Overview"
-    },
-    {
-      "slug": "flex",
-      "title": "Flex"
-    },
-    {
-      "slug": "grid",
-      "title": "Grid"
-    }
+    "overview",
+    "flex",
+    "grid"
   ]
 }

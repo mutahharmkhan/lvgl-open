@@ -229,13 +229,9 @@ lv_cache_t * lv_cache_create(const lv_cache_class_t *cache_class, size_t node_si
 
 | Name | Type | Description |
 |------|------|-------------|
-| `cache_class` | <ApiLink name="lv_cache_class_t" display="const lv_cache_class_t *" /> | The class of the cache. Currently only support one two builtin classes:
-- lv_cache_class_lru_rb_count for LRU-based cache with count-based eviction policy.
-- lv_cache_class_lru_rb_size for LRU-based cache with size-based eviction policy. |
+| `cache_class` | <ApiLink name="lv_cache_class_t" display="const lv_cache_class_t *" /> | The class of the cache. Currently only support one two builtin classes:<br/>- lv_cache_class_lru_rb_count for LRU-based cache with count-based eviction policy.<br/>- lv_cache_class_lru_rb_size for LRU-based cache with size-based eviction policy. |
 | `node_size` | <ApiLink name="size_t" /> | The node size is the size of the data stored in the cache.. |
-| `max_size` | <ApiLink name="size_t" /> | The max size is the maximum amount of memory or count that the cache can hold.
-- lv_cache_class_lru_rb_count: max_size is the maximum count of nodes in the cache.
-- lv_cache_class_lru_rb_size: max_size is the maximum size of the cache in bytes. |
+| `max_size` | <ApiLink name="size_t" /> | The max size is the maximum amount of memory or count that the cache can hold.<br/>- lv_cache_class_lru_rb_count: max_size is the maximum count of nodes in the cache.<br/>- lv_cache_class_lru_rb_size: max_size is the maximum size of the cache in bytes. |
 | `ops` | <ApiLink name="lv_cache_ops_t" /> | A set of operations that can be performed on the cache. See <ApiLink name="lv_cache_ops_t" /> for details. |
 
 **Returns:** <ApiLink name="lv_cache_t" display="lv_cache_t *" /> — Returns a pointer to the created cache object on success, `NULL` on error.

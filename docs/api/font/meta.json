@@ -1,18 +1,11 @@
 {
   "title": "Font",
   "pages": [
-    "index",
     "binfont_loader",
     "fmt_txt",
     "font_manager",
     "imgfont",
-    {
-      "slug": "lv_font_h",
-      "title": "lv_font.h"
-    },
-    {
-      "slug": "lv_symbol_def_h",
-      "title": "lv_symbol_def.h"
-    }
+    "lv_font_h",
+    "lv_symbol_def_h"
   ]
 }

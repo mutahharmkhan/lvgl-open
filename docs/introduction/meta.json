@@ -1,21 +1,9 @@
 {
-  "title": "Introduction",
+  "title": "Key Features",
   "pages": [
-    {
-      "slug": "requirements",
-      "title": "Requirements"
-    },
-    {
-      "slug": "license",
-      "title": "License"
-    },
-    {
-      "slug": "faq",
-      "title": "Faq"
-    },
-    {
-      "slug": "repo",
-      "title": "Repo"
-    }
+    "requirements",
+    "license",
+    "faq",
+    "repo"
   ]
 }

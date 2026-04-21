@@ -1,13 +1,7 @@
 {
   "title": "Observer",
   "pages": [
-    {
-      "slug": "observer",
-      "title": "Observer"
-    },
-    {
-      "slug": "observer_examples",
-      "title": "Observer Examples"
-    }
+    "observer",
+    "observer_examples"
   ]
 }

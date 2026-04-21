@@ -1,10 +1,6 @@
 {
   "title": "Assets",
   "pages": [
-    "index",
-    {
-      "slug": "lv_gltf_view_shader_h",
-      "title": "lv_gltf_view_shader.h"
-    }
+    "lv_gltf_view_shader_h"
   ]
 }

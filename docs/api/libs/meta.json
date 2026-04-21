@@ -1,7 +1,6 @@
 {
   "title": "Libs",
   "pages": [
-    "index",
     "barcode",
     "bin_decoder",
     "bmp",

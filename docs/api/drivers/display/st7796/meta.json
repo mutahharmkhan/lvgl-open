@@ -1,10 +1,6 @@
 {
   "title": "St7796",
   "pages": [
-    "index",
-    {
-      "slug": "lv_st7796_h",
-      "title": "lv_st7796.h"
-    }
+    "lv_st7796_h"
   ]
 }

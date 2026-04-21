@@ -1,10 +1,6 @@
 {
   "title": "List",
   "pages": [
-    "index",
-    {
-      "slug": "lv_list_h",
-      "title": "lv_list.h"
-    }
+    "lv_list_h"
   ]
 }

@@ -1,14 +1,7 @@
 {
   "title": "Gltf_environment",
   "pages": [
-    "index",
-    {
-      "slug": "lv_gltf_environment_h",
-      "title": "lv_gltf_environment.h"
-    },
-    {
-      "slug": "lv_gltf_environment_private_h",
-      "title": "lv_gltf_environment_private.h"
-    }
+    "lv_gltf_environment_h",
+    "lv_gltf_environment_private_h"
   ]
 }

@@ -1,13 +1,7 @@
 {
   "title": "Arm",
   "pages": [
-    {
-      "slug": "overview",
-      "title": "Overview"
-    },
-    {
-      "slug": "arm2d",
-      "title": "Arm2d"
-    }
+    "overview",
+    "arm2d"
   ]
 }

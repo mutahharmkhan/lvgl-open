@@ -1,10 +1,6 @@
 {
   "title": "Bin_decoder",
   "pages": [
-    "index",
-    {
-      "slug": "lv_bin_decoder_h",
-      "title": "lv_bin_decoder.h"
-    }
+    "lv_bin_decoder_h"
   ]
 }

@@ -1,10 +1,6 @@
 {
   "title": "Sdl",
   "pages": [
-    "index",
-    {
-      "slug": "lv_draw_sdl_h",
-      "title": "lv_draw_sdl.h"
-    }
+    "lv_draw_sdl_h"
   ]
 }

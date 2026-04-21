@@ -1,45 +1,15 @@
 {
   "title": "Integration",
   "pages": [
-    {
-      "slug": "overview",
-      "title": "Overview"
-    },
-    {
-      "slug": "pc",
-      "title": "Pc"
-    },
-    {
-      "slug": "embedded_linux",
-      "title": "Embedded Linux"
-    },
-    {
-      "slug": "rtos",
-      "title": "Rtos"
-    },
-    {
-      "slug": "frameworks",
-      "title": "Frameworks"
-    },
-    {
-      "slug": "boards",
-      "title": "Boards"
-    },
-    {
-      "slug": "chip_vendors",
-      "title": "Chip Vendors"
-    },
-    {
-      "slug": "external_display_controllers",
-      "title": "External Display Controllers"
-    },
-    {
-      "slug": "building",
-      "title": "Building"
-    },
-    {
-      "slug": "bindings",
-      "title": "Bindings"
-    }
+    "overview",
+    "pc",
+    "embedded_linux",
+    "rtos",
+    "frameworks",
+    "boards",
+    "chip_vendors",
+    "external_display_controllers",
+    "building",
+    "bindings"
   ]
 }

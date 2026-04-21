@@ -1,17 +1,8 @@
 {
   "title": "Tools",
   "pages": [
-    {
-      "slug": "cli",
-      "title": "CLI"
-    },
-    {
-      "slug": "online_share",
-      "title": "Online Share"
-    },
-    {
-      "slug": "figma",
-      "title": "Figma"
-    }
+    "cli",
+    "online_share",
+    "figma"
   ]
 }

@@ -1,10 +1,6 @@
 {
   "title": "Fb",
   "pages": [
-    "index",
-    {
-      "slug": "lv_linux_fbdev_h",
-      "title": "lv_linux_fbdev.h"
-    }
+    "lv_linux_fbdev_h"
   ]
 }

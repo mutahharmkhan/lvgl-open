@@ -1,10 +1,6 @@
 {
   "title": "Snapshot",
   "pages": [
-    "index",
-    {
-      "slug": "lv_snapshot_h",
-      "title": "lv_snapshot.h"
-    }
+    "lv_snapshot_h"
   ]
 }

@@ -266,7 +266,7 @@ lv_fs_res_t lv_fs_open(lv_fs_file_t *file_p, const char *path, lv_fs_mode_t mode
 |------|------|-------------|
 | `file_p` | <ApiLink name="lv_fs_file_t" display="lv_fs_file_t *" /> | pointer to a <ApiLink name="lv_fs_file_t" /> variable |
 | `path` | `const char *` | path to the file beginning with the driver letter (e.g. S:/folder/file.txt) |
-| `mode` | <ApiLink name="lv_fs_mode_t" /> | read: FS_MODE_RD, write: FS_MODE_WR, both: FS_MODE_RD | FS_MODE_WR |
+| `mode` | <ApiLink name="lv_fs_mode_t" /> | read: FS_MODE_RD, write: FS_MODE_WR, both: FS_MODE_RD \| FS_MODE_WR |
 
 **Returns:** <ApiLink name="lv_fs_res_t" /> — LV_FS_RES_OK or any error from <ApiLink name="lv_fs_res_t" /> enum
 

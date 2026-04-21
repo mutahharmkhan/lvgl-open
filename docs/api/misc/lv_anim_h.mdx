@@ -419,10 +419,7 @@ void lv_anim_set_external_data(lv_anim_t *anim, void *data, void(*free_cb)(void 
 |------|------|-------------|
 | `anim` | <ApiLink name="lv_anim_t" display="lv_anim_t *" /> | Pointer to the animation object to configure |
 | `data` | `void *` | User-defined data pointer to associate |
-| `free_cb` | `void(*)(void *data)` | Cleanup callback that receives ext_data when:
-- Animation completes naturally
-- Animation is deleted prematurely
-- New data replaces current association NULL indicates no cleanup required |
+| `free_cb` | `void(*)(void *data)` | Cleanup callback that receives ext_data when:<br/>- Animation completes naturally<br/>- Animation is deleted prematurely<br/>- New data replaces current association NULL indicates no cleanup required |
 
 
 </ApiMember>

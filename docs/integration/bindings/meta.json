@@ -1,25 +1,10 @@
 {
   "title": "Bindings",
   "pages": [
-    {
-      "slug": "api_json",
-      "title": "API JSON"
-    },
-    {
-      "slug": "cpp",
-      "title": "Cpp"
-    },
-    {
-      "slug": "javascript",
-      "title": "Javascript"
-    },
-    {
-      "slug": "micropython",
-      "title": "Micropython"
-    },
-    {
-      "slug": "pikascript",
-      "title": "Pikascript"
-    }
+    "api_json",
+    "cpp",
+    "javascript",
+    "micropython",
+    "pikascript"
   ]
 }
